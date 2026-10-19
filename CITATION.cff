@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Kausal IDHS: design-based causal graph discovery and confounder selection for complex survey data"
+version: v-paper1
+date-released: 2026-10-17
+license: MIT
+repository-code: "https://github.com/ariefsusanto-png/kausal-idhs"
+keywords:
+  - causal discovery
+  - PC algorithm
+  - complex survey
+  - confounder selection
+  - Indonesia Demographic and Health Survey
+authors:
+  - family-names: Susanto
+    given-names: Arief
+    email: ariefsusanto@students.undip.ac.id
+    affiliation: "Doctoral Department of Information Systems, Universitas Diponegoro; Department of Informatics Engineering, Universitas Muria Kudus"
+  - family-names: Widodo
+    given-names: Aris Puji
+    affiliation: "Doctoral Department of Information Systems, Universitas Diponegoro"
+  - family-names: Wibowo
+    given-names: Adi
+    affiliation: "Doctoral Department of Information Systems, Universitas Diponegoro"

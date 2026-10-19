@@ -1,0 +1,4 @@
+varian,node,n,sisi,tak_berarah,RD,RD_lo,RD_hi,himpunan_kandidat,RD_min,RD_max,induk_T,detik,memori_MB
+SOL v2 (desain),15,16232,42,0,-0.03241406279750073,-0.05438435638702148,-0.01044376920797999,1,-0.03241406279750073,-0.03241406279750073,"sanitasi_klaster_lo, pend_ibu_thn, org_per_kamar, skor_kekayaan_nonwash, cuci_tangan_dasar",12.60303783416748,83.659216
+SOL v2 naif,15,16232,44,2,-0.03256832973070193,-0.05452096623385032,-0.010615693227553537,1,-0.03256832973070193,-0.03256832973070193,"sanitasi_klaster_lo, pend_ibu_thn, org_per_kamar, skor_kekayaan_nonwash, air_layak, cuci_tangan_dasar",20.085618257522583,63.571877
+SOL v2 + MLC,18,15604,67,0,-0.030918621094694565,-0.05240647483346871,-0.009430767355920418,1,-0.030918621094694565,-0.030918621094694565,"eta_pendidikan, eta_ekonomi, umur_ibu, sanitasi_klaster_lo, org_per_kamar",42.632248878479004,84.473205

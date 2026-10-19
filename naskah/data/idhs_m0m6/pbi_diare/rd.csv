@@ -1,0 +1,10 @@
+analisis,metode,n,n_Z,RD,se,RD_lo,RD_hi,Z
+pbi_diare,M0,16508,10,0.024496836006198043,0.008794499634565581,0.007248946087161652,0.041744725925234434,"anak_laki, ibu_bekerja, jml_art, kk_perempuan, p0_daerah_mar2017, pbi_pct_prov, pend_ibu_thn, perdesaan, skor_kekayaan_nonwash, umur_anak_bln"
+pbi_diare,M1,16508,8,0.026613387767447944,0.00888512974179955,0.009187752873952963,0.04403902266094292,"ibu_bekerja, jml_art, kk_perempuan, p0_daerah_mar2017, pbi_pct_prov, pend_ibu_thn, perdesaan, skor_kekayaan_nonwash"
+pbi_diare,M2,16508,5,0.02611018102677566,0.008774047145109971,0.008902402802703033,0.04331795925084829,"pbi_pct_prov, ibu_bekerja, jml_art, pend_ibu_thn, skor_kekayaan_nonwash"
+pbi_diare,M3,16508,6,0.025502709909965556,0.008768616189966147,0.008305582947518743,0.04269983687241237,"pbi_pct_prov, ibu_bekerja, jml_art, pend_ibu_thn, skor_kekayaan_nonwash, T_sanitasi"
+pbi_diare,M4(aT=0.1),16508,6,0.025502709909965556,0.008768616189966147,0.008305582947518743,0.04269983687241237,"pbi_pct_prov, ibu_bekerja, jml_art, pend_ibu_thn, skor_kekayaan_nonwash, T_sanitasi"
+pbi_diare,M4(aT=0.2),16508,7,0.02348601445865609,0.00871359590002029,0.006396794022303125,0.040575234895009055,"pbi_pct_prov, ibu_bekerja, jml_art, pend_ibu_thn, umur_anak_bln, skor_kekayaan_nonwash, T_sanitasi"
+pbi_diare,M4(aT=0.3),16508,7,0.02348601445865609,0.00871359590002029,0.006396794022303125,0.040575234895009055,"pbi_pct_prov, ibu_bekerja, jml_art, pend_ibu_thn, umur_anak_bln, skor_kekayaan_nonwash, T_sanitasi"
+pbi_diare,M5,16508,9,0.025959801069363915,0.008867784955715203,0.008568183001553504,0.04335141913717433,"T_sanitasi, ibu_bekerja, jml_art, kk_perempuan, p0_daerah_mar2017, pbi_pct_prov, pend_ibu_thn, perdesaan, skor_kekayaan_nonwash"
+pbi_diare,M6,16508,7,0.02348601445865611,0.008713595900020292,0.006396794022303143,0.040575234895009075,"T_sanitasi, ibu_bekerja, jml_art, pbi_pct_prov, pend_ibu_thn, skor_kekayaan_nonwash, umur_anak_bln"

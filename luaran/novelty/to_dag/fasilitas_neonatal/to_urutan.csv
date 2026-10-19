@@ -1,0 +1,17 @@
+posisi,variabel,tier
+1,perdesaan,0
+2,p0_daerah_mar2017,0
+3,fasilitas_klaster_lo,0
+4,rasio_pkm_per_kec,0
+5,pct_pkm_kurang_bidan,0
+6,jarak_klaster_lo,0
+7,umur_ibu,1
+8,pend_ibu_thn,1
+9,urutan_lahir,1
+10,kembar,1
+11,anak_laki,1
+12,skor_kekayaan_nonwash,2
+13,hambatan_biaya,3
+14,hambatan_jarak,3
+15,T_fasilitas,4
+16,Y_mati_neonatal,5

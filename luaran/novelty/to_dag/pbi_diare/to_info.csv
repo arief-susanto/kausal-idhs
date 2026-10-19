@@ -1,0 +1,27 @@
+kunci,nilai
+n,16508
+skor,gauss
+berbobot,True
+n_penalti,5059.4
+maks_induk,5
+ukuran_tier,konteks=3 · demografi=6 · ekonomi=1 · WASH/akses=4 · outcome=1
+ruang_urutan_tier,103.680
+ruang_urutan_tanpa_tier,1.308e+12
+ruang_DAG,2.377e+41
+ruang_setelah_dekomposisi,752
+skor_lokal_dihitung,511
+grow_shrink_dihitung,238
+skor_TO_DAG,-102893.92
+skor_B3_pada_skor_sama,-102914.16
+skor_pakar_pada_skor_sama,-105528.55
+adjustment,"air_layak, ibu_bekerja, jml_art, kk_perempuan, p0_daerah_mar2017, pbi_pct_prov, pend_ibu_thn, perdesaan, skor_kekayaan_nonwash, umur_anak_bln"
+catatan,-
+sisi,32
+sisi_sama_pakar,14
+sisi_tambahan,18
+sisi_hilang,11
+arah_beda,0
+SHD,29
+detik_penemuan,0.21
+memori_MB,8.43
+detik,55.7

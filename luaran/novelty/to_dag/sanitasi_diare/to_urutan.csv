@@ -1,0 +1,16 @@
+posisi,variabel,tier
+1,sanitasi_klaster_lo,0
+2,perdesaan,0
+3,cuci_tangan_klaster_lo,0
+4,p0_daerah_mar2017,0
+5,umur_anak_bln,1
+6,pend_ibu_thn,1
+7,anak_laki,1
+8,skor_kekayaan_nonwash,2
+9,org_per_kamar,2
+10,punya_ternak,2
+11,air_layak,3
+12,cuci_tangan_dasar,3
+13,olah_air_efektif,3
+14,T_sanitasi,3
+15,Y_diare,5

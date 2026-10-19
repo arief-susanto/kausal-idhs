@@ -1,0 +1,20 @@
+konstruk,jenis,indikator,muatan,galat,bobot_komposit,biner
+eta_pendidikan,reflektif,pend_ibu_thn,0.9814718473806803,0.03671301279915462,,False
+eta_pendidikan,reflektif,ind_pend_ibu_level,0.9404317075128885,0.11558820350439292,,False
+eta_pendidikan,reflektif,pend_suami_kat,0.6237571626550958,0.6109270020364643,,False
+eta_kebersihan,reflektif → dipecah (ω < 0.70),cuci_tangan_dasar,0.3802086667372565,0.8554413697378778,,True
+eta_kebersihan,reflektif → dipecah (ω < 0.70),olah_air_efektif,-0.49989705657547023,0.7501029328271811,,True
+eta_kebersihan,reflektif → dipecah (ω < 0.70),air_layak,0.995,0.009974999999999956,,True
+eta_ekonomi,komposit (formatif),ind_listrik,,,0.34700301884502627,True
+eta_ekonomi,komposit (formatif),ind_tv,,,0.361584966547462,True
+eta_ekonomi,komposit (formatif),ind_kulkas,,,0.3748921324342677,True
+eta_ekonomi,komposit (formatif),ind_motor,,,0.31082276904154493,True
+eta_ekonomi,komposit (formatif),ind_mobil,,,0.3571171984400955,True
+eta_ekonomi,komposit (formatif),ind_bank,,,0.28654887711726995,True
+eta_ekonomi,komposit (formatif),ind_lantai,,,0.29665320754603763,True
+eta_ekonomi,komposit (formatif),ind_dinding,,,0.2684748829747846,True
+eta_ekonomi,komposit (formatif),ind_atap,,,0.3767830561861765,True
+eta_akses,komposit (formatif),hambatan_jarak,,,0.549321104611008,True
+eta_akses,komposit (formatif),hambatan_biaya,,,0.5476435624062461,True
+eta_akses,komposit (formatif),rasio_pkm_per_kec,,,-0.47438853307903245,False
+eta_akses,komposit (formatif),pct_pkm_kurang_bidan,,,-0.4162791998972103,False

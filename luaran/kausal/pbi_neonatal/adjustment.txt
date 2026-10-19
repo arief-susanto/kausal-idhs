@@ -1,0 +1,6 @@
+Teridentifikasi (backdoor): True
+Dikontrol (10): jml_art, kembar, kk_perempuan, p0_daerah_mar2017, pbi_pct_prov, pend_ibu_thn, perdesaan, skor_kekayaan_nonwash, umur_ibu, urutan_lahir
+Mediator (tidak dikontrol): T_fasilitas
+Laten: -
+Filter: umur_anak_bln < 24
+n analisis: 6968

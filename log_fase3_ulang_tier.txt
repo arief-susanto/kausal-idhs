@@ -1,0 +1,21 @@
+﻿BASE[fasilitas_neonatal] T_fasilitas->Y_mati_neonatal n=17607 p=16 boot=500
+BASE[fasilitas_neonatal] B1[T_fasilitas->Y_mati_neonatal] RMSEA=0.118 CFI=0.815 SRMR=0.079 chi2=6367.7 df=56 (n_eff=8151)
+BASE[fasilitas_neonatal] B1 linear: total=-0.0027 langsung=-0.0027 tak langsung=+0.0000 | probit RD=-0.0027 | backdoor g-komp RD=+0.0010 [-0.0049,+0.0061]
+BASE[fasilitas_neonatal] B2 uji=7866 sisi berarah=40 tak berarah=2 SHD vs pakar=46 | IDA 1 himpunan, RD [+0.0019,+0.0019], min|RD|=+0.0019
+BASE[fasilitas_neonatal] B3 skor=gauss langkah=51 sisi=51 SHD vs pakar=54 skor akhir=-365852.9 (pakar -384364.7) | RD=+0.0000 [+0.0000,+0.0000]
+BASE[fasilitas_neonatal] TERBAIK: B3 BN berbasis skor (peringkat rata-rata 1.00; unggul pada BIC_SEM, CFI) RD=+0.0000 | B1 BIC=5863 CFI=0.815 CI=0.0110 | B2 BIC=1323 CFI=0.944 CI=0.0101 | B3 BIC=-323 CFI=0.994 CI=nan
+[baseline fasilitas_neonatal exit 0, 144 dtk]
+NOV[pbi_diare] N1 SD-Hybrid uji=3147 skeleton=33 (B2 naif 39) delta_bar=2.13 n_eff=5059 sisi=26 SHD=25 RD=+0.0000 [+0.0000,+0.0000]
+NOV[pbi_diare] banding: terbaik=B3 BN berbasis skor (peringkat 1.33) | B1 BIC_SEM=142 CFI=0.964 lebar_CI=0.0291 | B2 BIC_SEM=-330 CFI=0.989 lebar_CI=0.0326 | B3 BIC_SEM=-374 CFI=0.993 lebar_CI=0.0309 | N1 BIC_SEM=-362 CFI=0.984 lebar_CI=nan
+NOV[pbi_diare] uji (naif/orde1/orde2): biner 2×2, S=∅ efek=0.0: 0.124/0.045/0.045; 3×3 (df 4), S=∅ efek=0.0: 0.138/0.071/0.066; biner 2×2, S={z} efek=0.0: 0.122/0.070/0.069; kontinu, S=∅ efek=0.0: 0.215/0.066/0.066; kontinu, S={z} efek=0.0: 0.213/0.064/0.064; biner 2×2, S=∅ efek=0.05: 0.947/0.739/0.739; 3×3 (df 4), S=∅ efek=0.05: 0.967/0.786/0.781; biner 2×2, S={z} efek=0.05: 0.819/0.541/0.540; kontinu, S=∅ efek=0.05: 0.999/0.923/0.923; kontinu, S={z} efek=0.05: 0.999/0.924/0.924; biner 2×2, S=∅ efek=0.1: 1.000/1.000/1.000; 3×3 (df 4), S=∅ efek=0.1: 1.000/1.000/1.000; biner 2×2, S={z} efek=0.1: 1.000/0.991/0.991; kontinu, S=∅ efek=0.1: 1.000/1.000/1.000; kontinu, S={z} efek=0.1: 1.000/1.000/1.000
+[N1 pbi_diare exit 0, 290 dtk]
+NOV[pbi_diare] N2 TO-DAG ruang urutan=103,680 (tanpa tier 1.31e+12) skor lokal=513 F=-102893.9 (B3 -102914.2) sisi=32 SHD=29 detik=0.25 memori=8.4MB RD=+0.0203
+NOV[pbi_diare] banding: terbaik=N2 TO-DAG (peringkat 1.67) | B1 detik_penemuan=0.00742 memori_MB=5.96 BIC_SEM=142 | B2 detik_penemuan=3.78 memori_MB=3.97 BIC_SEM=-330 | B3 detik_penemuan=0.331 memori_MB=5.95 BIC_SEM=-374 | N2 detik_penemuan=0.254 memori_MB=8.43 BIC_SEM=-410
+[N2 pbi_diare exit 0, 345 dtk]
+NOV[fasilitas_neonatal] N1 SD-Hybrid uji=4758 skeleton=38 (B2 naif 42) delta_bar=2.19 n_eff=5197 sisi=33 SHD=40 RD=+0.0000 [+0.0000,+0.0000]
+NOV[fasilitas_neonatal] banding: terbaik=B3 BN berbasis skor (peringkat 1.67) | B1 BIC_SEM=5.86e+03 CFI=0.815 lebar_CI=0.011 | B2 BIC_SEM=1.32e+03 CFI=0.944 lebar_CI=0.0101 | B3 BIC_SEM=-323 CFI=0.994 lebar_CI=nan | N1 BIC_SEM=281 CFI=0.972 lebar_CI=nan
+NOV[fasilitas_neonatal] uji (naif/orde1/orde2): biner 2×2, S=∅ efek=0.0: 0.114/0.050/0.050; 3×3 (df 4), S=∅ efek=0.0: 0.121/0.051/0.049; biner 2×2, S={z} efek=0.0: 0.114/0.057/0.056; kontinu, S=∅ efek=0.0: 0.208/0.053/0.053; kontinu, S={z} efek=0.0: 0.208/0.053/0.053; biner 2×2, S=∅ efek=0.05: 0.959/0.771/0.771; 3×3 (df 4), S=∅ efek=0.05: 0.972/0.802/0.792; biner 2×2, S={z} efek=0.05: 0.827/0.559/0.558; kontinu, S=∅ efek=0.05: 0.998/0.926/0.926; kontinu, S={z} efek=0.05: 0.998/0.927/0.927; biner 2×2, S=∅ efek=0.1: 1.000/1.000/1.000; 3×3 (df 4), S=∅ efek=0.1: 1.000/1.000/1.000; biner 2×2, S={z} efek=0.1: 1.000/0.995/0.995; kontinu, S=∅ efek=0.1: 1.000/1.000/1.000; kontinu, S={z} efek=0.1: 1.000/1.000/1.000
+[N1 fasilitas_neonatal exit 0, 503 dtk]
+NOV[fasilitas_neonatal] N2 TO-DAG ruang urutan=172,800 (tanpa tier 2.09e+13) skor lokal=812 F=-107491.3 (B3 -107521.3) sisi=39 SHD=46 detik=0.25 memori=9.6MB RD=+0.0000
+NOV[fasilitas_neonatal] banding: terbaik=N2 TO-DAG (peringkat 1.67) | B1 detik_penemuan=0.00881 memori_MB=6.78 BIC_SEM=5.86e+03 | B2 detik_penemuan=3.82 memori_MB=4.52 BIC_SEM=1.32e+03 | B3 detik_penemuan=0.371 memori_MB=6.77 BIC_SEM=-323 | N2 detik_penemuan=0.247 memori_MB=9.55 BIC_SEM=-365
+[N2 fasilitas_neonatal exit 0, 508 dtk]

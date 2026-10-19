@@ -1,0 +1,6 @@
+kode,hipotesis,hasil,putusan
+H10,Validitas penyesuaian metode terbaik (M4 utama/M5/M6) >= 90% dan >= M2,"M6 77.2% (Wilson 75.5%-78.8%) vs M2 55.0%, M0 99.2%",ditolak
+H11,FDR sisi M4(aT=0.1) <= M2 (naif),0.140 vs 0.271 (Wilcoxon p 0),diterima
+H12,RMSE metode terbaik <= M0 (semua kovariat pra-treatment),M6 0.0099 vs M0 0.0098 (Wilcoxon |galat| p 0.086),ditolak
+H13,Cakupan CI 95% metode terbaik >= 92%,M6 94.0%,diterima
+Gerbang 2,Bingkai naskah,terbaik = M6,B (studi peringatan)

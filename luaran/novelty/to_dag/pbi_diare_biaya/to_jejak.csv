@@ -1,0 +1,11 @@
+tier,mode,F_tier,tier_nama
+0,awal,-19270.430958029356,konteks
+0,eksak,-19270.430958029356,konteks
+1,awal,-42825.729433829685,demografi
+1,eksak,-42824.333704483506,demografi
+2,awal,-5985.27752746524,ekonomi
+2,eksak,-5985.27752746524,ekonomi
+3,awal,-27638.534975168925,WASH/akses
+3,eksak,-27638.02882040711,WASH/akses
+5,awal,-7175.852471139407,outcome
+5,eksak,-7175.852471139407,outcome

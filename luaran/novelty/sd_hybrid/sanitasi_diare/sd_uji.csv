@@ -1,0 +1,16 @@
+uji,efek,jenis,naif (B2),naif disesuaikan ukuran,terkoreksi orde 1,terkoreksi orde 2,nominal
+"biner 2×2, S=∅",0.0,galat tipe I,0.121,0.05,0.045,0.045,0.05
+"3×3 (df 4), S=∅",0.0,galat tipe I,0.114,0.05,0.049,0.043,0.05
+"biner 2×2, S={z}",0.0,galat tipe I,0.107,0.05,0.053,0.051,0.05
+"kontinu, S=∅",0.0,galat tipe I,0.225,0.05,0.053,0.053,0.05
+"kontinu, S={z}",0.0,galat tipe I,0.226,0.05,0.053,0.053,0.05
+"biner 2×2, S=∅",0.05,daya uji,0.954,0.909,0.746,0.746,0.05
+"3×3 (df 4), S=∅",0.05,daya uji,0.958,0.928,0.786,0.775,0.05
+"biner 2×2, S={z}",0.05,daya uji,0.833,0.725,0.555,0.554,0.05
+"kontinu, S=∅",0.05,daya uji,0.998,0.984,0.927,0.927,0.05
+"kontinu, S={z}",0.05,daya uji,0.997,0.985,0.928,0.928,0.05
+"biner 2×2, S=∅",0.1,daya uji,1.0,1.0,1.0,1.0,0.05
+"3×3 (df 4), S=∅",0.1,daya uji,1.0,1.0,1.0,1.0,0.05
+"biner 2×2, S={z}",0.1,daya uji,1.0,1.0,0.992,0.992,0.05
+"kontinu, S=∅",0.1,daya uji,1.0,1.0,1.0,1.0,0.05
+"kontinu, S={z}",0.1,daya uji,1.0,1.0,1.0,1.0,0.05

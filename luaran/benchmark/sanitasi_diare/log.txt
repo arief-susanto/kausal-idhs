@@ -1,0 +1,6 @@
+BENCH[sanitasi_diare] 200 tugas (100 replikasi × 2 skenario), gagal=0, 460.9 menit
+BENCH[sanitasi_diare] H1 Akurasi: didukung sebagian (4/27)
+BENCH[sanitasi_diare] H2 Kecepatan: didukung sebagian (3/8)
+BENCH[sanitasi_diare] H3 Memori: didukung sebagian (7/8)
+BENCH[sanitasi_diare] H4 Konvergensi & stabilitas: didukung sebagian (6/8)
+BENCH[sanitasi_diare] H5 Validitas koreksi desain: didukung sebagian (1/2)

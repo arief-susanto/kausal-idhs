@@ -1,0 +1,30 @@
+kunci,nilai
+n,15718
+penemuan,todag
+node_struktural,19
+node_tanpa_konstruk,32
+indikator_awal,19
+indikator_dibuang,0
+konstruk_reflektif,eta_pendidikan
+konstruk_komposit,"eta_ekonomi, eta_akses"
+konstruk_dipecah,eta_kebersihan
+omega_min,0.7
+reliabilitas_omega,"eta_pendidikan=0.89, eta_kebersihan=0.32, eta_ekonomi=komposit (PC1 56%), eta_akses=komposit (PC1 45%)"
+entri_statistik_cukup,361
+entri_tanpa_konstruk,1024
+uji_atau_skor,2641 skor lokal
+uji_atau_skor_tanpa_konstruk,10179 skor lokal
+sisi,68
+sisi_tanpa_konstruk,110
+adjustment,"T_sanitasi, air_layak, cuci_tangan_dasar, eta_ekonomi, eta_pendidikan, ibu_bekerja, jml_art, kk_perempuan, p0_daerah_mar2017, pbi_pct_prov, perdesaan, umur_anak_bln, umur_ibu, urutan_lahir"
+catatan,tidak ada jalur berarah T->Y di graf: efek = 0
+konstruk_bermasalah,-
+detik_korelasi,2.793
+detik_model_ukur,0.036
+detik_struktur,0.672
+detik_struktur_tanpa_konstruk,2.132
+detik_penemuan,3.501
+memori_MB,10.777
+detik_tanpa_konstruk,4.925
+memori_MB_tanpa_konstruk,5.619
+detik,6.4

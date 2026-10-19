@@ -1,0 +1,2 @@
+﻿NOV[pbi_diare] N2 TO-DAG ruang urutan=51,840 (tanpa tier 1.31e+12) skor lokal=527 F=-102893.2 (B3 -102911.2) sisi=31 SHD=29 detik=0.29 memori=8.4MB RD=+0.0206
+NOV[pbi_diare] banding: terbaik=N2 TO-DAG (peringkat 1.67) | B1 detik_penemuan=0.0212 memori_MB=5.96 BIC_SEM=142 | B2 detik_penemuan=6.99 memori_MB=3.97 BIC_SEM=-334 | B3 detik_penemuan=0.862 memori_MB=5.95 BIC_SEM=-379 | N2 detik_penemuan=0.294 memori_MB=8.43 BIC_SEM=-409

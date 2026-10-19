@@ -1,0 +1,6 @@
+uji,naif (B2),terkoreksi desain (N1),nominal
+"biner 2×2, S=∅",0.107,0.052,0.05
+"3×3 (df 4), S=∅",0.13,0.053,0.05
+"biner 2×2, S={z}",0.098,0.043,0.05
+"kontinu, S=∅",0.2,0.047,0.05
+"kontinu, S={z}",0.198,0.047,0.05

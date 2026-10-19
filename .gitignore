@@ -1,0 +1,46 @@
+﻿data_mentah/
+cache/
+hasil*/
+.venv/
+__pycache__/
+*.pkl
+doc_ctt/*.docx
+~$*
+naskah/*_otomatis.docx
+
+# --- Data IDHS/DHS: DILARANG diunggah (lisensi DHS Program) ---
+data/
+*.DTA
+*.dta
+*.SAV
+*.sav
+*.SAS7BDAT
+*.sas7bdat
+*.DAT
+*.zip
+*.ZIP
+# hasil turunan per individu dari data survei asli
+hasil/**/*idhs*
+hasil/**/*IDHS*
+hasil/**/*mikro*
+hasil/**/*per_anak*
+
+# --- Python / lingkungan ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+.streamlit/secrets.toml
+.env
+
+# --- Editor / OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+~$*
+
+# Data naskah beku: hasil agregat dan simulasi (bukan mikrodata DHS), tetap dilacak
+!naskah/data/

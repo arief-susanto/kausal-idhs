@@ -1,0 +1,27 @@
+kunci,nilai
+n,6953
+uji,desain
+alpha,0.05
+jumlah_uji,1248
+sisi_skeleton,24
+sisi_skeleton_B2_naif,28
+delta_bar,1.395
+n_Kish,4491.5
+n_eff,3219.9
+df_desain,1828
+rao_scott_orde,2
+skala_skor,n_eff
+skor,gauss
+langkah,23
+skor_akhir,-55751.71
+adjustment,"jml_art, kembar, p0_daerah_mar2017, pbi_pct_prov, pend_ibu_thn, perdesaan, skor_kekayaan_nonwash, umur_ibu"
+catatan,tidak ada jalur berarah T->Y di graf: efek = 0
+sisi,23
+sisi_sama_pakar,9
+sisi_tambahan,14
+sisi_hilang,11
+arah_beda,0
+SHD,25
+detik_penemuan,2.22
+memori_MB,4.31
+detik,2.7

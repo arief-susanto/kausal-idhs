@@ -1,0 +1,58 @@
+﻿BASE[pbi_diare] T_pbi->Y_diare n=16508 p=15 boot=500
+BASE[pbi_diare] B1[T_pbi->Y_diare] RMSEA=0.037 CFI=0.964 SRMR=0.023 chi2=606.6 df=52 (n_eff=7643)
+BASE[pbi_diare] B1 linear: total=+0.0167 langsung=+0.0167 tak langsung=+0.0000 | probit RD=+0.0162 | backdoor g-komp RD=+0.0194 [+0.0044,+0.0335]
+BASE[pbi_diare] B2 uji=4811 sisi berarah=36 tak berarah=3 SHD vs pakar=30 | IDA 1 himpunan, RD [+0.0214,+0.0214], min|RD|=+0.0214
+BASE[pbi_diare] B3 skor=gauss langkah=42 sisi=42 SHD vs pakar=36 skor akhir=-334330.9 (pakar -342981.6) | RD=+0.0203 [+0.0043,+0.0352]
+BASE[pbi_diare] TERBAIK: B3 BN berbasis skor (peringkat rata-rata 1.33; unggul pada BIC_SEM, CFI) RD=+0.0203 | B1 BIC=142 CFI=0.964 CI=0.0291 | B2 BIC=-330 CFI=0.989 CI=0.0326 | B3 BIC=-374 CFI=0.993 CI=0.0309
+[baseline pbi_diare exit 0, 169 dtk]
+BASE[sanitasi_diare_ctps] T_sanitasi->Y_diare n=16232 p=15 boot=500
+BASE[sanitasi_diare_ctps] B1[T_sanitasi->Y_diare] RMSEA=0.079 CFI=0.844 SRMR=0.068 chi2=2844.0 df=60 (n_eff=7515)
+BASE[sanitasi_diare_ctps] B1 linear: total=-0.0205 langsung=-0.0203 tak langsung=-0.0002 | probit RD=-0.0196 | backdoor g-komp RD=-0.0193 [-0.0376,-0.0002]
+BASE[sanitasi_diare_ctps] B2 uji=9108 sisi berarah=42 tak berarah=4 SHD vs pakar=38 | IDA 1 himpunan, RD [-0.0185,-0.0185], min|RD|=-0.0185
+BASE[sanitasi_diare_ctps] B3 skor=gauss langkah=50 sisi=50 SHD vs pakar=41 skor akhir=-325242.0 (pakar -333219.4) | RD=-0.0201 [-0.0399,-0.0016]
+BASE[sanitasi_diare_ctps] TERBAIK: B2 PC + tier + IDA (peringkat rata-rata 1.67; unggul pada lebar_CI) RD=-0.0185 | B1 BIC=2309 CFI=0.844 CI=0.0374 | B2 BIC=381 CFI=0.954 CI=0.0367 | B3 BIC=-247 CFI=0.991 CI=0.0383
+[baseline sanitasi_diare_ctps exit 0, 381 dtk]
+BASE[pbi_diare_biaya] T_pbi->Y_diare n=16508 p=15 boot=500
+BASE[pbi_diare_biaya] B1[T_pbi->Y_diare] RMSEA=0.038 CFI=0.964 SRMR=0.023 chi2=605.1 df=51 (n_eff=7643)
+BASE[pbi_diare_biaya] B1 linear: total=+0.0165 langsung=+0.0167 tak langsung=-0.0002 | probit RD=+0.0161 | backdoor g-komp RD=+0.0191 [+0.0039,+0.0328]
+BASE[pbi_diare_biaya] B2 uji=4811 sisi berarah=36 tak berarah=3 SHD vs pakar=31 | IDA 1 himpunan, RD [+0.0214,+0.0214], min|RD|=+0.0214
+BASE[pbi_diare_biaya] B3 skor=gauss langkah=42 sisi=42 SHD vs pakar=35 skor akhir=-334330.9 (pakar -342982.9) | RD=+0.0203 [+0.0043,+0.0352]
+BASE[pbi_diare_biaya] TERBAIK: B3 BN berbasis skor (peringkat rata-rata 1.33; unggul pada BIC_SEM, CFI) RD=+0.0203 | B1 BIC=149 CFI=0.964 CI=0.0289 | B2 BIC=-330 CFI=0.989 CI=0.0326 | B3 BIC=-374 CFI=0.993 CI=0.0309
+[baseline pbi_diare_biaya exit 0, 563 dtk]
+KAUSAL[sanitasi_diare] T_sanitasi->Y_diare n=16232 |Z|=13 identifikasi=YA mediator=-
+KAUSAL[sanitasi_diare] AIPW RD=-0.0338 [-0.0569,-0.0121] RR=0.79 [0.69,0.92] | gcomp RD=-0.0194 IPW RD=-0.0362
+KAUSAL[sanitasi_diare] E-value titik=1.83 CI=1.40 | SMD maks setelah IPW=0.11 | boot sah=500/500
+[kausal sanitasi_diare exit 0, 664 dtk]
+SOLv2[sanitasi_diare] SOL v2 (desain): node=15 sisi=42+0 RD=-0.0324 [-0.0544,-0.0104] induk T=sanitasi_klaster_lo, pend_ibu_thn, org_per_kamar, skor_kekayaan_nonwash, cuci_tangan_dasar 12.6s 83.7MB
+SOLv2[sanitasi_diare] SOL v2 naif: node=15 sisi=44+2 RD=-0.0326 [-0.0545,-0.0106] induk T=sanitasi_klaster_lo, pend_ibu_thn, org_per_kamar, skor_kekayaan_nonwash, air_layak, cuci_tangan_dasar 20.1s 63.6MB
+SOLv2[sanitasi_diare] SOL v2 + MLC: node=18 sisi=67+0 RD=-0.0309 [-0.0524,-0.0094] induk T=eta_pendidikan, eta_ekonomi, umur_ibu, sanitasi_klaster_lo, org_per_kamar 42.6s 84.5MB
+[sol_v2 sanitasi_diare exit 0, 744 dtk]
+KAUSAL[sanitasi_diare_ctps] T_sanitasi->Y_diare n=16384 |Z|=12 identifikasi=YA mediator=cuci_tangan_dasar
+KAUSAL[sanitasi_diare_ctps] AIPW RD=-0.0309 [-0.0523,-0.0116] RR=0.81 [0.71,0.92] | gcomp RD=-0.0183 IPW RD=-0.0336
+KAUSAL[sanitasi_diare_ctps] E-value titik=1.77 CI=1.39 | SMD maks setelah IPW=0.12 | boot sah=500/500
+[kausal sanitasi_diare_ctps exit 0, 820 dtk]
+SOLv2[sanitasi_diare_ctps] SOL v2 (desain): node=15 sisi=42+0 RD=-0.0324 [-0.0544,-0.0104] induk T=sanitasi_klaster_lo, pend_ibu_thn, org_per_kamar, skor_kekayaan_nonwash, cuci_tangan_dasar 13.1s 83.7MB
+SOLv2[sanitasi_diare_ctps] SOL v2 naif: node=15 sisi=44+2 RD=-0.0326 [-0.0545,-0.0106] induk T=sanitasi_klaster_lo, pend_ibu_thn, org_per_kamar, skor_kekayaan_nonwash, air_layak, cuci_tangan_dasar 20.5s 63.6MB
+SOLv2[sanitasi_diare_ctps] SOL v2 + MLC: node=18 sisi=67+0 RD=-0.0309 [-0.0524,-0.0094] induk T=eta_pendidikan, eta_ekonomi, umur_ibu, sanitasi_klaster_lo, org_per_kamar 46.1s 84.5MB
+[sol_v2 sanitasi_diare_ctps exit 0, 904 dtk]
+KAUSAL[pbi_diare] T_pbi->Y_diare n=16508 |Z|=13 identifikasi=YA mediator=-
+KAUSAL[pbi_diare] AIPW RD=+0.0246 [+0.0070,+0.0421] RR=1.18 [1.05,1.32] | gcomp RD=+0.0194 IPW RD=+0.0257
+KAUSAL[pbi_diare] E-value titik=1.65 CI=1.28 | SMD maks setelah IPW=0.03 | boot sah=500/500
+[kausal pbi_diare exit 0, 989 dtk]
+SOLv2[pbi_diare] SOL v2 (desain): node=15 sisi=34+1 RD=+0.0252 [+0.0079,+0.0426] induk T=pbi_pct_prov, ibu_bekerja, jml_art, pend_ibu_thn, skor_kekayaan_nonwash, T_sanitasi 7.1s 80.2MB
+SOLv2[pbi_diare] SOL v2 naif: node=15 sisi=39+0 RD=+0.0252 [+0.0079,+0.0426] induk T=pbi_pct_prov, ibu_bekerja, jml_art, pend_ibu_thn, skor_kekayaan_nonwash, T_sanitasi 11.6s 80.1MB
+SOLv2[pbi_diare] SOL v2 + MLC: node=19 sisi=66+0 RD=+0.0270 [+0.0092,+0.0448] induk T=eta_pendidikan, eta_ekonomi, urutan_lahir, pbi_pct_prov, jml_art 37.1s 77.5MB
+[sol_v2 pbi_diare exit 0, 1,050 dtk]
+KAUSAL[pbi_diare_biaya] T_pbi->Y_diare n=16518 |Z|=12 identifikasi=YA mediator=hambatan_biaya
+KAUSAL[pbi_diare_biaya] AIPW RD=+0.0241 [+0.0067,+0.0415] RR=1.18 [1.05,1.31] | gcomp RD=+0.0187 IPW RD=+0.0251
+KAUSAL[pbi_diare_biaya] E-value titik=1.63 CI=1.27 | SMD maks setelah IPW=0.03 | boot sah=500/500
+[kausal pbi_diare_biaya exit 0, 1,124 dtk]
+SOLv2[pbi_diare_biaya] SOL v2 (desain): node=15 sisi=34+1 RD=+0.0252 [+0.0079,+0.0426] induk T=pbi_pct_prov, ibu_bekerja, jml_art, pend_ibu_thn, skor_kekayaan_nonwash, T_sanitasi 6.9s 80.2MB
+SOLv2[pbi_diare_biaya] SOL v2 naif: node=15 sisi=39+0 RD=+0.0252 [+0.0079,+0.0426] induk T=pbi_pct_prov, ibu_bekerja, jml_art, pend_ibu_thn, skor_kekayaan_nonwash, T_sanitasi 11.6s 80.1MB
+SOLv2[pbi_diare_biaya] SOL v2 + MLC: node=19 sisi=66+0 RD=+0.0270 [+0.0092,+0.0448] induk T=eta_pendidikan, eta_ekonomi, urutan_lahir, pbi_pct_prov, jml_art 34.2s 77.5MB
+[sol_v2 pbi_diare_biaya exit 0, 1,181 dtk]
+=== 3.4 tanpa trimming (keluaran ke hasil\tanpa_trim)
+KAUSAL[sanitasi_diare] T_sanitasi->Y_diare n=16232 |Z|=13 identifikasi=YA mediator=-
+KAUSAL[sanitasi_diare] AIPW RD=-0.0335 [-0.0567,-0.0120] RR=0.80 [0.69,0.92] | gcomp RD=-0.0194 IPW RD=-0.0357
+KAUSAL[sanitasi_diare] E-value titik=1.82 CI=1.40 | SMD maks setelah IPW=0.10 | boot sah=500/500
+[tanpa trim exit 0, 1,261 dtk]

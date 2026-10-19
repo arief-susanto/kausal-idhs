@@ -1,0 +1,13 @@
+parameter,nilai
+Replikasi per sel,200
+Sel (ICC x efek x confounder x p),24
+ICC,"heterogen U(0,1; 0,8) per variabel; 0,15"
+Efek T->Y (laten probit),"[0.0, -0.15, -0.6]"
+Kekuatan confounder,"['lemah', 'kuat']"
+Jumlah node p,"[15, 30]"
+Alpha uji (M2/M3),0.05
+Alpha_T (M4); utama,"[0.1, 0.2, 0.3]; 0.1"
+Ukuran maksimum himpunan kondisi,3
+Proporsi X laten,0.15
+Desain (strata x PSU x unit),"(67, 29, 9)"
+Lipatan cross-fitting K,5

@@ -1,0 +1,6 @@
+﻿BASE[sanitasi_diare] T_sanitasi->Y_diare n=16232 p=15 boot=500
+BASE[sanitasi_diare] B1[T_sanitasi->Y_diare] RMSEA=0.079 CFI=0.840 SRMR=0.069 chi2=2915.7 df=61 (n_eff=7515)
+BASE[sanitasi_diare] B1 linear: total=-0.0203 langsung=-0.0203 tak langsung=+0.0000 | probit RD=-0.0194 | backdoor g-komp RD=-0.0194 [-0.0381,-0.0004]
+BASE[sanitasi_diare] B2 uji=9108 sisi berarah=42 tak berarah=4 SHD vs pakar=39 | IDA 1 himpunan, RD [-0.0185,-0.0185], min|RD|=-0.0185
+BASE[sanitasi_diare] B3 skor=gauss langkah=50 sisi=50 SHD vs pakar=41 skor akhir=-325242.0 (pakar -333284.2) | RD=-0.0201 [-0.0399,-0.0016]
+BASE[sanitasi_diare] TERBAIK: B2 PC + tier + IDA (peringkat rata-rata 1.67; unggul pada lebar_CI) RD=-0.0185 | B1 BIC=2371 CFI=0.840 CI=0.0378 | B2 BIC=381 CFI=0.954 CI=0.0367 | B3 BIC=-247 CFI=0.991 CI=0.0383

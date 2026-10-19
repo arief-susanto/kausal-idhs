@@ -1,0 +1,6 @@
+Teridentifikasi (backdoor): True
+Dikontrol (12): T_sanitasi, air_layak, anak_laki, ibu_bekerja, jml_art, kk_perempuan, p0_daerah_mar2017, pbi_pct_prov, pend_ibu_thn, perdesaan, skor_kekayaan_nonwash, umur_anak_bln
+Mediator (tidak dikontrol): hambatan_biaya
+Laten: -
+Filter: -
+n analisis: 16518

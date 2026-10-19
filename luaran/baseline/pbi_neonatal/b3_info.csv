@@ -1,0 +1,20 @@
+kunci,nilai
+n,6953
+skor,gauss
+awal,kosong
+maks_induk,5
+langkah,34
+skor_akhir,-119443.12
+skor_DAG_pakar,-124446.43
+skor_dihitung,329
+adjustment,"jml_art, kembar, p0_daerah_mar2017, pbi_pct_prov, pend_ibu_thn, perdesaan, skor_kekayaan_nonwash, umur_ibu, urutan_lahir"
+catatan,tidak ada jalur berarah T->Y di graf: efek = 0
+sisi,34
+sisi_sama_pakar,12
+sisi_tambahan,22
+sisi_hilang,8
+arah_beda,0
+SHD,30
+detik_penemuan,0.34
+memori_MB,2.25
+detik,1.2

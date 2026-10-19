@@ -1,0 +1,44 @@
+{
+ "mulai": "2026-10-10 20:21",
+ "rep": 200,
+ "pekerja": 4,
+ "sel": 24,
+ "tugas_baru": 4752,
+ "sudah": 48,
+ "konfigurasi": {
+  "rep": 200,
+  "icc": [
+   "heterogen",
+   0.15
+  ],
+  "beta_ty": [
+   0.0,
+   -0.15,
+   -0.6
+  ],
+  "kuat_confounder": [
+   "lemah",
+   "kuat"
+  ],
+  "p": [
+   15,
+   30
+  ],
+  "alpha": 0.05,
+  "alpha_T": [
+   0.1,
+   0.2,
+   0.3
+  ],
+  "alpha_T_utama": 0.1,
+  "maks_kondisi": 3,
+  "laten_frac": 0.15,
+  "desain": [
+   67,
+   29,
+   9
+  ],
+  "K": 5,
+  "pekerja": 3
+ }
+}

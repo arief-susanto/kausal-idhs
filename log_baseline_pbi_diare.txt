@@ -1,0 +1,6 @@
+﻿BASE[pbi_diare] T_pbi->Y_diare n=16508 p=15 boot=500
+BASE[pbi_diare] B1[T_pbi->Y_diare] RMSEA=0.037 CFI=0.964 SRMR=0.023 chi2=606.6 df=52 (n_eff=7643)
+BASE[pbi_diare] B1 linear: total=+0.0167 langsung=+0.0167 tak langsung=+0.0000 | probit RD=+0.0162 | backdoor g-komp RD=+0.0194 [+0.0044,+0.0335]
+BASE[pbi_diare] B2 uji=4803 sisi berarah=36 tak berarah=3 SHD vs pakar=31 | IDA 1 himpunan, RD [+0.0214,+0.0214], min|RD|=+0.0214
+BASE[pbi_diare] B3 skor=gauss langkah=41 sisi=41 SHD vs pakar=35 skor akhir=-334332.3 (pakar -342981.6) | RD=+0.0203 [+0.0043,+0.0352]
+BASE[pbi_diare] TERBAIK: B3 BN berbasis skor (peringkat rata-rata 1.33; unggul pada BIC_SEM, CFI) RD=+0.0203 | B1 BIC=142 CFI=0.964 CI=0.0291 | B2 BIC=-334 CFI=0.989 CI=0.0326 | B3 BIC=-379 CFI=0.993 CI=0.0309

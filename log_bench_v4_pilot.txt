@@ -1,0 +1,12 @@
+﻿48 tugas baru (0 sudah ada), 3 pekerja
+10/48 selesai, 1.8 menit, sisa ~7 menit, gagal 0
+20/48 selesai, 3.6 menit, sisa ~5 menit, gagal 0
+30/48 selesai, 6.8 menit, sisa ~4 menit, gagal 0
+40/48 selesai, 9.9 menit, sisa ~2 menit, gagal 0
+48/48 selesai, 14.0 menit, sisa ~0 menit, gagal 0
+     kode                                                              hipotesis                                               hasil              putusan
+      H10 Validitas penyesuaian metode terbaik (M4 utama/M5/M6) >= 90% dan >= M2 M6 83.3% (Wilson 64.1%-93.3%) vs M2 62.5%, M0 95.8%              ditolak
+      H11                                       FDR sisi M4(aT=0.1) <= M2 (naif)                 0.112 vs 0.235 (Wilcoxon p 1.1e-05)             diterima
+      H12               RMSE metode terbaik <= M0 (semua kovariat pra-treatment)    M6 0.0105 vs M0 0.0108 (Wilcoxon |galat| p 0.22)             diterima
+      H13                                   Cakupan CI 95% metode terbaik >= 92%                                            M6 91.7%              ditolak
+Gerbang 2                                                         Bingkai naskah                                        terbaik = M6 B (studi peringatan)

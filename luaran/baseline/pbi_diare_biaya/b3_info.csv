@@ -1,0 +1,20 @@
+kunci,nilai
+n,16508
+skor,gauss
+awal,kosong
+maks_induk,5
+langkah,42
+skor_akhir,-334330.86
+skor_DAG_pakar,-342982.91
+skor_dihitung,482
+adjustment,"air_layak, anak_laki, ibu_bekerja, jml_art, kk_perempuan, p0_daerah_mar2017, pbi_pct_prov, pend_ibu_thn, perdesaan, skor_kekayaan_nonwash, umur_anak_bln"
+catatan,-
+sisi,42
+sisi_sama_pakar,17
+sisi_tambahan,25
+sisi_hilang,9
+arah_beda,1
+SHD,35
+detik_penemuan,0.4
+memori_MB,6.02
+detik,49.2

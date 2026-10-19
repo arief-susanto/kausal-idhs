@@ -1,0 +1,27 @@
+kunci,nilai
+n,6953
+skor,gauss
+berbobot,True
+n_penalti,3219.9
+maks_induk,5
+ukuran_tier,konteks=3 · demografi=6 · ekonomi=1 · WASH/akses=1 · layanan persalinan=1 · outcome=1
+ruang_urutan_tier,4.320
+ruang_urutan_tanpa_tier,6.227e+09
+ruang_DAG,1.868e+31
+ruang_setelah_dekomposisi,730
+skor_lokal_dihitung,532
+grow_shrink_dihitung,208
+skor_TO_DAG,-55604.31
+skor_B3_pada_skor_sama,-55611.71
+skor_pakar_pada_skor_sama,-57828.99
+adjustment,"jml_art, kembar, p0_daerah_mar2017, pbi_pct_prov, pend_ibu_thn, perdesaan, skor_kekayaan_nonwash, umur_ibu, urutan_lahir"
+catatan,tidak ada jalur berarah T->Y di graf: efek = 0
+sisi,31
+sisi_sama_pakar,10
+sisi_tambahan,21
+sisi_hilang,10
+arah_beda,0
+SHD,31
+detik_penemuan,0.17
+memori_MB,3.16
+detik,0.8

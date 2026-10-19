@@ -1,0 +1,2 @@
+﻿NOV[pbi_neonatal] N2 TO-DAG ruang urutan=4,320 (tanpa tier 6.23e+09) skor lokal=534 F=-55604.3 (B3 -55611.7) sisi=31 SHD=31 detik=0.30 memori=3.2MB RD=+0.0000
+NOV[pbi_neonatal] banding: terbaik=N2 TO-DAG (peringkat 1.67) | B1 detik_penemuan=0.0105 memori_MB=2.18 BIC_SEM=1.09e+03 | B2 detik_penemuan=2.79 memori_MB=1.45 BIC_SEM=168 | B3 detik_penemuan=0.397 memori_MB=2.18 BIC_SEM=-243 | N2 detik_penemuan=0.298 memori_MB=3.16 BIC_SEM=-250

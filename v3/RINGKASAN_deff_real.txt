@@ -1,0 +1,2 @@
+IDHS nyata: n=16236 deff global (rata-rata univariat) 3.83 | deff tingkat-uji p10 1.36 median 2.39 p90 4.41 maks 10.75
+proporsi tolak H0 per uji (bukan galat tipe I; data nyata tanpa graf acuan): naif 71% kish 70% deff_global 64% sandwich_CR1 71% desain_usulan 71%

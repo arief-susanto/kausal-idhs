@@ -1,0 +1,6 @@
+varian,mlc,koreksi,tier,split,node,sisi,sisi_skeleton,jumlah_uji,n_eff,n_A,n_B,RD,RD_lo,RD_hi,RR,RR_lo,RR_hi,detik_penemuan,memori_MB,adjustment,catatan,reflektif,komposit,dipecah
+SOL-DAG,True,True,True,True,17,36,40,4493,1546.7286206902172,3182,3203,0.0,0.0,0.0,1.0,1.0,1.0,8.295529127120972,1.567115,-,tidak ada jalur berarah T->Y di graf: efek = 0,eta_pendidikan,"eta_ekonomi, eta_akses",eta_kebersihan
+SOL tanpa MLC,False,True,True,True,13,18,21,990,1624.4392739097502,3398,3555,0.0,0.0,0.0,1.0,1.0,1.0,1.3633413314819336,1.557739,-,tidak ada jalur berarah T->Y di graf: efek = 0,-,-,-
+SOL tanpa koreksi desain,True,False,True,True,17,44,48,6169,3182.0,3182,3203,0.0,0.0,0.0,1.0,1.0,1.0,6.590951204299927,0.983734,-,tidak ada jalur berarah T->Y di graf: efek = 0,eta_pendidikan,"eta_ekonomi, eta_akses",eta_kebersihan
+SOL tanpa tier,True,True,False,True,17,37,40,4493,1546.7286206902172,3182,3203,0.0,0.0,0.0,1.0,1.0,1.0,8.890474319458008,2.722692,-,tidak ada jalur berarah T->Y di graf: efek = 0,eta_pendidikan,"eta_ekonomi, eta_akses",eta_kebersihan
+SOL tanpa pemisahan sampel,True,True,True,False,17,42,49,7328,2968.552860143432,6385,6385,0.0,0.0,0.0,1.0,1.0,1.0,11.612828493118286,2.983549,-,tidak ada jalur berarah T->Y di graf: efek = 0,eta_pendidikan,"eta_ekonomi, eta_akses",eta_kebersihan

@@ -1,0 +1,35 @@
+BENCH {'icc': 0.05, 'beta_ty': -0.6}
+v1 aturan lama: SHD 5.0±2.6 RMSE 0.0562 cakupan 72% efek0 23% 1.85s 1.5MB
+v2 desain: SHD 5.0±2.6 RMSE 0.0279 cakupan 92% efek0 0% 1.86s 1.9MB
+v2 naif: SHD 4.6±2.4 RMSE 0.0278 cakupan 92% efek0 0% 2.40s 1.9MB
+CI-test tipe I naif 5.3% desain 5.3% | daya naif 86.5% desain 85.5%
+
+BENCH {'icc': 0.4, 'beta_ty': -0.6}
+v1 aturan lama: SHD 5.7±2.5 RMSE 0.0573 cakupan 72% efek0 24% 1.65s 1.5MB
+v2 desain: SHD 5.7±2.5 RMSE 0.0321 cakupan 93% efek0 0% 1.66s 1.9MB
+v2 naif: SHD 5.6±2.4 RMSE 0.0317 cakupan 94% efek0 0% 2.61s 1.9MB
+CI-test tipe I naif 13.9% desain 5.6% | daya naif 86.5% desain 82.9%
+
+BENCH {'icc': 0.05, 'beta_ty': -0.15}
+v1 aturan lama: SHD 5.6±2.5 RMSE 0.0318 cakupan 6% efek0 92% 1.74s 0.4MB
+v2 desain: SHD 5.6±2.5 RMSE 0.0300 cakupan 92% efek0 0% 1.81s 1.9MB
+v2 naif: SHD 5.3±2.3 RMSE 0.0302 cakupan 93% efek0 0% 2.29s 1.9MB
+CI-test tipe I naif 5.0% desain 5.4% | daya naif 83.2% desain 82.6%
+
+BENCH {'icc': 0.4, 'beta_ty': -0.15}
+v1 aturan lama: SHD 6.3±2.4 RMSE 0.0307 cakupan 5% efek0 94% 0.89s 0.4MB
+v2 desain: SHD 6.3±2.4 RMSE 0.0341 cakupan 91% efek0 0% 0.93s 1.9MB
+v2 naif: SHD 6.2±2.3 RMSE 0.0335 cakupan 92% efek0 0% 1.50s 1.9MB
+CI-test tipe I naif 14.2% desain 5.7% | daya naif 83.6% desain 80.0%
+
+BENCH {'icc': 0.05, 'beta_ty': 0.0}
+v1 aturan lama: SHD 5.7±2.5 RMSE 0.0113 cakupan 98% efek0 98% 1.00s 0.3MB
+v2 desain: SHD 5.7±2.5 RMSE 0.0310 cakupan 92% efek0 0% 1.05s 1.9MB
+v2 naif: SHD 5.4±2.4 RMSE 0.0313 cakupan 92% efek0 0% 1.34s 1.9MB
+CI-test tipe I naif 5.2% desain 5.4% | daya naif 82.1% desain 81.7%
+
+BENCH {'icc': 0.4, 'beta_ty': 0.0}
+v1 aturan lama: SHD 6.4±2.4 RMSE 0.0090 cakupan 98% efek0 98% 0.87s 0.3MB
+v2 desain: SHD 6.4±2.4 RMSE 0.0346 cakupan 90% efek0 0% 0.91s 1.9MB
+v2 naif: SHD 6.3±2.3 RMSE 0.0341 cakupan 92% efek0 0% 1.45s 1.9MB
+CI-test tipe I naif 14.1% desain 5.8% | daya naif 82.7% desain 79.1%

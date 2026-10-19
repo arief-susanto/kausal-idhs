@@ -1,0 +1,20 @@
+kunci,nilai
+n,17607
+skor,gauss
+awal,kosong
+maks_induk,5
+langkah,51
+skor_akhir,-365852.91
+skor_DAG_pakar,-384364.73
+skor_dihitung,544
+adjustment,"anak_laki, fasilitas_klaster_lo, jarak_klaster_lo, kembar, p0_daerah_mar2017, pct_pkm_kurang_bidan, pend_ibu_thn, perdesaan, rasio_pkm_per_kec, skor_kekayaan_nonwash, umur_ibu, urutan_lahir"
+catatan,tidak ada jalur berarah T->Y di graf: efek = 0
+sisi,51
+sisi_sama_pakar,13
+sisi_tambahan,38
+sisi_hilang,15
+arah_beda,1
+SHD,54
+detik_penemuan,0.44
+memori_MB,6.84
+detik,1.1

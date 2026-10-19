@@ -1,0 +1,20 @@
+kunci,nilai
+n,17607
+uji,campuran
+alpha,0.05
+maks_kondisi,3
+jumlah_uji,7866
+sisi_berarah,40
+sisi_tak_berarah,2
+induk_pasti_T,"fasilitas_klaster_lo, pend_ibu_thn, urutan_lahir, skor_kekayaan_nonwash"
+tetangga_tak_berarah_T,-
+jumlah_himpunan_IDA,1
+sisi,42
+sisi_sama_pakar,13
+sisi_tambahan,29
+sisi_hilang,15
+arah_beda,2
+SHD,46
+detik_penemuan,4.65
+memori_MB,4.52
+detik,37.9

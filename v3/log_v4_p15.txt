@@ -1,0 +1,51 @@
+DOWNSTREAM v4 p=15 reps=100
+                            SHD    FDR  recall  rec_TY  FDR_TY  valid  valid_S12   RMSE  RMSE_S12   cak  cak_S12  absbias  absbias_S12  material  material_S12     k  k_S12   detik
+skenario  uji                                                                                                                                                                      
+heterogen deff_global      7.10  0.006   0.871   0.797   0.002   0.60       0.86  0.011     0.011  0.98     0.98    0.001        0.001      0.01           0.0  2.67   4.83   4.563
+          desain_S13_a10   7.01  0.076   0.945   0.936   0.111   0.82       0.98  0.011     0.010  0.97     0.98    0.001        0.001      0.01           0.0  3.50   6.22   7.106
+          desain_S13_a20   7.84  0.107   0.949   0.951   0.198   0.84       0.98  0.011     0.010  0.97     0.97    0.001        0.001      0.01           0.0  3.95   6.99   8.041
+          desain_S13_a30   8.82  0.138   0.953   0.964   0.281   0.87       0.99  0.011     0.010  0.97     0.97    0.001        0.001      0.00           0.0  4.52   7.72   8.985
+          desain_usulan    6.84  0.062   0.939   0.916   0.067   0.78       0.97  0.011     0.010  0.98     0.98    0.001        0.001      0.01           0.0  3.22   5.77   6.576
+          kish            10.76  0.190   0.964   0.948   0.161   0.86       0.99  0.011     0.010  0.97     0.97    0.001        0.001      0.00           0.0  3.78   6.71   9.746
+          naif            10.79  0.193   0.970   0.961   0.159   0.91       1.00  0.011     0.010  0.97     0.98    0.001        0.001      0.00           0.0  3.90   6.70  10.921
+          sandwich_CR1     6.81  0.062   0.940   0.916   0.067   0.78       0.97  0.011     0.010  0.98     0.98    0.001        0.001      0.01           0.0  3.23   5.78   9.572
+homogen   deff_global      6.51  0.006   0.898   0.832   0.003   0.65       0.90  0.010     0.010  0.98     0.98    0.001        0.002      0.00           0.0  2.77   4.98   5.081
+          desain_S13_a10   6.55  0.069   0.958   0.947   0.101   0.84       0.97  0.010     0.010  0.98     0.98    0.001        0.002      0.00           0.0  3.52   6.07   7.543
+          desain_S13_a20   7.41  0.100   0.962   0.960   0.196   0.88       0.99  0.010     0.010  0.98     0.98    0.001        0.002      0.00           0.0  4.13   6.83   8.489
+          desain_S13_a30   8.51  0.134   0.964   0.967   0.281   0.90       1.00  0.010     0.010  0.98     0.98    0.001        0.002      0.00           0.0  4.66   7.67   9.362
+          desain_usulan    6.35  0.058   0.955   0.934   0.061   0.81       0.96  0.010     0.010  0.98     0.98    0.000        0.002      0.00           0.0  3.30   5.79   7.308
+          kish            10.05  0.174   0.969   0.951   0.160   0.86       0.98  0.010     0.010  0.98     0.98    0.001        0.002      0.00           0.0  3.89   6.50  10.724
+          naif             9.99  0.179   0.979   0.966   0.142   0.90       1.00  0.010     0.010  0.98     0.98    0.001        0.002      0.00           0.0  3.78   6.49  11.910
+          sandwich_CR1     6.32  0.057   0.954   0.934   0.061   0.81       0.96  0.010     0.010  0.98     0.98    0.000        0.002      0.00           0.0  3.30   5.79  10.129
+
+S14 proporsi material di antara himpunan tidak sah:
+skenario   uji           
+heterogen  deff_global       0.025
+           desain_S13_a10    0.056
+           desain_S13_a20    0.062
+           desain_S13_a30    0.000
+           desain_usulan     0.045
+           kish              0.000
+           naif              0.000
+           sandwich_CR1      0.045
+homogen    deff_global       0.000
+           desain_S13_a10    0.000
+           desain_S13_a20    0.000
+           desain_S13_a30    0.000
+           desain_usulan     0.000
+           kish              0.000
+           naif              0.000
+           sandwich_CR1      0.000
+
+UJI HIPOTESIS (PRAREGISTRASI_S12_S15.md)
+[heterogen] H12a validitas S12 > utama (Wilcoxon satu sisi, Holm): naif p=0.0499, kish p=0.0217, deff_global p=8.99e-05, sandwich_CR1 p=0.00283, desain_usulan p=0.00283
+[heterogen] H12b cakupan S12 desain_usulan = 98.0% (kriteria ≥ 92%) -> DITERIMA
+[heterogen] H13 (sensitivitas) α_q=0,10: ΔFDR vs desain=+0.014 [NI lo=+0.003], Δvalid vs naif=-0.090 [NI lo=-0.090] -> DITOLAK
+[heterogen] H13 (UTAMA) α_q=0,20: ΔFDR vs desain=+0.044 [NI lo=-0.031], Δvalid vs naif=-0.070 [NI lo=-0.060] -> DITOLAK
+[heterogen] H13 (sensitivitas) α_q=0,30: ΔFDR vs desain=+0.076 [NI lo=-0.063], Δvalid vs naif=-0.040 [NI lo=-0.030] -> DITOLAK
+[homogen] H12a validitas S12 > utama (Wilcoxon satu sisi, Holm): naif p=0.0349, kish p=0.0325, deff_global p=0.000156, sandwich_CR1 p=0.0184, desain_usulan p=0.0184
+[homogen] H12b cakupan S12 desain_usulan = 98.0% (kriteria ≥ 92%) -> DITERIMA
+[homogen] H13 (sensitivitas) α_q=0,10: ΔFDR vs desain=+0.011 [NI lo=+0.006], Δvalid vs naif=-0.060 [NI lo=-0.060] -> DITOLAK
+[homogen] H13 (UTAMA) α_q=0,20: ΔFDR vs desain=+0.042 [NI lo=-0.028], Δvalid vs naif=-0.020 [NI lo=-0.010] -> DITOLAK
+[homogen] H13 (sensitivitas) α_q=0,30: ΔFDR vs desain=+0.076 [NI lo=-0.065], Δvalid vs naif=+0.000 [NI lo=+0.020] -> DITOLAK
+p15 exit=0

@@ -1,0 +1,1124 @@
+# 2026-09-26 10:54
+DAG[sanitasi_diare] T_sanitasi->Y_diare identifikasi=YA |Z|=13
+DAG[sanitasi_diare] dikontrol: air_layak, anak_laki, cuci_tangan_dasar, cuci_tangan_klaster_lo, olah_air_efektif, org_per_kamar, p0_daerah_mar2017, pend_ibu_thn, perdesaan, punya_ternak, sanitasi_klaster_lo, skor_kekayaan_nonwash, umur_anak_bln
+DAG[sanitasi_diare] mediator: - | laten: -
+DAG[pbi_diare] T_pbi->Y_diare identifikasi=YA |Z|=13
+DAG[pbi_diare] dikontrol: T_sanitasi, air_layak, anak_laki, hambatan_biaya, ibu_bekerja, jml_art, kk_perempuan, p0_daerah_mar2017, pbi_pct_prov, pend_ibu_thn, perdesaan, skor_kekayaan_nonwash, umur_anak_bln
+DAG[pbi_diare] mediator: - | laten: -
+DAG[pbi_neonatal] T_pbi->Y_mati_neonatal identifikasi=YA |Z|=10
+DAG[pbi_neonatal] dikontrol: jml_art, kembar, kk_perempuan, p0_daerah_mar2017, pbi_pct_prov, pend_ibu_thn, perdesaan, skor_kekayaan_nonwash, umur_ibu, urutan_lahir
+DAG[pbi_neonatal] mediator: T_fasilitas | laten: -
+DAG[fasilitas_neonatal] T_fasilitas->Y_mati_neonatal identifikasi=TIDAK (ada laten) |Z|=14
+DAG[fasilitas_neonatal] dikontrol: anak_laki, fasilitas_klaster_lo, hambatan_biaya, hambatan_jarak, jarak_klaster_lo, kembar, p0_daerah_mar2017, pct_pkm_kurang_bidan, pend_ibu_thn, perdesaan, rasio_pkm_per_kec, skor_kekayaan_nonwash, umur_ibu, urutan_lahir
+DAG[fasilitas_neonatal] mediator: - | laten: risiko_kehamilan
+# 2026-09-26 10:58
+PREP: 17848 kelahiran, 53 variabel, 1967 klaster, 34 provinsi
+PREP: PCA kekayaan non-WASH menjelaskan 22.0% varians; RT tanpa pasangan HR = 0
+# 2026-09-26 10:58
+EDA: kosong terbanyak jarak_sumur_septik_m=71%, Y_mati_bayi=19%, M_anc4=14%
+EDA: T_pbi 0.297 [0.285-0.309] n=17846
+EDA: T_sanitasi 0.743 [0.728-0.758] n=17212
+EDA: T_fasilitas 0.794 [0.780-0.808] n=17769
+EDA: Y_diare 0.142 [0.134-0.149] n=17155
+EDA: Y_ispa 0.042 [0.038-0.046] n=17168
+EDA: Y_mati_neonatal 0.015 [0.013-0.018] n=17724
+EDA: Y_mati_bayi 0.023 [0.020-0.026] n=14383
+EDA: T_pbi kovariat SMD>0.1=22; terbesar jkn_nonpbi=-0.97, skor_kekayaan_nonwash=-0.56, pend_ibu_thn=-0.48
+EDA: T_sanitasi kovariat SMD>0.1=27; terbesar sanitasi_klaster_lo=+1.21, skor_kekayaan_nonwash=+1.00, pend_ibu_thn=+0.64
+EDA: T_fasilitas kovariat SMD>0.1=25; terbesar fasilitas_klaster_lo=+1.71, skor_kekayaan_nonwash=+0.93, perdesaan=-0.77
+# 2026-09-26 10:59
+DAG[sanitasi_diare] T_sanitasi->Y_diare identifikasi=YA |Z|=13
+DAG[sanitasi_diare] dikontrol: air_layak, anak_laki, cuci_tangan_dasar, cuci_tangan_klaster_lo, olah_air_efektif, org_per_kamar, p0_daerah_mar2017, pend_ibu_thn, perdesaan, punya_ternak, sanitasi_klaster_lo, skor_kekayaan_nonwash, umur_anak_bln
+DAG[sanitasi_diare] mediator: - | laten: -
+DAG[pbi_diare] T_pbi->Y_diare identifikasi=YA |Z|=13
+DAG[pbi_diare] dikontrol: T_sanitasi, air_layak, anak_laki, hambatan_biaya, ibu_bekerja, jml_art, kk_perempuan, p0_daerah_mar2017, pbi_pct_prov, pend_ibu_thn, perdesaan, skor_kekayaan_nonwash, umur_anak_bln
+DAG[pbi_diare] mediator: - | laten: -
+DAG[pbi_neonatal] T_pbi->Y_mati_neonatal identifikasi=YA |Z|=10
+DAG[pbi_neonatal] dikontrol: jml_art, kembar, kk_perempuan, p0_daerah_mar2017, pbi_pct_prov, pend_ibu_thn, perdesaan, skor_kekayaan_nonwash, umur_ibu, urutan_lahir
+DAG[pbi_neonatal] mediator: T_fasilitas | laten: -
+DAG[fasilitas_neonatal] T_fasilitas->Y_mati_neonatal identifikasi=TIDAK (ada laten) |Z|=14
+DAG[fasilitas_neonatal] dikontrol: anak_laki, fasilitas_klaster_lo, hambatan_biaya, hambatan_jarak, jarak_klaster_lo, kembar, p0_daerah_mar2017, pct_pkm_kurang_bidan, pend_ibu_thn, perdesaan, rasio_pkm_per_kec, skor_kekayaan_nonwash, umur_ibu, urutan_lahir
+DAG[fasilitas_neonatal] mediator: - | laten: risiko_kehamilan
+# 2026-09-26 10:59
+DAG[sanitasi_diare] T_sanitasi->Y_diare identifikasi=YA |Z|=13
+DAG[sanitasi_diare] dikontrol: air_layak, anak_laki, cuci_tangan_dasar, cuci_tangan_klaster_lo, olah_air_efektif, org_per_kamar, p0_daerah_mar2017, pend_ibu_thn, perdesaan, punya_ternak, sanitasi_klaster_lo, skor_kekayaan_nonwash, umur_anak_bln
+DAG[sanitasi_diare] mediator: - | laten: -
+DAG[pbi_diare] T_pbi->Y_diare identifikasi=YA |Z|=13
+DAG[pbi_diare] dikontrol: T_sanitasi, air_layak, anak_laki, hambatan_biaya, ibu_bekerja, jml_art, kk_perempuan, p0_daerah_mar2017, pbi_pct_prov, pend_ibu_thn, perdesaan, skor_kekayaan_nonwash, umur_anak_bln
+DAG[pbi_diare] mediator: - | laten: -
+DAG[pbi_neonatal] T_pbi->Y_mati_neonatal identifikasi=YA |Z|=10
+DAG[pbi_neonatal] dikontrol: jml_art, kembar, kk_perempuan, p0_daerah_mar2017, pbi_pct_prov, pend_ibu_thn, perdesaan, skor_kekayaan_nonwash, umur_ibu, urutan_lahir
+DAG[pbi_neonatal] mediator: T_fasilitas | laten: -
+DAG[fasilitas_neonatal] T_fasilitas->Y_mati_neonatal identifikasi=TIDAK (ada laten) |Z|=14
+DAG[fasilitas_neonatal] dikontrol: anak_laki, fasilitas_klaster_lo, hambatan_biaya, hambatan_jarak, jarak_klaster_lo, kembar, p0_daerah_mar2017, pct_pkm_kurang_bidan, pend_ibu_thn, perdesaan, rasio_pkm_per_kec, skor_kekayaan_nonwash, umur_ibu, urutan_lahir
+DAG[fasilitas_neonatal] mediator: - | laten: risiko_kehamilan
+# 2026-09-26 11:03
+PREP: 17848 kelahiran, 53 variabel, 1967 klaster, 34 provinsi
+PREP: PCA kekayaan non-WASH menjelaskan 22.0% varians; RT tanpa pasangan HR = 0
+# 2026-09-26 11:03
+EDA: kosong terbanyak jarak_sumur_septik_m=71%, Y_mati_bayi=19%, M_anc4=14%
+EDA: T_pbi 0.297 [0.285-0.309] n=17846
+EDA: T_sanitasi 0.743 [0.728-0.758] n=17212
+EDA: T_fasilitas 0.794 [0.780-0.808] n=17769
+EDA: Y_diare 0.142 [0.134-0.149] n=17155
+EDA: Y_ispa 0.042 [0.038-0.046] n=17168
+EDA: Y_mati_neonatal 0.015 [0.013-0.018] n=17724
+EDA: Y_mati_bayi 0.023 [0.020-0.026] n=14383
+EDA: T_pbi kovariat SMD>0.1=23; terbesar jkn_nonpbi=-0.97, kuintil_kekayaan_nonwash=-0.59, skor_kekayaan_nonwash=-0.56
+EDA: T_sanitasi kovariat SMD>0.1=28; terbesar sanitasi_klaster_lo=+1.21, skor_kekayaan_nonwash=+1.00, kuintil_kekayaan_nonwash=+0.99
+EDA: T_fasilitas kovariat SMD>0.1=26; terbesar fasilitas_klaster_lo=+1.71, skor_kekayaan_nonwash=+0.93, kuintil_kekayaan_nonwash=+0.88
+# 2026-09-26 11:04
+KAUSAL[sanitasi_diare] T_sanitasi->Y_diare n=16232 |Z|=13 identifikasi=YA mediator=-
+KAUSAL[sanitasi_diare] AIPW RD=-0.0338 [-0.0541,-0.0090] RR=0.79 [0.69,0.94] | gcomp RD=-0.0194 IPW RD=-0.0362
+KAUSAL[sanitasi_diare] E-value titik=1.83 CI=1.33 | SMD maks setelah IPW=0.11 | boot sah=20/20
+KAUSAL[pbi_diare] T_pbi->Y_diare n=16508 |Z|=13 identifikasi=YA mediator=-
+KAUSAL[pbi_diare] AIPW RD=+0.0246 [+0.0021,+0.0377] RR=1.18 [1.02,1.28] | gcomp RD=+0.0194 IPW RD=+0.0257
+KAUSAL[pbi_diare] E-value titik=1.65 CI=1.15 | SMD maks setelah IPW=0.03 | boot sah=20/20
+KAUSAL[pbi_neonatal] T_pbi->Y_mati_neonatal n=6968 |Z|=10 identifikasi=YA mediator=T_fasilitas
+KAUSAL[pbi_neonatal] AIPW RD=-0.0011 [-0.0059,+0.0037] RR=0.92 [0.60,1.30] | gcomp RD=-0.0008 IPW RD=-0.0022
+KAUSAL[pbi_neonatal] E-value titik=1.40 CI=1.00 | SMD maks setelah IPW=0.02 | boot sah=20/20
+KAUSAL[fasilitas_neonatal] T_fasilitas->Y_mati_neonatal n=17607 |Z|=14 identifikasi=TIDAK (ada laten) mediator=-
+KAUSAL[fasilitas_neonatal] AIPW RD=-0.0031 [-0.0099,+0.0011] RR=0.80 [0.54,1.10] | gcomp RD=+0.0010 IPW RD=-0.0036
+KAUSAL[fasilitas_neonatal] E-value titik=1.81 CI=1.00 | SMD maks setelah IPW=0.11 | boot sah=20/20
+# 2026-09-26 11:06
+PREP: 17848 kelahiran, 53 variabel, 1967 klaster, 34 provinsi
+PREP: PCA kekayaan non-WASH menjelaskan 22.0% varians; RT tanpa pasangan HR = 0
+# 2026-09-26 11:06
+EDA: kosong terbanyak jarak_sumur_septik_m=71%, Y_mati_bayi=19%, M_anc4=14%
+EDA: T_pbi 0.297 [0.285-0.309] n=17846
+EDA: T_sanitasi 0.743 [0.728-0.758] n=17212
+EDA: T_fasilitas 0.794 [0.780-0.808] n=17769
+EDA: Y_diare 0.142 [0.134-0.149] n=17155
+EDA: Y_ispa 0.042 [0.038-0.046] n=17168
+EDA: Y_mati_neonatal 0.015 [0.013-0.018] n=17724
+EDA: Y_mati_bayi 0.023 [0.020-0.026] n=14383
+EDA: T_pbi kovariat SMD>0.1=22; terbesar jkn_nonpbi=-0.97, skor_kekayaan_nonwash=-0.56, pend_ibu_thn=-0.48
+EDA: T_sanitasi kovariat SMD>0.1=27; terbesar sanitasi_klaster_lo=+1.21, skor_kekayaan_nonwash=+1.00, pend_ibu_thn=+0.64
+EDA: T_fasilitas kovariat SMD>0.1=25; terbesar fasilitas_klaster_lo=+1.71, skor_kekayaan_nonwash=+0.93, perdesaan=-0.77
+# 2026-09-26 11:08
+KAUSAL[sanitasi_diare] T_sanitasi->Y_diare n=16232 |Z|=13 identifikasi=YA mediator=-
+KAUSAL[sanitasi_diare] AIPW RD=-0.0338 [-0.0574,-0.0117] RR=0.79 [0.69,0.92] | gcomp RD=-0.0194 IPW RD=-0.0362
+KAUSAL[sanitasi_diare] E-value titik=1.83 CI=1.39 | SMD maks setelah IPW=0.11 | boot sah=200/200
+KAUSAL[pbi_diare] T_pbi->Y_diare n=16508 |Z|=13 identifikasi=YA mediator=-
+KAUSAL[pbi_diare] AIPW RD=+0.0246 [+0.0089,+0.0423] RR=1.18 [1.06,1.33] | gcomp RD=+0.0194 IPW RD=+0.0257
+KAUSAL[pbi_diare] E-value titik=1.65 CI=1.32 | SMD maks setelah IPW=0.03 | boot sah=200/200
+KAUSAL[pbi_neonatal] T_pbi->Y_mati_neonatal n=6968 |Z|=10 identifikasi=YA mediator=T_fasilitas
+KAUSAL[pbi_neonatal] AIPW RD=-0.0011 [-0.0077,+0.0065] RR=0.92 [0.50,1.60] | gcomp RD=-0.0008 IPW RD=-0.0022
+KAUSAL[pbi_neonatal] E-value titik=1.40 CI=1.00 | SMD maks setelah IPW=0.02 | boot sah=200/200
+KAUSAL[fasilitas_neonatal] T_fasilitas->Y_mati_neonatal n=17607 |Z|=14 identifikasi=TIDAK (ada laten) mediator=-
+KAUSAL[fasilitas_neonatal] AIPW RD=-0.0031 [-0.0135,+0.0053] RR=0.80 [0.47,1.65] | gcomp RD=+0.0010 IPW RD=-0.0036
+KAUSAL[fasilitas_neonatal] E-value titik=1.81 CI=1.00 | SMD maks setelah IPW=0.11 | boot sah=200/200
+# 2026-09-26 11:18
+DAG[sanitasi_diare] T_sanitasi->Y_diare identifikasi=YA |Z|=13
+DAG[sanitasi_diare] dikontrol: air_layak, anak_laki, cuci_tangan_dasar, cuci_tangan_klaster_lo, olah_air_efektif, org_per_kamar, p0_daerah_mar2017, pend_ibu_thn, perdesaan, punya_ternak, sanitasi_klaster_lo, skor_kekayaan_nonwash, umur_anak_bln
+DAG[sanitasi_diare] mediator: - | laten: -
+# 2026-09-26 11:19
+KAUSAL[sanitasi_diare] T_sanitasi->Y_diare n=16232 |Z|=13 identifikasi=YA mediator=-
+KAUSAL[sanitasi_diare] AIPW RD=-0.0338 [-0.0574,-0.0117] RR=0.79 [0.69,0.92] | gcomp RD=-0.0194 IPW RD=-0.0362
+KAUSAL[sanitasi_diare] E-value titik=1.83 CI=1.39 | SMD maks setelah IPW=0.11 | boot sah=200/200
+# 2026-09-26 14:13
+PREP: 17848 kelahiran, 53 variabel, 1967 klaster, 34 provinsi
+PREP: PCA kekayaan non-WASH menjelaskan 22.0% varians; RT tanpa pasangan HR = 0
+# 2026-09-26 14:13
+EDA: kosong terbanyak jarak_sumur_septik_m=71%, Y_mati_bayi=19%, M_anc4=14%
+EDA: T_pbi 0.297 [0.285-0.309] n=17846
+EDA: T_sanitasi 0.743 [0.728-0.758] n=17212
+EDA: T_fasilitas 0.794 [0.780-0.808] n=17769
+EDA: Y_diare 0.142 [0.134-0.149] n=17155
+EDA: Y_ispa 0.042 [0.038-0.046] n=17168
+EDA: Y_mati_neonatal 0.015 [0.013-0.018] n=17724
+EDA: Y_mati_bayi 0.023 [0.020-0.026] n=14383
+EDA: T_pbi kovariat SMD>0.1=23; terbesar jkn_nonpbi=-0.97, kuintil_kekayaan_nonwash=-0.59, skor_kekayaan_nonwash=-0.56
+EDA: T_sanitasi kovariat SMD>0.1=28; terbesar sanitasi_klaster_lo=+1.21, skor_kekayaan_nonwash=+1.00, kuintil_kekayaan_nonwash=+0.99
+EDA: T_fasilitas kovariat SMD>0.1=26; terbesar fasilitas_klaster_lo=+1.71, skor_kekayaan_nonwash=+0.93, kuintil_kekayaan_nonwash=+0.88
+# 2026-09-26 14:15
+KAUSAL[sanitasi_diare] T_sanitasi->Y_diare n=16232 |Z|=13 identifikasi=YA mediator=-
+KAUSAL[sanitasi_diare] AIPW RD=-0.0338 [-0.0574,-0.0117] RR=0.79 [0.69,0.92] | gcomp RD=-0.0194 IPW RD=-0.0362
+KAUSAL[sanitasi_diare] E-value titik=1.83 CI=1.39 | SMD maks setelah IPW=0.11 | boot sah=200/200
+KAUSAL[pbi_diare] T_pbi->Y_diare n=16508 |Z|=13 identifikasi=YA mediator=-
+KAUSAL[pbi_diare] AIPW RD=+0.0246 [+0.0089,+0.0423] RR=1.18 [1.06,1.33] | gcomp RD=+0.0194 IPW RD=+0.0257
+KAUSAL[pbi_diare] E-value titik=1.65 CI=1.32 | SMD maks setelah IPW=0.03 | boot sah=200/200
+KAUSAL[pbi_neonatal] T_pbi->Y_mati_neonatal n=6968 |Z|=10 identifikasi=YA mediator=T_fasilitas
+KAUSAL[pbi_neonatal] AIPW RD=-0.0011 [-0.0077,+0.0065] RR=0.92 [0.50,1.60] | gcomp RD=-0.0008 IPW RD=-0.0022
+KAUSAL[pbi_neonatal] E-value titik=1.40 CI=1.00 | SMD maks setelah IPW=0.02 | boot sah=200/200
+KAUSAL[fasilitas_neonatal] T_fasilitas->Y_mati_neonatal n=17607 |Z|=14 identifikasi=TIDAK (ada laten) mediator=-
+KAUSAL[fasilitas_neonatal] AIPW RD=-0.0031 [-0.0135,+0.0053] RR=0.80 [0.47,1.65] | gcomp RD=+0.0010 IPW RD=-0.0036
+KAUSAL[fasilitas_neonatal] E-value titik=1.81 CI=1.00 | SMD maks setelah IPW=0.11 | boot sah=200/200
+# 2026-09-26 14:15
+BASE[sanitasi_diare] T_sanitasi->Y_diare n=16232 p=15 boot=0
+BASE[sanitasi_diare] B2 uji=7798 sisi berarah=40 tak berarah=4 SHD vs pakar=39 | IDA 1 himpunan, RD [-0.0185,-0.0185], min|RD|=-0.0185
+# 2026-09-26 14:18
+BASE[sanitasi_diare] T_sanitasi->Y_diare n=16232 p=15 boot=100
+BASE[sanitasi_diare] B1[T_sanitasi->Y_diare] RMSEA=0.079 CFI=0.840 SRMR=0.069 chi2=2915.7 df=61 (n_eff=7515)
+BASE[sanitasi_diare] B1 linear: total=-0.0203 langsung=-0.0203 tak langsung=+0.0000 | probit RD=-0.0194 | backdoor g-komp RD=-0.0194 [-0.0365,-0.0039]
+BASE[sanitasi_diare] B2 uji=7798 sisi berarah=40 tak berarah=4 SHD vs pakar=39 | IDA 1 himpunan, RD [-0.0185,-0.0185], min|RD|=-0.0185
+BASE[sanitasi_diare] B3 skor=bic langkah=28 sisi=28 SHD vs pakar=31 skor akhir=-192751.6 (pakar -673067.0) | RD=-0.0192 [-0.0323,-0.0007]
+BASE[pbi_diare] T_pbi->Y_diare n=16508 p=15 boot=100
+BASE[pbi_diare] B1[T_pbi->Y_diare] RMSEA=0.037 CFI=0.964 SRMR=0.023 chi2=606.6 df=52 (n_eff=7643)
+BASE[pbi_diare] B1 linear: total=+0.0167 langsung=+0.0167 tak langsung=+0.0000 | probit RD=+0.0162 | backdoor g-komp RD=+0.0194 [-0.0009,+0.0349]
+BASE[pbi_diare] B2 uji=3140 sisi berarah=27 tak berarah=4 SHD vs pakar=30 | IDA 1 himpunan, RD [+0.0200,+0.0200], min|RD|=+0.0200
+BASE[pbi_diare] B3 skor=bic langkah=23 sisi=23 SHD vs pakar=28 skor akhir=-199415.9 (pakar -322330.5) | RD=+0.0000 [+0.0000,+0.0000]
+BASE[pbi_neonatal] T_pbi->Y_mati_neonatal n=6953 p=13 boot=100
+BASE[pbi_neonatal] B1[T_pbi->Y_mati_neonatal] RMSEA=0.116 CFI=0.839 SRMR=0.070 chi2=1331.9 df=30 (n_eff=3219)
+BASE[pbi_neonatal] B1 linear: total=-0.0025 langsung=-0.0028 tak langsung=+0.0002 | probit RD=-0.0022 | backdoor g-komp RD=-0.0011 [-0.0057,+0.0039]
+BASE[pbi_neonatal] B2 uji=1856 sisi berarah=22 tak berarah=4 SHD vs pakar=28 | IDA 1 himpunan, RD [-0.0014,-0.0014], min|RD|=-0.0014
+BASE[pbi_neonatal] B3 skor=bic langkah=22 sisi=21 SHD vs pakar=29 skor akhir=-69712.7 (pakar -97262.5) | RD=+0.0000 [+0.0000,+0.0000]
+BASE[fasilitas_neonatal] T_fasilitas->Y_mati_neonatal n=17607 p=16 boot=100
+BASE[fasilitas_neonatal] B1[T_fasilitas->Y_mati_neonatal] RMSEA=0.118 CFI=0.815 SRMR=0.079 chi2=6367.7 df=56 (n_eff=8151)
+BASE[fasilitas_neonatal] B1 linear: total=-0.0027 langsung=-0.0027 tak langsung=+0.0000 | probit RD=-0.0027 | backdoor g-komp RD=+0.0010 [-0.0034,+0.0057]
+BASE[fasilitas_neonatal] B2 uji=5705 sisi berarah=34 tak berarah=2 SHD vs pakar=41 | IDA 1 himpunan, RD [+0.0019,+0.0019], min|RD|=+0.0019
+BASE[fasilitas_neonatal] B3 skor=bic langkah=32 sisi=32 SHD vs pakar=40 skor akhir=-211732.9 (pakar -2409901.6) | RD=+0.0000 [+0.0000,+0.0000]
+# 2026-09-26 14:58
+PREP: 17848 kelahiran, 53 variabel, 1967 klaster, 34 provinsi
+PREP: PCA kekayaan non-WASH menjelaskan 22.0% varians; RT tanpa pasangan HR = 0
+# 2026-09-26 14:59
+EDA: kosong terbanyak jarak_sumur_septik_m=71%, Y_mati_bayi=19%, M_anc4=14%
+EDA: T_pbi 0.297 [0.285-0.309] n=17846
+EDA: T_sanitasi 0.743 [0.728-0.758] n=17212
+EDA: T_fasilitas 0.794 [0.780-0.808] n=17769
+EDA: Y_diare 0.142 [0.134-0.149] n=17155
+EDA: Y_ispa 0.042 [0.038-0.046] n=17168
+EDA: Y_mati_neonatal 0.015 [0.013-0.018] n=17724
+EDA: Y_mati_bayi 0.023 [0.020-0.026] n=14383
+EDA: T_pbi kovariat SMD>0.1=23; terbesar jkn_nonpbi=-0.97, kuintil_kekayaan_nonwash=-0.59, skor_kekayaan_nonwash=-0.56
+EDA: T_sanitasi kovariat SMD>0.1=28; terbesar sanitasi_klaster_lo=+1.21, skor_kekayaan_nonwash=+1.00, kuintil_kekayaan_nonwash=+0.99
+EDA: T_fasilitas kovariat SMD>0.1=26; terbesar fasilitas_klaster_lo=+1.71, skor_kekayaan_nonwash=+0.93, kuintil_kekayaan_nonwash=+0.88
+# 2026-09-26 14:59
+DAG[sanitasi_diare] T_sanitasi->Y_diare identifikasi=YA |Z|=13
+DAG[sanitasi_diare] dikontrol: air_layak, anak_laki, cuci_tangan_dasar, cuci_tangan_klaster_lo, olah_air_efektif, org_per_kamar, p0_daerah_mar2017, pend_ibu_thn, perdesaan, punya_ternak, sanitasi_klaster_lo, skor_kekayaan_nonwash, umur_anak_bln
+DAG[sanitasi_diare] mediator: - | laten: -
+# 2026-09-26 15:00
+KAUSAL[sanitasi_diare] T_sanitasi->Y_diare n=16232 |Z|=13 identifikasi=YA mediator=-
+KAUSAL[sanitasi_diare] AIPW RD=-0.0338 [-0.0574,-0.0117] RR=0.79 [0.69,0.92] | gcomp RD=-0.0194 IPW RD=-0.0362
+KAUSAL[sanitasi_diare] E-value titik=1.83 CI=1.39 | SMD maks setelah IPW=0.11 | boot sah=200/200
+# 2026-09-26 15:02
+BASE[sanitasi_diare] T_sanitasi->Y_diare n=16232 p=15 boot=100
+BASE[sanitasi_diare] B1[T_sanitasi->Y_diare] RMSEA=0.079 CFI=0.840 SRMR=0.069 chi2=2915.7 df=61 (n_eff=7515)
+BASE[sanitasi_diare] B1 linear: total=-0.0203 langsung=-0.0203 tak langsung=+0.0000 | probit RD=-0.0194 | backdoor g-komp RD=-0.0194 [-0.0365,-0.0039]
+BASE[sanitasi_diare] B2 uji=7798 sisi berarah=40 tak berarah=4 SHD vs pakar=39 | IDA 1 himpunan, RD [-0.0185,-0.0185], min|RD|=-0.0185
+BASE[sanitasi_diare] B3 skor=bic langkah=28 sisi=28 SHD vs pakar=31 skor akhir=-192751.6 (pakar -673067.0) | RD=-0.0192 [-0.0323,-0.0007]
+BASE[sanitasi_diare] TERBAIK: B2 PC + tier + IDA (peringkat rata-rata 1.67; unggul pada BIC_SEM, CFI) RD=-0.0185 | B1 BIC=2371 CFI=0.840 CI=0.0326 | B2 BIC=385 CFI=0.953 CI=0.0344 | B3 BIC=684 CFI=0.929 CI=0.0316
+# 2026-09-26 15:16
+EDA: kosong terbanyak jarak_sumur_septik_m=71%, Y_mati_bayi=19%, M_anc4=14%
+EDA: T_pbi 0.297 [0.285-0.309] n=17846
+EDA: T_sanitasi 0.743 [0.728-0.758] n=17212
+EDA: T_fasilitas 0.794 [0.780-0.808] n=17769
+EDA: Y_diare 0.142 [0.134-0.149] n=17155
+EDA: Y_ispa 0.042 [0.038-0.046] n=17168
+EDA: Y_mati_neonatal 0.015 [0.013-0.018] n=17724
+EDA: Y_mati_bayi 0.023 [0.020-0.026] n=14383
+EDA: T_pbi kovariat SMD>0.1=23; terbesar jkn_nonpbi=-0.97, kuintil_kekayaan_nonwash=-0.59, skor_kekayaan_nonwash=-0.56
+EDA: T_sanitasi kovariat SMD>0.1=28; terbesar sanitasi_klaster_lo=+1.21, skor_kekayaan_nonwash=+1.00, kuintil_kekayaan_nonwash=+0.99
+EDA: T_fasilitas kovariat SMD>0.1=26; terbesar fasilitas_klaster_lo=+1.71, skor_kekayaan_nonwash=+0.93, kuintil_kekayaan_nonwash=+0.88
+# 2026-09-26 15:18
+DAG[sanitasi_diare] T_sanitasi->Y_diare identifikasi=YA |Z|=13
+DAG[sanitasi_diare] dikontrol: air_layak, anak_laki, cuci_tangan_dasar, cuci_tangan_klaster_lo, olah_air_efektif, org_per_kamar, p0_daerah_mar2017, pend_ibu_thn, perdesaan, punya_ternak, sanitasi_klaster_lo, skor_kekayaan_nonwash, umur_anak_bln
+DAG[sanitasi_diare] mediator: - | laten: -
+# 2026-09-26 15:19
+KAUSAL[sanitasi_diare] T_sanitasi->Y_diare n=16232 |Z|=13 identifikasi=YA mediator=-
+KAUSAL[sanitasi_diare] AIPW RD=-0.0338 [-0.0574,-0.0117] RR=0.79 [0.69,0.92] | gcomp RD=-0.0194 IPW RD=-0.0362
+KAUSAL[sanitasi_diare] E-value titik=1.83 CI=1.39 | SMD maks setelah IPW=0.11 | boot sah=200/200
+# 2026-09-26 15:21
+BASE[sanitasi_diare] T_sanitasi->Y_diare n=16232 p=15 boot=100
+BASE[sanitasi_diare] B1[T_sanitasi->Y_diare] RMSEA=0.079 CFI=0.840 SRMR=0.069 chi2=2915.7 df=61 (n_eff=7515)
+BASE[sanitasi_diare] B1 linear: total=-0.0203 langsung=-0.0203 tak langsung=+0.0000 | probit RD=-0.0194 | backdoor g-komp RD=-0.0194 [-0.0365,-0.0039]
+BASE[sanitasi_diare] B2 uji=7798 sisi berarah=40 tak berarah=4 SHD vs pakar=39 | IDA 1 himpunan, RD [-0.0185,-0.0185], min|RD|=-0.0185
+BASE[sanitasi_diare] B3 skor=bic langkah=33 sisi=28 SHD vs pakar=31 skor akhir=-192751.6 (pakar -673067.0) | RD=-0.0192 [-0.0323,-0.0007]
+BASE[sanitasi_diare] TERBAIK: B2 PC + tier + IDA (peringkat rata-rata 1.67; unggul pada BIC_SEM, CFI) RD=-0.0185 | B1 BIC=2371 CFI=0.840 CI=0.0326 | B2 BIC=385 CFI=0.953 CI=0.0344 | B3 BIC=684 CFI=0.929 CI=0.0316
+# 2026-09-26 15:23
+BASE[sanitasi_diare] T_sanitasi->Y_diare n=16232 p=15 boot=100
+BASE[sanitasi_diare] B1[T_sanitasi->Y_diare] RMSEA=0.079 CFI=0.840 SRMR=0.069 chi2=2915.7 df=61 (n_eff=7515)
+BASE[sanitasi_diare] B1 linear: total=-0.0203 langsung=-0.0203 tak langsung=+0.0000 | probit RD=-0.0194 | backdoor g-komp RD=-0.0194 [-0.0365,-0.0039]
+BASE[sanitasi_diare] B2 uji=7798 sisi berarah=40 tak berarah=4 SHD vs pakar=39 | IDA 1 himpunan, RD [-0.0185,-0.0185], min|RD|=-0.0185
+BASE[sanitasi_diare] B3 skor=bdeu langkah=33 sisi=28 SHD vs pakar=31 skor akhir=-192967.2 (pakar -214621.7) | RD=-0.0192 [-0.0323,-0.0007]
+BASE[sanitasi_diare] TERBAIK: B2 PC + tier + IDA (peringkat rata-rata 1.67; unggul pada BIC_SEM, CFI) RD=-0.0185 | B1 BIC=2371 CFI=0.840 CI=0.0326 | B2 BIC=385 CFI=0.953 CI=0.0344 | B3 BIC=685 CFI=0.929 CI=0.0316
+# 2026-09-26 15:24
+BASE[sanitasi_diare] T_sanitasi->Y_diare n=16232 p=15 boot=100
+BASE[sanitasi_diare] B1[T_sanitasi->Y_diare] RMSEA=0.079 CFI=0.840 SRMR=0.069 chi2=2915.7 df=61 (n_eff=7515)
+BASE[sanitasi_diare] B1 linear: total=-0.0203 langsung=-0.0203 tak langsung=+0.0000 | probit RD=-0.0194 | backdoor g-komp RD=-0.0194 [-0.0365,-0.0039]
+BASE[sanitasi_diare] B2 uji=7798 sisi berarah=40 tak berarah=4 SHD vs pakar=39 | IDA 1 himpunan, RD [-0.0185,-0.0185], min|RD|=-0.0185
+BASE[sanitasi_diare] B3 skor=bdeu langkah=33 sisi=28 SHD vs pakar=31 skor akhir=-192967.2 (pakar -214621.7) | RD=-0.0192 [-0.0323,-0.0007]
+BASE[sanitasi_diare] TERBAIK: B2 PC + tier + IDA (peringkat rata-rata 1.67; unggul pada BIC_SEM, CFI) RD=-0.0185 | B1 BIC=2371 CFI=0.840 CI=0.0326 | B2 BIC=385 CFI=0.953 CI=0.0344 | B3 BIC=685 CFI=0.929 CI=0.0316
+# 2026-09-26 15:41
+BASE[sanitasi_diare] T_sanitasi->Y_diare n=16232 p=15 boot=100
+BASE[sanitasi_diare] B1[T_sanitasi->Y_diare] RMSEA=0.079 CFI=0.840 SRMR=0.069 chi2=2915.7 df=61 (n_eff=7515)
+BASE[sanitasi_diare] B1 linear: total=-0.0203 langsung=-0.0203 tak langsung=+0.0000 | probit RD=-0.0194 | backdoor g-komp RD=-0.0194 [-0.0365,-0.0039]
+BASE[sanitasi_diare] B2 uji=7798 sisi berarah=40 tak berarah=4 SHD vs pakar=39 | IDA 1 himpunan, RD [-0.0185,-0.0185], min|RD|=-0.0185
+BASE[sanitasi_diare] B3 skor=bic langkah=28 sisi=28 SHD vs pakar=31 skor akhir=-192751.6 (pakar -673067.0) | RD=-0.0192 [-0.0323,-0.0007]
+BASE[sanitasi_diare] TERBAIK: B2 PC + tier + IDA (peringkat rata-rata 1.67; unggul pada BIC_SEM, CFI) RD=-0.0185 | B1 BIC=2371 CFI=0.840 CI=0.0326 | B2 BIC=385 CFI=0.953 CI=0.0344 | B3 BIC=684 CFI=0.929 CI=0.0316
+BASE[pbi_diare] T_pbi->Y_diare n=16508 p=15 boot=100
+BASE[pbi_diare] B1[T_pbi->Y_diare] RMSEA=0.037 CFI=0.964 SRMR=0.023 chi2=606.6 df=52 (n_eff=7643)
+BASE[pbi_diare] B1 linear: total=+0.0167 langsung=+0.0167 tak langsung=+0.0000 | probit RD=+0.0162 | backdoor g-komp RD=+0.0194 [-0.0009,+0.0349]
+BASE[pbi_diare] B2 uji=3140 sisi berarah=27 tak berarah=4 SHD vs pakar=30 | IDA 1 himpunan, RD [+0.0200,+0.0200], min|RD|=+0.0200
+BASE[pbi_diare] B3 skor=bic langkah=23 sisi=23 SHD vs pakar=28 skor akhir=-199415.9 (pakar -322330.5) | RD=+0.0000 [+0.0000,+0.0000]
+BASE[pbi_diare] TERBAIK: B2 PC + tier + IDA (peringkat rata-rata 1.00; unggul pada BIC_SEM, CFI, lebar_CI) RD=+0.0200 | B1 BIC=142 CFI=0.964 CI=0.0358 | B2 BIC=-341 CFI=0.986 CI=0.0352 | B3 BIC=38 CFI=0.956 CI=nan
+BASE[pbi_neonatal] T_pbi->Y_mati_neonatal n=6953 p=13 boot=100
+BASE[pbi_neonatal] B1[T_pbi->Y_mati_neonatal] RMSEA=0.116 CFI=0.839 SRMR=0.070 chi2=1331.9 df=30 (n_eff=3219)
+BASE[pbi_neonatal] B1 linear: total=-0.0025 langsung=-0.0028 tak langsung=+0.0002 | probit RD=-0.0022 | backdoor g-komp RD=-0.0011 [-0.0057,+0.0039]
+BASE[pbi_neonatal] B2 uji=1856 sisi berarah=22 tak berarah=4 SHD vs pakar=28 | IDA 1 himpunan, RD [-0.0014,-0.0014], min|RD|=-0.0014
+BASE[pbi_neonatal] B3 skor=bic langkah=22 sisi=21 SHD vs pakar=29 skor akhir=-69712.7 (pakar -97262.5) | RD=+0.0000 [+0.0000,+0.0000]
+BASE[pbi_neonatal] TERBAIK: B2 PC + tier + IDA (peringkat rata-rata 1.33; unggul pada BIC_SEM, CFI) RD=-0.0014 | B1 BIC=1090 CFI=0.839 CI=0.0096 | B2 BIC=-20 CFI=0.960 CI=0.0122 | B3 BIC=208 CFI=0.924 CI=nan
+BASE[fasilitas_neonatal] T_fasilitas->Y_mati_neonatal n=17607 p=16 boot=100
+BASE[fasilitas_neonatal] B1[T_fasilitas->Y_mati_neonatal] RMSEA=0.118 CFI=0.815 SRMR=0.079 chi2=6367.7 df=56 (n_eff=8151)
+BASE[fasilitas_neonatal] B1 linear: total=-0.0027 langsung=-0.0027 tak langsung=+0.0000 | probit RD=-0.0027 | backdoor g-komp RD=+0.0010 [-0.0034,+0.0057]
+BASE[fasilitas_neonatal] B2 uji=5705 sisi berarah=34 tak berarah=2 SHD vs pakar=41 | IDA 1 himpunan, RD [+0.0019,+0.0019], min|RD|=+0.0019
+BASE[fasilitas_neonatal] B3 skor=bic langkah=32 sisi=32 SHD vs pakar=40 skor akhir=-211732.9 (pakar -2409901.6) | RD=+0.0000 [+0.0000,+0.0000]
+BASE[fasilitas_neonatal] TERBAIK: B2 PC + tier + IDA (peringkat rata-rata 1.33; unggul pada BIC_SEM, CFI) RD=+0.0019 | B1 BIC=5863 CFI=0.815 CI=0.0090 | B2 BIC=1341 CFI=0.943 CI=0.0094 | B3 BIC=1601 CFI=0.933 CI=nan
+# 2026-09-26 15:43
+NOV[sanitasi_diare] N1 SD-Hybrid uji=4927 skeleton=37 (B2 naif 44) delta_bar=2.77 n_eff=3823 sisi=25 SHD=30 RD=+0.0000 [+0.0000,+0.0000]
+NOV[sanitasi_diare] banding: terbaik=B2 PC + tier + IDA (peringkat 1.67) | B1 BIC_SEM=2.37e+03 CFI=0.84 lebar_CI=0.0326 | B2 BIC_SEM=385 CFI=0.953 lebar_CI=0.0344 | B3 BIC_SEM=684 CFI=0.929 lebar_CI=0.0316 | N1 BIC_SEM=1.31e+03 CFI=0.892 lebar_CI=nan
+NOV[sanitasi_diare] tipe I naif/terkoreksi: biner 2×2, S=∅ 0.130/0.040; 3×3 (df 4), S=∅ 0.140/0.085; biner 2×2, S={z} 0.130/0.040; kontinu, S=∅ 0.225/0.055; kontinu, S={z} 0.225/0.055
+NOV[pbi_diare] N1 SD-Hybrid uji=1927 skeleton=29 (B2 naif 31) delta_bar=1.94 n_eff=5549 sisi=21 SHD=26 RD=+0.0000 [+0.0000,+0.0000]
+NOV[pbi_diare] banding: terbaik=B2 PC + tier + IDA (peringkat 1.00) | B1 BIC_SEM=142 CFI=0.964 lebar_CI=0.0358 | B2 BIC_SEM=-341 CFI=0.986 lebar_CI=0.0352 | B3 BIC_SEM=38.4 CFI=0.956 lebar_CI=nan | N1 BIC_SEM=198 CFI=0.944 lebar_CI=nan
+NOV[pbi_diare] tipe I naif/terkoreksi: biner 2×2, S=∅ 0.135/0.045; 3×3 (df 4), S=∅ 0.110/0.060; biner 2×2, S={z} 0.075/0.040; kontinu, S=∅ 0.185/0.060; kontinu, S={z} 0.185/0.060
+NOV[pbi_neonatal] N1 SD-Hybrid uji=919 skeleton=21 (B2 naif 26) delta_bar=1.28 n_eff=3516 sisi=13 SHD=23 RD=+0.0000 [+0.0000,+0.0000]
+NOV[pbi_neonatal] banding: terbaik=B2 PC + tier + IDA (peringkat 1.33) | B1 BIC_SEM=1.09e+03 CFI=0.839 lebar_CI=0.00962 | B2 BIC_SEM=-19.6 CFI=0.96 lebar_CI=0.0122 | B3 BIC_SEM=208 CFI=0.924 lebar_CI=nan | N1 BIC_SEM=580 CFI=0.877 lebar_CI=nan
+NOV[pbi_neonatal] tipe I naif/terkoreksi: biner 2×2, S=∅ 0.065/0.050; 3×3 (df 4), S=∅ 0.075/0.040; biner 2×2, S={z} 0.075/0.060; kontinu, S=∅ 0.100/0.055; kontinu, S={z} 0.100/0.065
+NOV[fasilitas_neonatal] N1 SD-Hybrid uji=3415 skeleton=34 (B2 naif 36) delta_bar=2.68 n_eff=4257 sisi=26 SHD=35 RD=+0.0000 [+0.0000,+0.0000]
+NOV[fasilitas_neonatal] banding: terbaik=B2 PC + tier + IDA (peringkat 1.33) | B1 BIC_SEM=5.86e+03 CFI=0.815 lebar_CI=0.00905 | B2 BIC_SEM=1.34e+03 CFI=0.943 lebar_CI=0.00935 | B3 BIC_SEM=1.6e+03 CFI=0.933 lebar_CI=nan | N1 BIC_SEM=2.23e+03 CFI=0.913 lebar_CI=nan
+NOV[fasilitas_neonatal] tipe I naif/terkoreksi: biner 2×2, S=∅ 0.160/0.090; 3×3 (df 4), S=∅ 0.110/0.055; biner 2×2, S={z} 0.140/0.095; kontinu, S=∅ 0.270/0.080; kontinu, S={z} 0.270/0.080
+# 2026-09-26 15:43
+NOV[sanitasi_diare] N2 TO-DAG ruang urutan=20,736 (tanpa tier 1.31e+12) skor lokal=481 F=-189095.3 (B3 -189171.7) sisi=30 SHD=33 detik=0.65 memori=6.1MB RD=-0.0202
+NOV[sanitasi_diare] banding: terbaik=B3 BN berbasis skor (peringkat 1.33) | B1 detik_penemuan=0.00819 memori_MB=5.86 BIC_SEM=2.37e+03 | B2 detik_penemuan=4.33 memori_MB=3.9 BIC_SEM=385 | B3 detik_penemuan=0.499 memori_MB=2.91 BIC_SEM=684 | N2 detik_penemuan=0.646 memori_MB=6.05 BIC_SEM=736
+NOV[pbi_diare] N2 TO-DAG ruang urutan=51,840 (tanpa tier 1.31e+12) skor lokal=411 F=-195686.4 (B3 -195767.3) sisi=24 SHD=29 detik=0.56 memori=6.1MB RD=+0.0000
+NOV[pbi_diare] banding: terbaik=B3 BN berbasis skor (peringkat 1.67) | B1 detik_penemuan=0.00812 memori_MB=5.96 BIC_SEM=142 | B2 detik_penemuan=2.61 memori_MB=3.97 BIC_SEM=-341 | B3 detik_penemuan=0.538 memori_MB=2.92 BIC_SEM=38.4 | N2 detik_penemuan=0.565 memori_MB=6.15 BIC_SEM=-68.3
+NOV[pbi_neonatal] N2 TO-DAG ruang urutan=4,320 (tanpa tier 6.23e+09) skor lokal=381 F=-67463.5 (B3 -67497.8) sisi=21 SHD=30 detik=0.40 memori=2.3MB RD=+0.0000
+NOV[pbi_neonatal] banding: terbaik=B3 BN berbasis skor (peringkat 1.67) | B1 detik_penemuan=0.00736 memori_MB=2.18 BIC_SEM=1.09e+03 | B2 detik_penemuan=1.58 memori_MB=1.45 BIC_SEM=-19.6 | B3 detik_penemuan=0.447 memori_MB=1.18 BIC_SEM=208 | N2 detik_penemuan=0.398 memori_MB=2.29 BIC_SEM=287
+NOV[fasilitas_neonatal] N2 TO-DAG ruang urutan=172,800 (tanpa tier 2.09e+13) skor lokal=634 F=-202076.3 (B3 -202526.5) sisi=33 SHD=42 detik=0.85 memori=7.0MB RD=+0.0000
+NOV[fasilitas_neonatal] banding: terbaik=N2 TO-DAG (peringkat 1.67) | B1 detik_penemuan=0.0122 memori_MB=6.77 BIC_SEM=5.86e+03 | B2 detik_penemuan=5.67 memori_MB=4.52 BIC_SEM=1.34e+03 | B3 detik_penemuan=1.07 memori_MB=3.28 BIC_SEM=1.6e+03 | N2 detik_penemuan=0.848 memori_MB=6.97 BIC_SEM=1.27e+03
+# 2026-09-26 15:44
+NOV[sanitasi_diare] N3 MLC-DAG node 25->10 dibuang=3 sisi=29 detik=2.64 (tanpa konstruk 3.58) memori=3.7MB (3.7MB) RD=-0.0320 (tanpa konstruk -0.0298)
+NOV[sanitasi_diare] banding: terbaik=B3 BN berbasis skor (peringkat 1.00) | B1 detik_penemuan=0.00819 memori_MB=5.86 lebar_CI=0.0326 | B2 detik_penemuan=4.33 memori_MB=3.9 lebar_CI=0.0344 | B3 detik_penemuan=0.499 memori_MB=2.91 lebar_CI=0.0316 | N3 detik_penemuan=2.64 memori_MB=3.73 lebar_CI=0.0316 | N3- detik_penemuan=3.58 memori_MB=3.73 lebar_CI=0.0328
+NOV[pbi_diare] N3 MLC-DAG node 25->10 dibuang=3 sisi=29 detik=2.34 (tanpa konstruk 3.21) memori=3.6MB (3.6MB) RD=+0.0176 (tanpa konstruk +0.0000)
+NOV[pbi_diare] banding: terbaik=B3 BN berbasis skor (peringkat 1.00) | B1 detik_penemuan=0.00812 memori_MB=5.96 lebar_CI=0.0358 | B2 detik_penemuan=2.61 memori_MB=3.97 lebar_CI=0.0352 | B3 detik_penemuan=0.538 memori_MB=2.92 lebar_CI=nan | N3 detik_penemuan=2.34 memori_MB=3.57 lebar_CI=0.0296 | N3- detik_penemuan=3.21 memori_MB=3.57 lebar_CI=nan
+NOV[pbi_neonatal] N3 MLC-DAG node 25->10 dibuang=3 sisi=27 detik=2.14 (tanpa konstruk 2.85) memori=1.5MB (3.1MB) RD=-0.0019 (tanpa konstruk +0.0000)
+NOV[pbi_neonatal] banding: terbaik=B1 SEM (DAG pakar) (peringkat 1.00) | B1 detik_penemuan=0.00736 memori_MB=2.18 lebar_CI=0.00962 | B2 detik_penemuan=1.58 memori_MB=1.45 lebar_CI=0.0122 | B3 detik_penemuan=0.447 memori_MB=1.18 lebar_CI=nan | N3 detik_penemuan=2.14 memori_MB=1.47 lebar_CI=0.0111 | N3- detik_penemuan=2.85 memori_MB=3.11 lebar_CI=nan
+NOV[fasilitas_neonatal] N3 MLC-DAG node 25->10 dibuang=3 sisi=28 detik=2.08 (tanpa konstruk 2.86) memori=3.7MB (3.7MB) RD=+0.0000 (tanpa konstruk +0.0000)
+NOV[fasilitas_neonatal] banding: terbaik=B1 SEM (DAG pakar) (peringkat 1.00) | B1 detik_penemuan=0.0122 memori_MB=6.77 lebar_CI=0.00905 | B2 detik_penemuan=5.67 memori_MB=4.52 lebar_CI=0.00935 | B3 detik_penemuan=1.07 memori_MB=3.28 lebar_CI=nan | N3 detik_penemuan=2.08 memori_MB=3.66 lebar_CI=nan | N3- detik_penemuan=2.86 memori_MB=3.66 lebar_CI=nan
+# 2026-09-26 15:51
+PREP: 17848 kelahiran, 63 variabel, 1967 klaster, 34 provinsi
+PREP: PCA kekayaan non-WASH menjelaskan 22.0% varians; RT tanpa pasangan HR = 0
+# 2026-09-26 15:51
+EDA: kosong terbanyak jarak_sumur_septik_m=71%, Y_mati_bayi=19%, M_anc4=14%
+EDA: T_pbi 0.297 [0.285-0.309] n=17846
+EDA: T_sanitasi 0.743 [0.728-0.758] n=17212
+EDA: T_fasilitas 0.794 [0.780-0.808] n=17769
+EDA: Y_diare 0.142 [0.134-0.149] n=17155
+EDA: Y_ispa 0.042 [0.038-0.046] n=17168
+EDA: Y_mati_neonatal 0.015 [0.013-0.018] n=17724
+EDA: Y_mati_bayi 0.023 [0.020-0.026] n=14383
+EDA: T_pbi kovariat SMD>0.1=23; terbesar jkn_nonpbi=-0.97, kuintil_kekayaan_nonwash=-0.59, skor_kekayaan_nonwash=-0.56
+EDA: T_sanitasi kovariat SMD>0.1=28; terbesar sanitasi_klaster_lo=+1.21, skor_kekayaan_nonwash=+1.00, kuintil_kekayaan_nonwash=+0.99
+EDA: T_fasilitas kovariat SMD>0.1=26; terbesar fasilitas_klaster_lo=+1.71, skor_kekayaan_nonwash=+0.93, kuintil_kekayaan_nonwash=+0.88
+# 2026-09-26 15:52
+KAUSAL[sanitasi_diare] T_sanitasi->Y_diare n=16232 |Z|=13 identifikasi=YA mediator=-
+KAUSAL[sanitasi_diare] AIPW RD=-0.0338 [-0.0574,-0.0117] RR=0.79 [0.69,0.92] | gcomp RD=-0.0194 IPW RD=-0.0362
+KAUSAL[sanitasi_diare] E-value titik=1.83 CI=1.39 | SMD maks setelah IPW=0.11 | boot sah=200/200
+# 2026-09-26 15:53
+BASE[sanitasi_diare] T_sanitasi->Y_diare n=16232 p=15 boot=100
+BASE[sanitasi_diare] B1[T_sanitasi->Y_diare] RMSEA=0.079 CFI=0.840 SRMR=0.069 chi2=2915.7 df=61 (n_eff=7515)
+BASE[sanitasi_diare] B1 linear: total=-0.0203 langsung=-0.0203 tak langsung=+0.0000 | probit RD=-0.0194 | backdoor g-komp RD=-0.0194 [-0.0365,-0.0039]
+BASE[sanitasi_diare] B2 uji=7798 sisi berarah=40 tak berarah=4 SHD vs pakar=39 | IDA 1 himpunan, RD [-0.0185,-0.0185], min|RD|=-0.0185
+BASE[sanitasi_diare] B3 skor=bic langkah=28 sisi=28 SHD vs pakar=31 skor akhir=-192751.6 (pakar -673067.0) | RD=-0.0192 [-0.0323,-0.0007]
+BASE[sanitasi_diare] TERBAIK: B2 PC + tier + IDA (peringkat rata-rata 1.67; unggul pada BIC_SEM, CFI) RD=-0.0185 | B1 BIC=2371 CFI=0.840 CI=0.0326 | B2 BIC=385 CFI=0.953 CI=0.0344 | B3 BIC=684 CFI=0.929 CI=0.0316
+# 2026-09-26 16:00
+NOV[sanitasi_diare] N3 MLC-DAG node 25->10 dibuang=3 sisi=29 detik=3.13 (tanpa konstruk 4.40) memori=3.7MB (3.7MB) RD=-0.0320 (tanpa konstruk -0.0298)
+NOV[sanitasi_diare] banding: terbaik=B3 BN berbasis skor (peringkat 1.00) | B1 detik_penemuan=0.00832 memori_MB=5.87 lebar_CI=0.0326 | B2 detik_penemuan=4.9 memori_MB=3.91 lebar_CI=0.0344 | B3 detik_penemuan=0.534 memori_MB=2.92 lebar_CI=0.0316 | N3 detik_penemuan=3.13 memori_MB=3.73 lebar_CI=0.0316 | N3- detik_penemuan=4.4 memori_MB=3.73 lebar_CI=0.0328
+# 2026-09-26 21:45
+NOV[sanitasi_diare] N1 SD-Hybrid uji=4927 skeleton=37 (B2 naif 44) delta_bar=2.77 n_eff=3823 sisi=25 SHD=30 RD=+0.0000 [+0.0000,+0.0000]
+NOV[sanitasi_diare] banding: terbaik=B2 PC + tier + IDA (peringkat 1.67) | B1 BIC_SEM=2.37e+03 CFI=0.84 lebar_CI=0.0326 | B2 BIC_SEM=385 CFI=0.953 lebar_CI=0.0344 | B3 BIC_SEM=684 CFI=0.929 lebar_CI=0.0316 | N1 BIC_SEM=1.31e+03 CFI=0.892 lebar_CI=nan
+NOV[sanitasi_diare] tipe I naif/terkoreksi: biner 2×2, S=∅ 0.130/0.040; 3×3 (df 4), S=∅ 0.140/0.085; biner 2×2, S={z} 0.130/0.040; kontinu, S=∅ 0.225/0.055; kontinu, S={z} 0.225/0.055
+# 2026-09-26 22:03
+PREP: 17848 kelahiran, 63 variabel, 1967 klaster, 34 provinsi
+PREP: PCA kekayaan non-WASH menjelaskan 22.0% varians; RT tanpa pasangan HR = 0
+# 2026-09-26 22:10
+BASE[sanitasi_diare] T_sanitasi->Y_diare n=16232 p=15 boot=100
+BASE[sanitasi_diare] B1[T_sanitasi->Y_diare] RMSEA=0.079 CFI=0.840 SRMR=0.069 chi2=2915.7 df=61 (n_eff=7515)
+BASE[sanitasi_diare] B1 linear: total=-0.0203 langsung=-0.0203 tak langsung=+0.0000 | probit RD=-0.0194 | backdoor g-komp RD=-0.0194 [-0.0365,-0.0039]
+BASE[sanitasi_diare] B2 uji=7798 sisi berarah=40 tak berarah=4 SHD vs pakar=39 | IDA 1 himpunan, RD [-0.0185,-0.0185], min|RD|=-0.0185
+BASE[sanitasi_diare] B3 skor=bic langkah=28 sisi=28 SHD vs pakar=31 skor akhir=-192751.6 (pakar -673067.0) | RD=-0.0192 [-0.0323,-0.0007]
+BASE[sanitasi_diare] TERBAIK: B2 PC + tier + IDA (peringkat rata-rata 1.67; unggul pada BIC_SEM, CFI) RD=-0.0185 | B1 BIC=2371 CFI=0.840 CI=0.0326 | B2 BIC=385 CFI=0.953 CI=0.0344 | B3 BIC=684 CFI=0.929 CI=0.0316
+BASE[pbi_diare] T_pbi->Y_diare n=16508 p=15 boot=100
+BASE[pbi_diare] B1[T_pbi->Y_diare] RMSEA=0.037 CFI=0.964 SRMR=0.023 chi2=606.6 df=52 (n_eff=7643)
+BASE[pbi_diare] B1 linear: total=+0.0167 langsung=+0.0167 tak langsung=+0.0000 | probit RD=+0.0162 | backdoor g-komp RD=+0.0194 [-0.0009,+0.0349]
+BASE[pbi_diare] B2 uji=3140 sisi berarah=27 tak berarah=4 SHD vs pakar=30 | IDA 1 himpunan, RD [+0.0200,+0.0200], min|RD|=+0.0200
+BASE[pbi_diare] B3 skor=bic langkah=23 sisi=23 SHD vs pakar=28 skor akhir=-199415.9 (pakar -322330.5) | RD=+0.0000 [+0.0000,+0.0000]
+BASE[pbi_diare] TERBAIK: B2 PC + tier + IDA (peringkat rata-rata 1.00; unggul pada BIC_SEM, CFI, lebar_CI) RD=+0.0200 | B1 BIC=142 CFI=0.964 CI=0.0358 | B2 BIC=-341 CFI=0.986 CI=0.0352 | B3 BIC=38 CFI=0.956 CI=nan
+BASE[pbi_neonatal] T_pbi->Y_mati_neonatal n=6953 p=13 boot=100
+BASE[pbi_neonatal] B1[T_pbi->Y_mati_neonatal] RMSEA=0.116 CFI=0.839 SRMR=0.070 chi2=1331.9 df=30 (n_eff=3219)
+BASE[pbi_neonatal] B1 linear: total=-0.0025 langsung=-0.0028 tak langsung=+0.0002 | probit RD=-0.0022 | backdoor g-komp RD=-0.0011 [-0.0057,+0.0039]
+BASE[pbi_neonatal] B2 uji=1856 sisi berarah=22 tak berarah=4 SHD vs pakar=28 | IDA 1 himpunan, RD [-0.0014,-0.0014], min|RD|=-0.0014
+BASE[pbi_neonatal] B3 skor=bic langkah=22 sisi=21 SHD vs pakar=29 skor akhir=-69712.7 (pakar -97262.5) | RD=+0.0000 [+0.0000,+0.0000]
+BASE[pbi_neonatal] TERBAIK: B2 PC + tier + IDA (peringkat rata-rata 1.33; unggul pada BIC_SEM, CFI) RD=-0.0014 | B1 BIC=1090 CFI=0.839 CI=0.0096 | B2 BIC=-20 CFI=0.960 CI=0.0122 | B3 BIC=208 CFI=0.924 CI=nan
+BASE[fasilitas_neonatal] T_fasilitas->Y_mati_neonatal n=17607 p=16 boot=100
+BASE[fasilitas_neonatal] B1[T_fasilitas->Y_mati_neonatal] RMSEA=0.118 CFI=0.815 SRMR=0.079 chi2=6367.7 df=56 (n_eff=8151)
+BASE[fasilitas_neonatal] B1 linear: total=-0.0027 langsung=-0.0027 tak langsung=+0.0000 | probit RD=-0.0027 | backdoor g-komp RD=+0.0010 [-0.0034,+0.0057]
+BASE[fasilitas_neonatal] B2 uji=5705 sisi berarah=34 tak berarah=2 SHD vs pakar=41 | IDA 1 himpunan, RD [+0.0019,+0.0019], min|RD|=+0.0019
+BASE[fasilitas_neonatal] B3 skor=bic langkah=32 sisi=32 SHD vs pakar=40 skor akhir=-211732.9 (pakar -2409901.6) | RD=+0.0000 [+0.0000,+0.0000]
+BASE[fasilitas_neonatal] TERBAIK: B2 PC + tier + IDA (peringkat rata-rata 1.33; unggul pada BIC_SEM, CFI) RD=+0.0019 | B1 BIC=5863 CFI=0.815 CI=0.0090 | B2 BIC=1341 CFI=0.943 CI=0.0094 | B3 BIC=1601 CFI=0.933 CI=nan
+# 2026-09-26 22:13
+NOV[sanitasi_diare] N1 SD-Hybrid uji=4927 skeleton=37 (B2 naif 44) delta_bar=2.77 n_eff=3823 sisi=25 SHD=30 RD=+0.0000 [+0.0000,+0.0000]
+NOV[sanitasi_diare] banding: terbaik=B2 PC + tier + IDA (peringkat 1.67) | B1 BIC_SEM=2.37e+03 CFI=0.84 lebar_CI=0.0326 | B2 BIC_SEM=385 CFI=0.953 lebar_CI=0.0344 | B3 BIC_SEM=684 CFI=0.929 lebar_CI=0.0316 | N1 BIC_SEM=1.31e+03 CFI=0.892 lebar_CI=nan
+NOV[sanitasi_diare] tipe I naif/terkoreksi: biner 2×2, S=∅ 0.130/0.040; 3×3 (df 4), S=∅ 0.140/0.085; biner 2×2, S={z} 0.130/0.040; kontinu, S=∅ 0.225/0.055; kontinu, S={z} 0.225/0.055
+# 2026-09-26 22:38
+PREP: 17848 kelahiran, 63 variabel, 1967 klaster, 34 provinsi
+PREP: PCA kekayaan non-WASH menjelaskan 22.0% varians; RT tanpa pasangan HR = 0
+# 2026-09-26 22:38
+EDA: kosong terbanyak jarak_sumur_septik_m=71%, Y_mati_bayi=19%, M_anc4=14%
+EDA: T_pbi 0.297 [0.285-0.309] n=17846
+EDA: T_sanitasi 0.743 [0.728-0.758] n=17212
+EDA: T_fasilitas 0.794 [0.780-0.808] n=17769
+EDA: Y_diare 0.142 [0.134-0.149] n=17155
+EDA: Y_ispa 0.042 [0.038-0.046] n=17168
+EDA: Y_mati_neonatal 0.015 [0.013-0.018] n=17724
+EDA: Y_mati_bayi 0.023 [0.020-0.026] n=14383
+EDA: T_pbi kovariat SMD>0.1=23; terbesar jkn_nonpbi=-0.97, kuintil_kekayaan_nonwash=-0.59, skor_kekayaan_nonwash=-0.56
+EDA: T_sanitasi kovariat SMD>0.1=28; terbesar sanitasi_klaster_lo=+1.21, skor_kekayaan_nonwash=+1.00, kuintil_kekayaan_nonwash=+0.99
+EDA: T_fasilitas kovariat SMD>0.1=26; terbesar fasilitas_klaster_lo=+1.71, skor_kekayaan_nonwash=+0.93, kuintil_kekayaan_nonwash=+0.88
+# 2026-09-26 22:39
+KAUSAL[sanitasi_diare] T_sanitasi->Y_diare n=16232 |Z|=13 identifikasi=YA mediator=-
+KAUSAL[sanitasi_diare] AIPW RD=-0.0338 [-0.0574,-0.0117] RR=0.79 [0.69,0.92] | gcomp RD=-0.0194 IPW RD=-0.0362
+KAUSAL[sanitasi_diare] E-value titik=1.83 CI=1.39 | SMD maks setelah IPW=0.11 | boot sah=200/200
+# 2026-09-26 22:40
+BASE[sanitasi_diare] T_sanitasi->Y_diare n=16232 p=15 boot=100
+BASE[sanitasi_diare] B1[T_sanitasi->Y_diare] RMSEA=0.079 CFI=0.840 SRMR=0.069 chi2=2915.7 df=61 (n_eff=7515)
+BASE[sanitasi_diare] B1 linear: total=-0.0203 langsung=-0.0203 tak langsung=+0.0000 | probit RD=-0.0194 | backdoor g-komp RD=-0.0194 [-0.0365,-0.0039]
+BASE[sanitasi_diare] B2 uji=7798 sisi berarah=40 tak berarah=4 SHD vs pakar=39 | IDA 1 himpunan, RD [-0.0185,-0.0185], min|RD|=-0.0185
+BASE[sanitasi_diare] B3 skor=bic langkah=28 sisi=28 SHD vs pakar=31 skor akhir=-192751.6 (pakar -673067.0) | RD=-0.0192 [-0.0323,-0.0007]
+BASE[sanitasi_diare] TERBAIK: B2 PC + tier + IDA (peringkat rata-rata 1.67; unggul pada BIC_SEM, CFI) RD=-0.0185 | B1 BIC=2371 CFI=0.840 CI=0.0326 | B2 BIC=385 CFI=0.953 CI=0.0344 | B3 BIC=684 CFI=0.929 CI=0.0316
+# 2026-09-26 22:43
+NOV[sanitasi_diare] N1 SD-Hybrid uji=4927 skeleton=37 (B2 naif 44) delta_bar=2.77 n_eff=3823 sisi=25 SHD=30 RD=+0.0000 [+0.0000,+0.0000]
+NOV[sanitasi_diare] banding: terbaik=B2 PC + tier + IDA (peringkat 1.67) | B1 BIC_SEM=2.37e+03 CFI=0.84 lebar_CI=0.0326 | B2 BIC_SEM=385 CFI=0.953 lebar_CI=0.0344 | B3 BIC_SEM=684 CFI=0.929 lebar_CI=0.0316 | N1 BIC_SEM=1.31e+03 CFI=0.892 lebar_CI=nan
+NOV[sanitasi_diare] tipe I naif/terkoreksi: biner 2×2, S=∅ 0.130/0.040; 3×3 (df 4), S=∅ 0.140/0.085; biner 2×2, S={z} 0.130/0.040; kontinu, S=∅ 0.225/0.055; kontinu, S={z} 0.225/0.055
+# 2026-09-26 22:45
+NOV[sanitasi_diare] N2 TO-DAG ruang urutan=20,736 (tanpa tier 1.31e+12) skor lokal=481 F=-189095.3 (B3 -189171.7) sisi=30 SHD=33 detik=0.59 memori=6.1MB RD=-0.0202
+NOV[sanitasi_diare] banding: terbaik=B3 BN berbasis skor (peringkat 1.33) | B1 detik_penemuan=0.00986 memori_MB=5.87 BIC_SEM=2.37e+03 | B2 detik_penemuan=5.11 memori_MB=3.91 BIC_SEM=385 | B3 detik_penemuan=0.541 memori_MB=2.98 BIC_SEM=684 | N2 detik_penemuan=0.585 memori_MB=6.05 BIC_SEM=736
+# 2026-09-26 22:45
+NOV[sanitasi_diare] N3 MLC-DAG node 25->10 dibuang=3 sisi=29 detik=2.84 (tanpa konstruk 3.92) memori=3.7MB (3.7MB) RD=-0.0320 (tanpa konstruk -0.0298)
+NOV[sanitasi_diare] banding: terbaik=B3 BN berbasis skor (peringkat 1.00) | B1 detik_penemuan=0.00986 memori_MB=5.87 lebar_CI=0.0326 | B2 detik_penemuan=5.11 memori_MB=3.91 lebar_CI=0.0344 | B3 detik_penemuan=0.541 memori_MB=2.98 lebar_CI=0.0316 | N3 detik_penemuan=2.84 memori_MB=3.73 lebar_CI=0.0316 | N3- detik_penemuan=3.92 memori_MB=3.73 lebar_CI=0.0328
+# 2026-09-26 23:01
+PREP: 17848 kelahiran, 63 variabel, 1967 klaster, 34 provinsi
+PREP: PCA kekayaan non-WASH menjelaskan 22.0% varians; RT tanpa pasangan HR = 0
+# 2026-09-26 23:02
+PREP: 17848 kelahiran, 63 variabel, 1967 klaster, 34 provinsi
+PREP: PCA kekayaan non-WASH menjelaskan 22.0% varians; RT tanpa pasangan HR = 0
+# 2026-09-26 23:02
+EDA: kosong terbanyak jarak_sumur_septik_m=71%, Y_mati_bayi=19%, M_anc4=14%
+EDA: T_pbi 0.297 [0.285-0.309] n=17846
+EDA: T_sanitasi 0.743 [0.728-0.758] n=17212
+EDA: T_fasilitas 0.794 [0.780-0.808] n=17769
+EDA: Y_diare 0.142 [0.134-0.149] n=17155
+EDA: Y_ispa 0.042 [0.038-0.046] n=17168
+EDA: Y_mati_neonatal 0.015 [0.013-0.018] n=17724
+EDA: Y_mati_bayi 0.023 [0.020-0.026] n=14383
+EDA: T_pbi kovariat SMD>0.1=23; terbesar jkn_nonpbi=-0.97, kuintil_kekayaan_nonwash=-0.59, skor_kekayaan_nonwash=-0.56
+EDA: T_sanitasi kovariat SMD>0.1=28; terbesar sanitasi_klaster_lo=+1.21, skor_kekayaan_nonwash=+1.00, kuintil_kekayaan_nonwash=+0.99
+EDA: T_fasilitas kovariat SMD>0.1=26; terbesar fasilitas_klaster_lo=+1.71, skor_kekayaan_nonwash=+0.93, kuintil_kekayaan_nonwash=+0.88
+# 2026-09-26 23:02
+KAUSAL[sanitasi_diare] T_sanitasi->Y_diare n=16232 |Z|=13 identifikasi=YA mediator=-
+KAUSAL[sanitasi_diare] AIPW RD=-0.0338 [-0.0574,-0.0117] RR=0.79 [0.69,0.92] | gcomp RD=-0.0194 IPW RD=-0.0362
+KAUSAL[sanitasi_diare] E-value titik=1.83 CI=1.39 | SMD maks setelah IPW=0.11 | boot sah=200/200
+# 2026-09-26 23:04
+BASE[sanitasi_diare] T_sanitasi->Y_diare n=16232 p=15 boot=100
+BASE[sanitasi_diare] B1[T_sanitasi->Y_diare] RMSEA=0.079 CFI=0.840 SRMR=0.069 chi2=2915.7 df=61 (n_eff=7515)
+BASE[sanitasi_diare] B1 linear: total=-0.0203 langsung=-0.0203 tak langsung=+0.0000 | probit RD=-0.0194 | backdoor g-komp RD=-0.0194 [-0.0365,-0.0039]
+BASE[sanitasi_diare] B2 uji=7798 sisi berarah=40 tak berarah=4 SHD vs pakar=39 | IDA 1 himpunan, RD [-0.0185,-0.0185], min|RD|=-0.0185
+BASE[sanitasi_diare] B3 skor=bic langkah=28 sisi=28 SHD vs pakar=31 skor akhir=-192751.6 (pakar -673067.0) | RD=-0.0192 [-0.0323,-0.0007]
+BASE[sanitasi_diare] TERBAIK: B2 PC + tier + IDA (peringkat rata-rata 1.67; unggul pada BIC_SEM, CFI) RD=-0.0185 | B1 BIC=2371 CFI=0.840 CI=0.0326 | B2 BIC=385 CFI=0.953 CI=0.0344 | B3 BIC=684 CFI=0.929 CI=0.0316
+# 2026-09-26 23:05
+NOV[sanitasi_diare] N1 SD-Hybrid uji=4927 skeleton=37 (B2 naif 44) delta_bar=2.77 n_eff=3823 sisi=25 SHD=30 RD=+0.0000 [+0.0000,+0.0000]
+NOV[sanitasi_diare] banding: terbaik=B2 PC + tier + IDA (peringkat 1.67) | B1 BIC_SEM=2.37e+03 CFI=0.84 lebar_CI=0.0326 | B2 BIC_SEM=385 CFI=0.953 lebar_CI=0.0344 | B3 BIC_SEM=684 CFI=0.929 lebar_CI=0.0316 | N1 BIC_SEM=1.31e+03 CFI=0.892 lebar_CI=nan
+NOV[sanitasi_diare] tipe I naif/terkoreksi: biner 2×2, S=∅ 0.130/0.040; 3×3 (df 4), S=∅ 0.140/0.085; biner 2×2, S={z} 0.130/0.040; kontinu, S=∅ 0.225/0.055; kontinu, S={z} 0.225/0.055
+# 2026-09-26 23:33
+PREP: 17848 kelahiran, 63 variabel, 1967 klaster, 34 provinsi
+PREP: PCA kekayaan non-WASH menjelaskan 22.0% varians; RT tanpa pasangan HR = 0
+# 2026-09-26 23:34
+EDA: kosong terbanyak jarak_sumur_septik_m=71%, Y_mati_bayi=19%, M_anc4=14%
+EDA: T_pbi 0.297 [0.285-0.309] n=17846
+EDA: T_sanitasi 0.743 [0.728-0.758] n=17212
+EDA: T_fasilitas 0.794 [0.780-0.808] n=17769
+EDA: Y_diare 0.142 [0.134-0.149] n=17155
+EDA: Y_ispa 0.042 [0.038-0.046] n=17168
+EDA: Y_mati_neonatal 0.015 [0.013-0.018] n=17724
+EDA: Y_mati_bayi 0.023 [0.020-0.026] n=14383
+EDA: T_pbi kovariat SMD>0.1=23; terbesar jkn_nonpbi=-0.97, kuintil_kekayaan_nonwash=-0.59, skor_kekayaan_nonwash=-0.56
+EDA: T_sanitasi kovariat SMD>0.1=28; terbesar sanitasi_klaster_lo=+1.21, skor_kekayaan_nonwash=+1.00, kuintil_kekayaan_nonwash=+0.99
+EDA: T_fasilitas kovariat SMD>0.1=26; terbesar fasilitas_klaster_lo=+1.71, skor_kekayaan_nonwash=+0.93, kuintil_kekayaan_nonwash=+0.88
+# 2026-09-26 23:35
+KAUSAL[sanitasi_diare] T_sanitasi->Y_diare n=16232 |Z|=13 identifikasi=YA mediator=-
+KAUSAL[sanitasi_diare] AIPW RD=-0.0338 [-0.0574,-0.0117] RR=0.79 [0.69,0.92] | gcomp RD=-0.0194 IPW RD=-0.0362
+KAUSAL[sanitasi_diare] E-value titik=1.83 CI=1.39 | SMD maks setelah IPW=0.11 | boot sah=200/200
+# 2026-09-26 23:36
+BASE[sanitasi_diare] T_sanitasi->Y_diare n=16232 p=15 boot=100
+BASE[sanitasi_diare] B1[T_sanitasi->Y_diare] RMSEA=0.079 CFI=0.840 SRMR=0.069 chi2=2915.7 df=61 (n_eff=7515)
+BASE[sanitasi_diare] B1 linear: total=-0.0203 langsung=-0.0203 tak langsung=+0.0000 | probit RD=-0.0194 | backdoor g-komp RD=-0.0194 [-0.0365,-0.0039]
+BASE[sanitasi_diare] B2 uji=7798 sisi berarah=40 tak berarah=4 SHD vs pakar=39 | IDA 1 himpunan, RD [-0.0185,-0.0185], min|RD|=-0.0185
+BASE[sanitasi_diare] B3 skor=bic langkah=28 sisi=28 SHD vs pakar=31 skor akhir=-192751.6 (pakar -673067.0) | RD=-0.0192 [-0.0323,-0.0007]
+BASE[sanitasi_diare] TERBAIK: B2 PC + tier + IDA (peringkat rata-rata 1.67; unggul pada BIC_SEM, CFI) RD=-0.0185 | B1 BIC=2371 CFI=0.840 CI=0.0326 | B2 BIC=385 CFI=0.953 CI=0.0344 | B3 BIC=684 CFI=0.929 CI=0.0316
+# 2026-09-26 23:36
+NOV[sanitasi_diare] N1 SD-Hybrid uji=4927 skeleton=37 (B2 naif 44) delta_bar=2.77 n_eff=3823 sisi=25 SHD=30 RD=+0.0000 [+0.0000,+0.0000]
+NOV[sanitasi_diare] banding: terbaik=B2 PC + tier + IDA (peringkat 1.67) | B1 BIC_SEM=2.37e+03 CFI=0.84 lebar_CI=0.0326 | B2 BIC_SEM=385 CFI=0.953 lebar_CI=0.0344 | B3 BIC_SEM=684 CFI=0.929 lebar_CI=0.0316 | N1 BIC_SEM=1.31e+03 CFI=0.892 lebar_CI=nan
+NOV[sanitasi_diare] tipe I naif/terkoreksi: biner 2×2, S=∅ 0.130/0.040; 3×3 (df 4), S=∅ 0.140/0.085; biner 2×2, S={z} 0.130/0.040; kontinu, S=∅ 0.225/0.055; kontinu, S={z} 0.225/0.055
+# 2026-09-26 23:37
+NOV[sanitasi_diare] N2 TO-DAG ruang urutan=20,736 (tanpa tier 1.31e+12) skor lokal=481 F=-189095.3 (B3 -189171.7) sisi=30 SHD=33 detik=0.56 memori=6.1MB RD=-0.0202
+NOV[sanitasi_diare] banding: terbaik=B3 BN berbasis skor (peringkat 1.67) | B1 detik_penemuan=0.0107 memori_MB=5.87 BIC_SEM=2.37e+03 | B2 detik_penemuan=6.1 memori_MB=3.91 BIC_SEM=385 | B3 detik_penemuan=0.685 memori_MB=2.99 BIC_SEM=684 | N2 detik_penemuan=0.561 memori_MB=6.06 BIC_SEM=736
+# 2026-09-26 23:38
+NOV[sanitasi_diare] N3 MLC-DAG node 25->10 dibuang=3 sisi=29 detik=2.69 (tanpa konstruk 3.82) memori=3.7MB (3.7MB) RD=-0.0320 (tanpa konstruk -0.0298)
+NOV[sanitasi_diare] banding: terbaik=B3 BN berbasis skor (peringkat 1.00) | B1 detik_penemuan=0.0107 memori_MB=5.87 lebar_CI=0.0326 | B2 detik_penemuan=6.1 memori_MB=3.91 lebar_CI=0.0344 | B3 detik_penemuan=0.685 memori_MB=2.99 lebar_CI=0.0316 | N3 detik_penemuan=2.69 memori_MB=3.74 lebar_CI=0.0316 | N3- detik_penemuan=3.82 memori_MB=3.74 lebar_CI=0.0328
+# 2026-09-27 00:59
+NOV[sanitasi_diare] N1 SD-Hybrid uji=4927 skeleton=37 (B2 naif 44) delta_bar=2.77 n_eff=3823 sisi=17 SHD=24 RD=+0.0000 [+0.0000,+0.0000]
+NOV[sanitasi_diare] banding: terbaik=B2 PC + tier + IDA (peringkat 1.67) | B1 BIC_SEM=2.37e+03 CFI=0.84 lebar_CI=0.0326 | B2 BIC_SEM=385 CFI=0.953 lebar_CI=0.0344 | B3 BIC_SEM=684 CFI=0.929 lebar_CI=0.0316 | N1 BIC_SEM=2.26e+03 CFI=0.835 lebar_CI=nan
+NOV[sanitasi_diare] uji (naif/orde1/orde2): biner 2×2, S=∅ efek=0.0: 0.130/0.040/0.040; 3×3 (df 4), S=∅ efek=0.0: 0.140/0.070/0.050; biner 2×2, S={z} efek=0.0: 0.130/0.040/0.040; kontinu, S=∅ efek=0.0: 0.225/0.055/0.055; kontinu, S={z} efek=0.0: 0.225/0.055/0.055; biner 2×2, S=∅ efek=0.05: 0.940/0.750/0.750; 3×3 (df 4), S=∅ efek=0.05: 0.970/0.795/0.785; biner 2×2, S={z} efek=0.05: 0.925/0.700/0.695; kontinu, S=∅ efek=0.05: 1.000/0.915/0.915; kontinu, S={z} efek=0.05: 1.000/0.915/0.915; biner 2×2, S=∅ efek=0.1: 1.000/1.000/1.000; 3×3 (df 4), S=∅ efek=0.1: 1.000/1.000/1.000; biner 2×2, S={z} efek=0.1: 1.000/1.000/1.000; kontinu, S=∅ efek=0.1: 1.000/1.000/1.000; kontinu, S={z} efek=0.1: 1.000/1.000/1.000
+NOV[pbi_diare] N1 SD-Hybrid uji=1911 skeleton=28 (B2 naif 31) delta_bar=1.94 n_eff=5549 sisi=15 SHD=24 RD=+0.0000 [+0.0000,+0.0000]
+NOV[pbi_diare] banding: terbaik=B2 PC + tier + IDA (peringkat 1.00) | B1 BIC_SEM=142 CFI=0.964 lebar_CI=0.0358 | B2 BIC_SEM=-341 CFI=0.986 lebar_CI=0.0352 | B3 BIC_SEM=38.4 CFI=0.956 lebar_CI=nan | N1 BIC_SEM=467 CFI=0.926 lebar_CI=nan
+NOV[pbi_diare] uji (naif/orde1/orde2): biner 2×2, S=∅ efek=0.0: 0.135/0.045/0.045; 3×3 (df 4), S=∅ efek=0.0: 0.120/0.045/0.045; biner 2×2, S={z} efek=0.0: 0.125/0.045/0.045; kontinu, S=∅ efek=0.0: 0.180/0.040/0.040; kontinu, S={z} efek=0.0: 0.180/0.040/0.040; biner 2×2, S=∅ efek=0.05: 0.920/0.735/0.735; 3×3 (df 4), S=∅ efek=0.05: 0.945/0.715/0.715; biner 2×2, S={z} efek=0.05: 0.890/0.680/0.680; kontinu, S=∅ efek=0.05: 0.995/0.910/0.910; kontinu, S={z} efek=0.05: 0.995/0.910/0.910; biner 2×2, S=∅ efek=0.1: 1.000/1.000/1.000; 3×3 (df 4), S=∅ efek=0.1: 1.000/1.000/1.000; biner 2×2, S={z} efek=0.1: 1.000/1.000/1.000; kontinu, S=∅ efek=0.1: 1.000/1.000/1.000; kontinu, S={z} efek=0.1: 1.000/1.000/1.000
+NOV[pbi_neonatal] N1 SD-Hybrid uji=926 skeleton=21 (B2 naif 26) delta_bar=1.28 n_eff=3516 sisi=12 SHD=24 RD=+0.0000 [+0.0000,+0.0000]
+NOV[pbi_neonatal] banding: terbaik=B2 PC + tier + IDA (peringkat 1.33) | B1 BIC_SEM=1.09e+03 CFI=0.839 lebar_CI=0.00962 | B2 BIC_SEM=-19.6 CFI=0.96 lebar_CI=0.0122 | B3 BIC_SEM=208 CFI=0.924 lebar_CI=nan | N1 BIC_SEM=644 CFI=0.868 lebar_CI=nan
+NOV[pbi_neonatal] uji (naif/orde1/orde2): biner 2×2, S=∅ efek=0.0: 0.070/0.030/0.030; 3×3 (df 4), S=∅ efek=0.0: 0.065/0.065/0.065; biner 2×2, S={z} efek=0.0: 0.080/0.035/0.035; kontinu, S=∅ efek=0.0: 0.120/0.020/0.020; kontinu, S={z} efek=0.0: 0.120/0.020/0.020; biner 2×2, S=∅ efek=0.05: 0.730/0.430/0.430; 3×3 (df 4), S=∅ efek=0.05: 0.705/0.415/0.415; biner 2×2, S={z} efek=0.05: 0.620/0.380/0.380; kontinu, S=∅ efek=0.05: 0.945/0.755/0.755; kontinu, S={z} efek=0.05: 0.945/0.750/0.750; biner 2×2, S=∅ efek=0.1: 1.000/0.955/0.955; 3×3 (df 4), S=∅ efek=0.1: 1.000/0.985/0.985; biner 2×2, S={z} efek=0.1: 0.995/0.920/0.920; kontinu, S=∅ efek=0.1: 1.000/1.000/1.000; kontinu, S={z} efek=0.1: 1.000/1.000/1.000
+NOV[fasilitas_neonatal] N1 SD-Hybrid uji=3415 skeleton=34 (B2 naif 36) delta_bar=2.68 n_eff=4257 sisi=20 SHD=31 RD=+0.0000 [+0.0000,+0.0000]
+NOV[fasilitas_neonatal] banding: terbaik=B2 PC + tier + IDA (peringkat 1.33) | B1 BIC_SEM=5.86e+03 CFI=0.815 lebar_CI=0.00905 | B2 BIC_SEM=1.34e+03 CFI=0.943 lebar_CI=0.00935 | B3 BIC_SEM=1.6e+03 CFI=0.933 lebar_CI=nan | N1 BIC_SEM=3.57e+03 CFI=0.873 lebar_CI=nan
+NOV[fasilitas_neonatal] uji (naif/orde1/orde2): biner 2×2, S=∅ efek=0.0: 0.155/0.050/0.050; 3×3 (df 4), S=∅ efek=0.0: 0.140/0.030/0.025; biner 2×2, S={z} efek=0.0: 0.105/0.075/0.070; kontinu, S=∅ efek=0.0: 0.245/0.050/0.050; kontinu, S={z} efek=0.0: 0.245/0.050/0.050; biner 2×2, S=∅ efek=0.05: 0.955/0.785/0.785; 3×3 (df 4), S=∅ efek=0.05: 0.975/0.850/0.845; biner 2×2, S={z} efek=0.05: 0.925/0.755/0.755; kontinu, S=∅ efek=0.05: 1.000/0.960/0.960; kontinu, S={z} efek=0.05: 1.000/0.960/0.960; biner 2×2, S=∅ efek=0.1: 1.000/1.000/1.000; 3×3 (df 4), S=∅ efek=0.1: 1.000/1.000/1.000; biner 2×2, S={z} efek=0.1: 1.000/1.000/1.000; kontinu, S=∅ efek=0.1: 1.000/1.000/1.000; kontinu, S={z} efek=0.1: 1.000/1.000/1.000
+# 2026-09-27 01:00
+NOV[sanitasi_diare] N2 TO-DAG ruang urutan=20,736 (tanpa tier 1.31e+12) skor lokal=340 F=-45076.2 (B3 -45308.6) sisi=20 SHD=25 detik=0.88 memori=6.1MB RD=+0.0000
+NOV[sanitasi_diare] banding: terbaik=B3 BN berbasis skor (peringkat 1.33) | B1 detik_penemuan=0.0107 memori_MB=5.87 BIC_SEM=2.37e+03 | B2 detik_penemuan=6.1 memori_MB=3.91 BIC_SEM=385 | B3 detik_penemuan=0.685 memori_MB=2.99 BIC_SEM=684 | N2 detik_penemuan=0.882 memori_MB=6.05 BIC_SEM=1.76e+03
+NOV[pbi_diare] N2 TO-DAG ruang urutan=51,840 (tanpa tier 1.31e+12) skor lokal=297 F=-66219.2 (B3 -66581.2) sisi=15 SHD=24 detik=0.83 memori=6.1MB RD=+0.0000
+NOV[pbi_diare] banding: terbaik=B3 BN berbasis skor (peringkat 1.33) | B1 detik_penemuan=0.0117 memori_MB=5.96 BIC_SEM=142 | B2 detik_penemuan=2.24 memori_MB=3.98 BIC_SEM=-341 | B3 detik_penemuan=0.574 memori_MB=2.94 BIC_SEM=38.4 | N2 detik_penemuan=0.835 memori_MB=6.15 BIC_SEM=467
+NOV[pbi_neonatal] N2 TO-DAG ruang urutan=4,320 (tanpa tier 6.23e+09) skor lokal=275 F=-34398.2 (B3 -34527.3) sisi=15 SHD=25 detik=0.51 memori=2.3MB RD=+0.0000
+NOV[pbi_neonatal] banding: terbaik=B3 BN berbasis skor (peringkat 1.33) | B1 detik_penemuan=0.00834 memori_MB=2.19 BIC_SEM=1.09e+03 | B2 detik_penemuan=1.17 memori_MB=1.46 BIC_SEM=-19.6 | B3 detik_penemuan=0.306 memori_MB=1.25 BIC_SEM=208 | N2 detik_penemuan=0.514 memori_MB=2.29 BIC_SEM=367
+NOV[fasilitas_neonatal] N2 TO-DAG ruang urutan=172,800 (tanpa tier 2.09e+13) skor lokal=495 F=-49992.3 (B3 -51067.5) sisi=22 SHD=33 detik=1.16 memori=7.0MB RD=+0.0000
+NOV[fasilitas_neonatal] banding: terbaik=B3 BN berbasis skor (peringkat 1.33) | B1 detik_penemuan=0.0134 memori_MB=6.78 BIC_SEM=5.86e+03 | B2 detik_penemuan=4.18 memori_MB=4.52 BIC_SEM=1.34e+03 | B3 detik_penemuan=0.89 memori_MB=3.3 BIC_SEM=1.6e+03 | N2 detik_penemuan=1.16 memori_MB=6.97 BIC_SEM=2.03e+03
+# 2026-09-27 01:01
+NOV[sanitasi_diare] N3 MLC-DAG v2 node 33->20 reflektif=['eta_pendidikan'] komposit=['eta_ekonomi', 'eta_akses'] dipecah=['eta_kebersihan'] omega={'eta_pendidikan': 0.89, 'eta_kebersihan': 0.32} sisi=77 detik=6.52 (tanpa konstruk 10.19) RD=-0.0192 (tanpa konstruk +0.0000)
+NOV[sanitasi_diare] banding: terbaik=B3 BN berbasis skor (peringkat 1.00) | B1 detik_penemuan=0.0107 memori_MB=5.87 lebar_CI=0.0326 | B2 detik_penemuan=6.1 memori_MB=3.91 lebar_CI=0.0344 | B3 detik_penemuan=0.685 memori_MB=2.99 lebar_CI=0.0316 | N3 detik_penemuan=6.52 memori_MB=4.91 lebar_CI=0.0379 | N3- detik_penemuan=10.2 memori_MB=6.38 lebar_CI=nan
+NOV[pbi_diare] N3 MLC-DAG v2 node 33->20 reflektif=['eta_pendidikan'] komposit=['eta_ekonomi', 'eta_akses'] dipecah=['eta_kebersihan'] omega={'eta_pendidikan': 0.89, 'eta_kebersihan': 0.32} sisi=77 detik=6.62 (tanpa konstruk 8.71) RD=+0.0000 (tanpa konstruk +0.0000)
+NOV[pbi_diare] banding: terbaik=B3 BN berbasis skor (peringkat 1.33) | B1 detik_penemuan=0.0117 memori_MB=5.96 lebar_CI=0.0358 | B2 detik_penemuan=2.24 memori_MB=3.98 lebar_CI=0.0352 | B3 detik_penemuan=0.574 memori_MB=2.94 lebar_CI=nan | N3 detik_penemuan=6.62 memori_MB=5.2 lebar_CI=nan | N3- detik_penemuan=8.71 memori_MB=5.45 lebar_CI=nan
+NOV[pbi_neonatal] N3 MLC-DAG v2 node 31->18 reflektif=['eta_pendidikan'] komposit=['eta_ekonomi', 'eta_akses'] dipecah=['eta_kebersihan'] omega={'eta_pendidikan': 0.9, 'eta_kebersihan': 0.34} sisi=69 detik=5.14 (tanpa konstruk 8.25) RD=+0.0000 (tanpa konstruk +0.0000)
+NOV[pbi_neonatal] banding: terbaik=B3 BN berbasis skor (peringkat 1.33) | B1 detik_penemuan=0.00834 memori_MB=2.19 lebar_CI=0.00962 | B2 detik_penemuan=1.17 memori_MB=1.46 lebar_CI=0.0122 | B3 detik_penemuan=0.306 memori_MB=1.25 lebar_CI=nan | N3 detik_penemuan=5.14 memori_MB=1.98 lebar_CI=nan | N3- detik_penemuan=8.25 memori_MB=6.24 lebar_CI=nan
+NOV[fasilitas_neonatal] N3 MLC-DAG v2 node 31->18 reflektif=['eta_pendidikan'] komposit=['eta_ekonomi', 'eta_akses'] dipecah=['eta_kebersihan'] omega={'eta_pendidikan': 0.9, 'eta_kebersihan': 0.33} sisi=68 detik=5.45 (tanpa konstruk 8.26) RD=+0.0010 (tanpa konstruk +0.0000)
+NOV[fasilitas_neonatal] banding: terbaik=B2 PC + tier + IDA (peringkat 1.67) | B1 detik_penemuan=0.0134 memori_MB=6.78 lebar_CI=0.00905 | B2 detik_penemuan=4.18 memori_MB=4.52 lebar_CI=0.00935 | B3 detik_penemuan=0.89 memori_MB=3.3 lebar_CI=nan | N3 detik_penemuan=5.45 memori_MB=4.82 lebar_CI=0.00964 | N3- detik_penemuan=8.26 memori_MB=5.2 lebar_CI=nan
+# 2026-09-27 01:13
+SOL[sanitasi_diare] SOL-DAG: node=20 sisi=44 skeleton=49 RD=+0.0000 [+0.0000,+0.0000] detik=58.87 memori=3.8MB
+SOL[sanitasi_diare] SOL tanpa MLC: node=15 sisi=30 skeleton=32 RD=+0.0000 [+0.0000,+0.0000] detik=13.41 memori=4.1MB
+SOL[sanitasi_diare] SOL tanpa koreksi desain: node=20 sisi=58 skeleton=69 RD=+0.0000 [+0.0000,+0.0000] detik=31.30 memori=2.5MB
+SOL[sanitasi_diare] SOL tanpa tier: node=20 sisi=44 skeleton=49 RD=+0.0000 [+0.0000,+0.0000] detik=54.61 memori=3.8MB
+SOL[sanitasi_diare] SOL tanpa pemisahan sampel: node=20 sisi=59 skeleton=74 RD=+0.0000 [+0.0000,+0.0000] detik=134.56 memori=7.7MB
+SOL[pbi_diare] SOL-DAG: node=20 sisi=43 skeleton=47 RD=+0.0000 [+0.0000,+0.0000] detik=34.60 memori=3.8MB
+SOL[pbi_diare] SOL tanpa MLC: node=15 sisi=23 skeleton=25 RD=+0.0000 [+0.0000,+0.0000] detik=4.34 memori=4.2MB
+SOL[pbi_diare] SOL tanpa koreksi desain: node=20 sisi=56 skeleton=65 RD=+0.0000 [+0.0000,+0.0000] detik=23.11 memori=2.6MB
+SOL[pbi_diare] SOL tanpa tier: node=20 sisi=44 skeleton=47 RD=+0.0000 [+0.0000,+0.0000] detik=27.84 memori=4.3MB
+SOL[pbi_diare] SOL tanpa pemisahan sampel: node=20 sisi=54 skeleton=62 RD=+0.0000 [+0.0000,+0.0000] detik=84.45 memori=7.7MB
+SOL[pbi_neonatal] SOL-DAG: node=18 sisi=32 skeleton=33 RD=+0.0000 [+0.0000,+0.0000] detik=14.01 memori=1.6MB
+SOL[pbi_neonatal] SOL tanpa MLC: node=13 sisi=17 skeleton=17 RD=+0.0000 [+0.0000,+0.0000] detik=1.59 memori=1.6MB
+SOL[pbi_neonatal] SOL tanpa koreksi desain: node=18 sisi=37 skeleton=40 RD=+0.0000 [+0.0000,+0.0000] detik=11.69 memori=1.0MB
+SOL[pbi_neonatal] SOL tanpa tier: node=18 sisi=33 skeleton=33 RD=+0.0000 [+0.0000,+0.0000] detik=11.86 memori=1.7MB
+SOL[pbi_neonatal] SOL tanpa pemisahan sampel: node=18 sisi=42 skeleton=46 RD=+0.0000 [+0.0000,+0.0000] detik=20.23 memori=3.1MB
+SOL[fasilitas_neonatal] SOL-DAG: node=18 sisi=42 skeleton=46 RD=+0.0000 [+0.0000,+0.0000] detik=34.33 memori=3.5MB
+SOL[fasilitas_neonatal] SOL tanpa MLC: node=16 sisi=26 skeleton=29 RD=+0.0000 [+0.0000,+0.0000] detik=10.59 memori=4.7MB
+SOL[fasilitas_neonatal] SOL tanpa koreksi desain: node=18 sisi=48 skeleton=55 RD=+0.0000 [+0.0000,+0.0000] detik=31.32 memori=2.4MB
+SOL[fasilitas_neonatal] SOL tanpa tier: node=18 sisi=41 skeleton=46 RD=+0.0000 [+0.0000,+0.0000] detik=34.49 memori=3.5MB
+SOL[fasilitas_neonatal] SOL tanpa pemisahan sampel: node=18 sisi=48 skeleton=53 RD=+0.0000 [+0.0000,+0.0000] detik=56.63 memori=7.2MB
+# 2026-09-27 04:32
+BENCH[sanitasi_diare] 200 tugas (100 replikasi × 2 skenario), gagal=0, 220.5 menit
+BENCH[sanitasi_diare] H1 Akurasi: didukung sebagian (6/27)
+BENCH[sanitasi_diare] H2 Kecepatan: didukung sebagian (3/8)
+BENCH[sanitasi_diare] H3 Memori: didukung sebagian (6/8)
+BENCH[sanitasi_diare] H4 Konvergensi & stabilitas: didukung sebagian (4/8)
+BENCH[sanitasi_diare] H5 Validitas koreksi desain: tidak didukung (0/2)
+# 2026-09-27 06:55
+PREP: 17848 kelahiran, 63 variabel, 1967 klaster, 34 provinsi
+PREP: PCA kekayaan non-WASH menjelaskan 22.0% varians; RT tanpa pasangan HR = 0
+# 2026-09-27 06:55
+EDA: kosong terbanyak jarak_sumur_septik_m=71%, Y_mati_bayi=19%, M_anc4=14%
+EDA: T_pbi 0.297 [0.285-0.309] n=17846
+EDA: T_sanitasi 0.743 [0.728-0.758] n=17212
+EDA: T_fasilitas 0.794 [0.780-0.808] n=17769
+EDA: Y_diare 0.142 [0.134-0.149] n=17155
+EDA: Y_ispa 0.042 [0.038-0.046] n=17168
+EDA: Y_mati_neonatal 0.015 [0.013-0.018] n=17724
+EDA: Y_mati_bayi 0.023 [0.020-0.026] n=14383
+EDA: T_pbi kovariat SMD>0.1=23; terbesar jkn_nonpbi=-0.97, kuintil_kekayaan_nonwash=-0.59, skor_kekayaan_nonwash=-0.56
+EDA: T_sanitasi kovariat SMD>0.1=28; terbesar sanitasi_klaster_lo=+1.21, skor_kekayaan_nonwash=+1.00, kuintil_kekayaan_nonwash=+0.99
+EDA: T_fasilitas kovariat SMD>0.1=26; terbesar fasilitas_klaster_lo=+1.71, skor_kekayaan_nonwash=+0.93, kuintil_kekayaan_nonwash=+0.88
+# 2026-09-27 06:55
+KAUSAL[sanitasi_diare] T_sanitasi->Y_diare n=16232 |Z|=13 identifikasi=YA mediator=-
+KAUSAL[sanitasi_diare] AIPW RD=-0.0338 [-0.0574,-0.0117] RR=0.79 [0.69,0.92] | gcomp RD=-0.0194 IPW RD=-0.0362
+KAUSAL[sanitasi_diare] E-value titik=1.83 CI=1.39 | SMD maks setelah IPW=0.11 | boot sah=200/200
+# 2026-09-27 06:57
+BASE[sanitasi_diare] T_sanitasi->Y_diare n=16232 p=15 boot=100
+BASE[sanitasi_diare] B1[T_sanitasi->Y_diare] RMSEA=0.079 CFI=0.840 SRMR=0.069 chi2=2915.7 df=61 (n_eff=7515)
+BASE[sanitasi_diare] B1 linear: total=-0.0203 langsung=-0.0203 tak langsung=+0.0000 | probit RD=-0.0194 | backdoor g-komp RD=-0.0194 [-0.0365,-0.0039]
+BASE[sanitasi_diare] B2 uji=7798 sisi berarah=40 tak berarah=4 SHD vs pakar=39 | IDA 1 himpunan, RD [-0.0185,-0.0185], min|RD|=-0.0185
+BASE[sanitasi_diare] B3 skor=bic langkah=28 sisi=28 SHD vs pakar=31 skor akhir=-192751.6 (pakar -673067.0) | RD=-0.0192 [-0.0323,-0.0007]
+BASE[sanitasi_diare] TERBAIK: B2 PC + tier + IDA (peringkat rata-rata 1.67; unggul pada BIC_SEM, CFI) RD=-0.0185 | B1 BIC=2371 CFI=0.840 CI=0.0326 | B2 BIC=385 CFI=0.953 CI=0.0344 | B3 BIC=684 CFI=0.929 CI=0.0316
+# 2026-09-27 06:58
+NOV[sanitasi_diare] N1 SD-Hybrid uji=4927 skeleton=37 (B2 naif 44) delta_bar=2.77 n_eff=3823 sisi=17 SHD=24 RD=+0.0000 [+0.0000,+0.0000]
+NOV[sanitasi_diare] banding: terbaik=B2 PC + tier + IDA (peringkat 1.67) | B1 BIC_SEM=2.37e+03 CFI=0.84 lebar_CI=0.0326 | B2 BIC_SEM=385 CFI=0.953 lebar_CI=0.0344 | B3 BIC_SEM=684 CFI=0.929 lebar_CI=0.0316 | N1 BIC_SEM=2.26e+03 CFI=0.835 lebar_CI=nan
+NOV[sanitasi_diare] uji (naif/orde1/orde2): biner 2×2, S=∅ efek=0.0: 0.130/0.040/0.040; 3×3 (df 4), S=∅ efek=0.0: 0.140/0.070/0.050; biner 2×2, S={z} efek=0.0: 0.130/0.040/0.040; kontinu, S=∅ efek=0.0: 0.225/0.055/0.055; kontinu, S={z} efek=0.0: 0.225/0.055/0.055; biner 2×2, S=∅ efek=0.05: 0.940/0.750/0.750; 3×3 (df 4), S=∅ efek=0.05: 0.970/0.795/0.785; biner 2×2, S={z} efek=0.05: 0.925/0.700/0.695; kontinu, S=∅ efek=0.05: 1.000/0.915/0.915; kontinu, S={z} efek=0.05: 1.000/0.915/0.915; biner 2×2, S=∅ efek=0.1: 1.000/1.000/1.000; 3×3 (df 4), S=∅ efek=0.1: 1.000/1.000/1.000; biner 2×2, S={z} efek=0.1: 1.000/1.000/1.000; kontinu, S=∅ efek=0.1: 1.000/1.000/1.000; kontinu, S={z} efek=0.1: 1.000/1.000/1.000
+# 2026-09-27 07:00
+NOV[sanitasi_diare] N2 TO-DAG ruang urutan=20,736 (tanpa tier 1.31e+12) skor lokal=340 F=-45076.2 (B3 -45308.6) sisi=20 SHD=25 detik=0.39 memori=6.1MB RD=+0.0000
+NOV[sanitasi_diare] banding: terbaik=B3 BN berbasis skor (peringkat 1.67) | B1 detik_penemuan=0.00953 memori_MB=5.86 BIC_SEM=2.37e+03 | B2 detik_penemuan=6.73 memori_MB=3.91 BIC_SEM=385 | B3 detik_penemuan=0.679 memori_MB=2.99 BIC_SEM=684 | N2 detik_penemuan=0.385 memori_MB=6.06 BIC_SEM=1.76e+03
+# 2026-09-27 07:00
+NOV[sanitasi_diare] N3 MLC-DAG v2 node 33->20 reflektif=['eta_pendidikan'] komposit=['eta_ekonomi', 'eta_akses'] dipecah=['eta_kebersihan'] omega={'eta_pendidikan': 0.89, 'eta_kebersihan': 0.32} sisi=77 detik=3.96 (tanpa konstruk 6.37) RD=-0.0192 (tanpa konstruk +0.0000)
+NOV[sanitasi_diare] banding: terbaik=B3 BN berbasis skor (peringkat 1.00) | B1 detik_penemuan=0.00953 memori_MB=5.86 lebar_CI=0.0326 | B2 detik_penemuan=6.73 memori_MB=3.91 lebar_CI=0.0344 | B3 detik_penemuan=0.679 memori_MB=2.99 lebar_CI=0.0316 | N3 detik_penemuan=3.96 memori_MB=4.91 lebar_CI=0.0379 | N3- detik_penemuan=6.37 memori_MB=6.39 lebar_CI=nan
+# 2026-09-27 07:03
+SOL[sanitasi_diare] SOL-DAG: node=20 sisi=44 skeleton=49 RD=+0.0000 [+0.0000,+0.0000] detik=29.20 memori=3.8MB
+SOL[sanitasi_diare] SOL tanpa MLC: node=15 sisi=30 skeleton=32 RD=+0.0000 [+0.0000,+0.0000] detik=7.36 memori=4.1MB
+SOL[sanitasi_diare] SOL tanpa koreksi desain: node=20 sisi=58 skeleton=69 RD=+0.0000 [+0.0000,+0.0000] detik=18.61 memori=2.5MB
+SOL[sanitasi_diare] SOL tanpa tier: node=20 sisi=44 skeleton=49 RD=+0.0000 [+0.0000,+0.0000] detik=25.15 memori=3.8MB
+SOL[sanitasi_diare] SOL tanpa pemisahan sampel: node=20 sisi=59 skeleton=74 RD=+0.0000 [+0.0000,+0.0000] detik=69.59 memori=7.7MB
+# 2026-09-27 07:46
+SOLv2[sanitasi_diare] SOL v2 (desain): node=15 sisi=42+0 RD=-0.0319 [-0.0540,-0.0098] induk T=sanitasi_klaster_lo, pend_ibu_thn, org_per_kamar, skor_kekayaan_nonwash, cuci_tangan_dasar 39.1s 25.7MB
+SOLv2[sanitasi_diare] SOL v2 naif: node=15 sisi=44+2 RD=-0.0324 [-0.0545,-0.0102] induk T=sanitasi_klaster_lo, pend_ibu_thn, org_per_kamar, skor_kekayaan_nonwash, air_layak, cuci_tangan_dasar 74.0s 27.9MB
+SOLv2[sanitasi_diare] SOL v2 + MLC: node=20 sisi=86+0 RD=-0.0302 [-0.0520,-0.0084] induk T=eta_pendidikan, eta_ekonomi, T_pbi, umur_ibu, sanitasi_klaster_lo, org_per_kamar 264.9s 34.6MB
+SOLv2[pbi_diare] SOL v2 (desain): node=15 sisi=34+1 RD=+0.0267 [+0.0094,+0.0440] induk T=pbi_pct_prov, ibu_bekerja, jml_art, pend_ibu_thn, skor_kekayaan_nonwash, T_sanitasi 16.3s 26.0MB
+SOLv2[pbi_diare] SOL v2 naif: node=15 sisi=39+0 RD=+0.0267 [+0.0094,+0.0440] induk T=pbi_pct_prov, ibu_bekerja, jml_art, pend_ibu_thn, skor_kekayaan_nonwash, T_sanitasi 29.9s 26.0MB
+SOLv2[pbi_diare] SOL v2 + MLC: node=20 sisi=74+0 RD=+0.0276 [+0.0095,+0.0456] induk T=eta_pendidikan, eta_ekonomi, urutan_lahir, pbi_pct_prov, jml_art 174.5s 30.4MB
+SOLv2[pbi_neonatal] SOL v2 (desain): node=13 sisi=23+1 RD=-0.0015 [-0.0077,+0.0047] induk T=pbi_pct_prov, jml_art, pend_ibu_thn, skor_kekayaan_nonwash 6.5s 11.3MB
+SOLv2[pbi_neonatal] SOL v2 naif: node=13 sisi=27+1 RD=-0.0015 [-0.0077,+0.0047] induk T=pbi_pct_prov, jml_art, pend_ibu_thn, skor_kekayaan_nonwash 13.0s 11.3MB
+SOLv2[pbi_neonatal] SOL v2 + MLC: node=18 sisi=56+0 RD=-0.0014 [-0.0081,+0.0054] induk T=eta_pendidikan, eta_ekonomi, pbi_pct_prov, jml_art 60.0s 13.6MB
+SOLv2[fasilitas_neonatal] SOL v2 (desain): node=16 sisi=39+0 RD=-0.0020 [-0.0101,+0.0060] induk T=fasilitas_klaster_lo, pend_ibu_thn, urutan_lahir, skor_kekayaan_nonwash 48.9s 29.3MB
+SOLv2[fasilitas_neonatal] SOL v2 naif: node=16 sisi=42+0 RD=-0.0020 [-0.0101,+0.0060] induk T=fasilitas_klaster_lo, pend_ibu_thn, urutan_lahir, skor_kekayaan_nonwash 52.0s 29.3MB
+SOLv2[fasilitas_neonatal] SOL v2 + MLC: node=18 sisi=61+0 RD=-0.0019 [-0.0100,+0.0061] induk T=eta_pendidikan, eta_ekonomi, cuci_tangan_dasar, air_layak, T_sanitasi, urutan_lahir, perdesaan, fasilitas_klaster_lo 153.8s 46.6MB
+# 2026-09-27 12:01
+BENCH[sanitasi_diare] 200 tugas (100 replikasi × 2 skenario), gagal=0, 238.4 menit
+BENCH[sanitasi_diare] H1 Akurasi: didukung sebagian (6/27)
+BENCH[sanitasi_diare] H2 Kecepatan: didukung sebagian (3/8)
+BENCH[sanitasi_diare] H3 Memori: didukung sebagian (6/8)
+BENCH[sanitasi_diare] H4 Konvergensi & stabilitas: didukung sebagian (4/8)
+BENCH[sanitasi_diare] H5 Validitas koreksi desain: tidak didukung (0/2)
+# 2026-09-27 12:21
+PREP: 17848 kelahiran, 63 variabel, 1967 klaster, 34 provinsi
+PREP: PCA kekayaan non-WASH menjelaskan 22.0% varians; RT tanpa pasangan HR = 0
+# 2026-09-27 12:21
+EDA: kosong terbanyak jarak_sumur_septik_m=71%, Y_mati_bayi=19%, M_anc4=14%
+EDA: T_pbi 0.297 [0.285-0.309] n=17846
+EDA: T_sanitasi 0.743 [0.728-0.758] n=17212
+EDA: T_fasilitas 0.794 [0.780-0.808] n=17769
+EDA: Y_diare 0.142 [0.134-0.149] n=17155
+EDA: Y_ispa 0.042 [0.038-0.046] n=17168
+EDA: Y_mati_neonatal 0.015 [0.013-0.018] n=17724
+EDA: Y_mati_bayi 0.023 [0.020-0.026] n=14383
+EDA: T_pbi kovariat SMD>0.1=23; terbesar jkn_nonpbi=-0.97, kuintil_kekayaan_nonwash=-0.59, skor_kekayaan_nonwash=-0.56
+EDA: T_sanitasi kovariat SMD>0.1=28; terbesar sanitasi_klaster_lo=+1.21, skor_kekayaan_nonwash=+1.00, kuintil_kekayaan_nonwash=+0.99
+EDA: T_fasilitas kovariat SMD>0.1=26; terbesar fasilitas_klaster_lo=+1.71, skor_kekayaan_nonwash=+0.93, kuintil_kekayaan_nonwash=+0.88
+# 2026-09-27 12:24
+EDA: kosong terbanyak jarak_sumur_septik_m=71%, Y_mati_bayi=19%, M_anc4=14%
+EDA: T_pbi 0.297 [0.285-0.309] n=17846
+EDA: T_sanitasi 0.743 [0.728-0.758] n=17212
+EDA: T_fasilitas 0.794 [0.780-0.808] n=17769
+EDA: Y_diare 0.142 [0.134-0.149] n=17155
+EDA: Y_ispa 0.042 [0.038-0.046] n=17168
+EDA: Y_mati_neonatal 0.015 [0.013-0.018] n=17724
+EDA: Y_mati_bayi 0.023 [0.020-0.026] n=14383
+EDA: T_pbi kovariat SMD>0.1=23; terbesar jkn_nonpbi=-0.97, kuintil_kekayaan_nonwash=-0.59, skor_kekayaan_nonwash=-0.56
+EDA: T_sanitasi kovariat SMD>0.1=28; terbesar sanitasi_klaster_lo=+1.21, skor_kekayaan_nonwash=+1.00, kuintil_kekayaan_nonwash=+0.99
+EDA: T_fasilitas kovariat SMD>0.1=26; terbesar fasilitas_klaster_lo=+1.71, skor_kekayaan_nonwash=+0.93, kuintil_kekayaan_nonwash=+0.88
+# 2026-09-27 12:25
+KAUSAL[sanitasi_diare] T_sanitasi->Y_diare n=16232 |Z|=13 identifikasi=YA mediator=-
+KAUSAL[sanitasi_diare] AIPW RD=-0.0338 [-0.0574,-0.0117] RR=0.79 [0.69,0.92] | gcomp RD=-0.0194 IPW RD=-0.0362
+KAUSAL[sanitasi_diare] E-value titik=1.83 CI=1.39 | SMD maks setelah IPW=0.11 | boot sah=200/200
+# 2026-09-27 12:26
+BASE[sanitasi_diare] T_sanitasi->Y_diare n=16232 p=15 boot=100
+BASE[sanitasi_diare] B1[T_sanitasi->Y_diare] RMSEA=0.079 CFI=0.840 SRMR=0.069 chi2=2915.7 df=61 (n_eff=7515)
+BASE[sanitasi_diare] B1 linear: total=-0.0203 langsung=-0.0203 tak langsung=+0.0000 | probit RD=-0.0194 | backdoor g-komp RD=-0.0194 [-0.0365,-0.0039]
+BASE[sanitasi_diare] B2 uji=7798 sisi berarah=40 tak berarah=4 SHD vs pakar=39 | IDA 1 himpunan, RD [-0.0185,-0.0185], min|RD|=-0.0185
+BASE[sanitasi_diare] B3 skor=bic langkah=28 sisi=28 SHD vs pakar=31 skor akhir=-192751.6 (pakar -673067.0) | RD=-0.0192 [-0.0323,-0.0007]
+BASE[sanitasi_diare] TERBAIK: B2 PC + tier + IDA (peringkat rata-rata 1.67; unggul pada BIC_SEM, CFI) RD=-0.0185 | B1 BIC=2371 CFI=0.840 CI=0.0326 | B2 BIC=385 CFI=0.953 CI=0.0344 | B3 BIC=684 CFI=0.929 CI=0.0316
+# 2026-09-27 12:28
+NOV[sanitasi_diare] N1 SD-Hybrid uji=4927 skeleton=37 (B2 naif 44) delta_bar=2.77 n_eff=3823 sisi=17 SHD=24 RD=+0.0000 [+0.0000,+0.0000]
+NOV[sanitasi_diare] banding: terbaik=B2 PC + tier + IDA (peringkat 1.67) | B1 BIC_SEM=2.37e+03 CFI=0.84 lebar_CI=0.0326 | B2 BIC_SEM=385 CFI=0.953 lebar_CI=0.0344 | B3 BIC_SEM=684 CFI=0.929 lebar_CI=0.0316 | N1 BIC_SEM=2.26e+03 CFI=0.835 lebar_CI=nan
+NOV[sanitasi_diare] uji (naif/orde1/orde2): biner 2×2, S=∅ efek=0.0: 0.130/0.040/0.040; 3×3 (df 4), S=∅ efek=0.0: 0.140/0.070/0.050; biner 2×2, S={z} efek=0.0: 0.130/0.040/0.040; kontinu, S=∅ efek=0.0: 0.225/0.055/0.055; kontinu, S={z} efek=0.0: 0.225/0.055/0.055; biner 2×2, S=∅ efek=0.05: 0.940/0.750/0.750; 3×3 (df 4), S=∅ efek=0.05: 0.970/0.795/0.785; biner 2×2, S={z} efek=0.05: 0.925/0.700/0.695; kontinu, S=∅ efek=0.05: 1.000/0.915/0.915; kontinu, S={z} efek=0.05: 1.000/0.915/0.915; biner 2×2, S=∅ efek=0.1: 1.000/1.000/1.000; 3×3 (df 4), S=∅ efek=0.1: 1.000/1.000/1.000; biner 2×2, S={z} efek=0.1: 1.000/1.000/1.000; kontinu, S=∅ efek=0.1: 1.000/1.000/1.000; kontinu, S={z} efek=0.1: 1.000/1.000/1.000
+# 2026-09-27 12:29
+NOV[sanitasi_diare] N2 TO-DAG ruang urutan=20,736 (tanpa tier 1.31e+12) skor lokal=340 F=-45076.2 (B3 -45308.6) sisi=20 SHD=25 detik=0.41 memori=6.1MB RD=+0.0000
+NOV[sanitasi_diare] banding: terbaik=B3 BN berbasis skor (peringkat 1.67) | B1 detik_penemuan=0.00921 memori_MB=5.87 BIC_SEM=2.37e+03 | B2 detik_penemuan=6.41 memori_MB=3.91 BIC_SEM=385 | B3 detik_penemuan=0.552 memori_MB=2.92 BIC_SEM=684 | N2 detik_penemuan=0.406 memori_MB=6.06 BIC_SEM=1.76e+03
+# 2026-09-27 12:30
+NOV[sanitasi_diare] N3 MLC-DAG v2 node 33->20 reflektif=['eta_pendidikan'] komposit=['eta_ekonomi', 'eta_akses'] dipecah=['eta_kebersihan'] omega={'eta_pendidikan': 0.89, 'eta_kebersihan': 0.32} sisi=77 detik=3.48 (tanpa konstruk 5.52) RD=-0.0192 (tanpa konstruk +0.0000)
+NOV[sanitasi_diare] banding: terbaik=B3 BN berbasis skor (peringkat 1.00) | B1 detik_penemuan=0.00921 memori_MB=5.87 lebar_CI=0.0326 | B2 detik_penemuan=6.41 memori_MB=3.91 lebar_CI=0.0344 | B3 detik_penemuan=0.552 memori_MB=2.92 lebar_CI=0.0316 | N3 detik_penemuan=3.48 memori_MB=4.91 lebar_CI=0.0379 | N3- detik_penemuan=5.52 memori_MB=6.39 lebar_CI=nan
+# 2026-09-27 12:31
+NOV[sanitasi_diare] N1 SD-Hybrid uji=4927 skeleton=37 (B2 naif 44) delta_bar=2.77 n_eff=3823 sisi=17 SHD=24 RD=+0.0000 [+0.0000,+0.0000]
+NOV[sanitasi_diare] banding: terbaik=B2 PC + tier + IDA (peringkat 1.67) | B1 BIC_SEM=2.37e+03 CFI=0.84 lebar_CI=0.0326 | B2 BIC_SEM=385 CFI=0.953 lebar_CI=0.0344 | B3 BIC_SEM=684 CFI=0.929 lebar_CI=0.0316 | N1 BIC_SEM=2.26e+03 CFI=0.835 lebar_CI=nan
+NOV[sanitasi_diare] uji (naif/orde1/orde2): biner 2×2, S=∅ efek=0.0: 0.130/0.040/0.040; 3×3 (df 4), S=∅ efek=0.0: 0.140/0.070/0.050; biner 2×2, S={z} efek=0.0: 0.130/0.040/0.040; kontinu, S=∅ efek=0.0: 0.225/0.055/0.055; kontinu, S={z} efek=0.0: 0.225/0.055/0.055; biner 2×2, S=∅ efek=0.05: 0.940/0.750/0.750; 3×3 (df 4), S=∅ efek=0.05: 0.970/0.795/0.785; biner 2×2, S={z} efek=0.05: 0.925/0.700/0.695; kontinu, S=∅ efek=0.05: 1.000/0.915/0.915; kontinu, S={z} efek=0.05: 1.000/0.915/0.915; biner 2×2, S=∅ efek=0.1: 1.000/1.000/1.000; 3×3 (df 4), S=∅ efek=0.1: 1.000/1.000/1.000; biner 2×2, S={z} efek=0.1: 1.000/1.000/1.000; kontinu, S=∅ efek=0.1: 1.000/1.000/1.000; kontinu, S={z} efek=0.1: 1.000/1.000/1.000
+# 2026-09-27 12:31
+NOV[sanitasi_diare] N2 TO-DAG ruang urutan=20,736 (tanpa tier 1.31e+12) skor lokal=340 F=-45076.2 (B3 -45308.6) sisi=20 SHD=25 detik=0.38 memori=6.1MB RD=+0.0000
+NOV[sanitasi_diare] banding: terbaik=B3 BN berbasis skor (peringkat 1.67) | B1 detik_penemuan=0.00921 memori_MB=5.87 BIC_SEM=2.37e+03 | B2 detik_penemuan=6.41 memori_MB=3.91 BIC_SEM=385 | B3 detik_penemuan=0.552 memori_MB=2.92 BIC_SEM=684 | N2 detik_penemuan=0.38 memori_MB=6.05 BIC_SEM=1.76e+03
+# 2026-09-27 12:32
+NOV[sanitasi_diare] N3 MLC-DAG v2 node 33->20 reflektif=['eta_pendidikan'] komposit=['eta_ekonomi', 'eta_akses'] dipecah=['eta_kebersihan'] omega={'eta_pendidikan': 0.89, 'eta_kebersihan': 0.32} sisi=77 detik=3.94 (tanpa konstruk 6.49) RD=-0.0192 (tanpa konstruk +0.0000)
+NOV[sanitasi_diare] banding: terbaik=B3 BN berbasis skor (peringkat 1.00) | B1 detik_penemuan=0.00921 memori_MB=5.87 lebar_CI=0.0326 | B2 detik_penemuan=6.41 memori_MB=3.91 lebar_CI=0.0344 | B3 detik_penemuan=0.552 memori_MB=2.92 lebar_CI=0.0316 | N3 detik_penemuan=3.94 memori_MB=4.91 lebar_CI=0.0379 | N3- detik_penemuan=6.49 memori_MB=6.39 lebar_CI=nan
+# 2026-09-27 12:36
+SOL[sanitasi_diare] SOL-DAG: node=20 sisi=44 skeleton=49 RD=+0.0000 [+0.0000,+0.0000] detik=25.05 memori=3.8MB
+SOL[sanitasi_diare] SOL tanpa MLC: node=15 sisi=30 skeleton=32 RD=+0.0000 [+0.0000,+0.0000] detik=7.47 memori=4.1MB
+SOL[sanitasi_diare] SOL tanpa koreksi desain: node=20 sisi=58 skeleton=69 RD=+0.0000 [+0.0000,+0.0000] detik=18.80 memori=2.5MB
+SOL[sanitasi_diare] SOL tanpa tier: node=20 sisi=44 skeleton=49 RD=+0.0000 [+0.0000,+0.0000] detik=34.57 memori=3.8MB
+SOL[sanitasi_diare] SOL tanpa pemisahan sampel: node=20 sisi=59 skeleton=74 RD=+0.0000 [+0.0000,+0.0000] detik=114.23 memori=7.7MB
+# 2026-09-27 12:41
+SOL[sanitasi_diare] SOL-DAG: node=20 sisi=44 skeleton=49 RD=+0.0000 [+0.0000,+0.0000] detik=31.86 memori=3.8MB
+SOL[sanitasi_diare] SOL tanpa MLC: node=15 sisi=30 skeleton=32 RD=+0.0000 [+0.0000,+0.0000] detik=9.35 memori=4.1MB
+SOL[sanitasi_diare] SOL tanpa koreksi desain: node=20 sisi=58 skeleton=69 RD=+0.0000 [+0.0000,+0.0000] detik=23.65 memori=2.5MB
+SOL[sanitasi_diare] SOL tanpa tier: node=20 sisi=44 skeleton=49 RD=+0.0000 [+0.0000,+0.0000] detik=31.39 memori=3.8MB
+SOL[sanitasi_diare] SOL tanpa pemisahan sampel: node=20 sisi=59 skeleton=74 RD=+0.0000 [+0.0000,+0.0000] detik=104.86 memori=7.7MB
+# 2026-09-27 13:31
+PREP: 17848 kelahiran, 63 variabel, 1967 klaster, 34 provinsi
+PREP: PCA kekayaan non-WASH menjelaskan 22.0% varians; RT tanpa pasangan HR = 0
+# 2026-09-27 13:31
+EDA: kosong terbanyak jarak_sumur_septik_m=71%, Y_mati_bayi=19%, M_anc4=14%
+EDA: T_pbi 0.297 [0.285-0.309] n=17846
+EDA: T_sanitasi 0.743 [0.728-0.758] n=17212
+EDA: T_fasilitas 0.794 [0.780-0.808] n=17769
+EDA: Y_diare 0.142 [0.134-0.149] n=17155
+EDA: Y_ispa 0.042 [0.038-0.046] n=17168
+EDA: Y_mati_neonatal 0.015 [0.013-0.018] n=17724
+EDA: Y_mati_bayi 0.023 [0.020-0.026] n=14383
+EDA: T_pbi kovariat SMD>0.1=23; terbesar jkn_nonpbi=-0.97, kuintil_kekayaan_nonwash=-0.59, skor_kekayaan_nonwash=-0.56
+EDA: T_sanitasi kovariat SMD>0.1=28; terbesar sanitasi_klaster_lo=+1.21, skor_kekayaan_nonwash=+1.00, kuintil_kekayaan_nonwash=+0.99
+EDA: T_fasilitas kovariat SMD>0.1=26; terbesar fasilitas_klaster_lo=+1.71, skor_kekayaan_nonwash=+0.93, kuintil_kekayaan_nonwash=+0.88
+# 2026-09-27 13:32
+EDA: kosong terbanyak jarak_sumur_septik_m=71%, Y_mati_bayi=19%, M_anc4=14%
+EDA: T_pbi 0.297 [0.285-0.309] n=17846
+EDA: T_sanitasi 0.743 [0.728-0.758] n=17212
+EDA: T_fasilitas 0.794 [0.780-0.808] n=17769
+EDA: Y_diare 0.142 [0.134-0.149] n=17155
+EDA: Y_ispa 0.042 [0.038-0.046] n=17168
+EDA: Y_mati_neonatal 0.015 [0.013-0.018] n=17724
+EDA: Y_mati_bayi 0.023 [0.020-0.026] n=14383
+EDA: T_pbi kovariat SMD>0.1=23; terbesar jkn_nonpbi=-0.97, kuintil_kekayaan_nonwash=-0.59, skor_kekayaan_nonwash=-0.56
+EDA: T_sanitasi kovariat SMD>0.1=28; terbesar sanitasi_klaster_lo=+1.21, skor_kekayaan_nonwash=+1.00, kuintil_kekayaan_nonwash=+0.99
+EDA: T_fasilitas kovariat SMD>0.1=26; terbesar fasilitas_klaster_lo=+1.71, skor_kekayaan_nonwash=+0.93, kuintil_kekayaan_nonwash=+0.88
+# 2026-09-27 13:35
+BASE[sanitasi_diare] T_sanitasi->Y_diare n=16232 p=15 boot=100
+BASE[sanitasi_diare] B1[T_sanitasi->Y_diare] RMSEA=0.079 CFI=0.840 SRMR=0.069 chi2=2915.7 df=61 (n_eff=7515)
+BASE[sanitasi_diare] B1 linear: total=-0.0203 langsung=-0.0203 tak langsung=+0.0000 | probit RD=-0.0194 | backdoor g-komp RD=-0.0194 [-0.0365,-0.0039]
+BASE[sanitasi_diare] B2 uji=7798 sisi berarah=40 tak berarah=4 SHD vs pakar=39 | IDA 1 himpunan, RD [-0.0185,-0.0185], min|RD|=-0.0185
+BASE[sanitasi_diare] B3 skor=bic langkah=28 sisi=28 SHD vs pakar=31 skor akhir=-192751.6 (pakar -673067.0) | RD=-0.0192 [-0.0323,-0.0007]
+BASE[sanitasi_diare] TERBAIK: B2 PC + tier + IDA (peringkat rata-rata 1.67; unggul pada BIC_SEM, CFI) RD=-0.0185 | B1 BIC=2371 CFI=0.840 CI=0.0326 | B2 BIC=385 CFI=0.953 CI=0.0344 | B3 BIC=684 CFI=0.929 CI=0.0316
+# 2026-09-27 13:39
+NOV[sanitasi_diare] N1 SD-Hybrid uji=4927 skeleton=37 (B2 naif 44) delta_bar=2.77 n_eff=3823 sisi=17 SHD=24 RD=+0.0000 [+0.0000,+0.0000]
+NOV[sanitasi_diare] banding: terbaik=B2 PC + tier + IDA (peringkat 1.67) | B1 BIC_SEM=2.37e+03 CFI=0.84 lebar_CI=0.0326 | B2 BIC_SEM=385 CFI=0.953 lebar_CI=0.0344 | B3 BIC_SEM=684 CFI=0.929 lebar_CI=0.0316 | N1 BIC_SEM=2.26e+03 CFI=0.835 lebar_CI=nan
+NOV[sanitasi_diare] uji (naif/orde1/orde2): biner 2×2, S=∅ efek=0.0: 0.130/0.040/0.040; 3×3 (df 4), S=∅ efek=0.0: 0.140/0.070/0.050; biner 2×2, S={z} efek=0.0: 0.130/0.040/0.040; kontinu, S=∅ efek=0.0: 0.225/0.055/0.055; kontinu, S={z} efek=0.0: 0.225/0.055/0.055; biner 2×2, S=∅ efek=0.05: 0.940/0.750/0.750; 3×3 (df 4), S=∅ efek=0.05: 0.970/0.795/0.785; biner 2×2, S={z} efek=0.05: 0.925/0.700/0.695; kontinu, S=∅ efek=0.05: 1.000/0.915/0.915; kontinu, S={z} efek=0.05: 1.000/0.915/0.915; biner 2×2, S=∅ efek=0.1: 1.000/1.000/1.000; 3×3 (df 4), S=∅ efek=0.1: 1.000/1.000/1.000; biner 2×2, S={z} efek=0.1: 1.000/1.000/1.000; kontinu, S=∅ efek=0.1: 1.000/1.000/1.000; kontinu, S={z} efek=0.1: 1.000/1.000/1.000
+# 2026-09-27 13:41
+NOV[sanitasi_diare] N2 TO-DAG ruang urutan=20,736 (tanpa tier 1.31e+12) skor lokal=340 F=-45076.2 (B3 -45308.6) sisi=20 SHD=25 detik=1.85 memori=6.1MB RD=+0.0000
+NOV[sanitasi_diare] banding: terbaik=B3 BN berbasis skor (peringkat 1.67) | B1 detik_penemuan=0.0484 memori_MB=5.87 BIC_SEM=2.37e+03 | B2 detik_penemuan=24.2 memori_MB=3.91 BIC_SEM=385 | B3 detik_penemuan=2.7 memori_MB=2.92 BIC_SEM=684 | N2 detik_penemuan=1.85 memori_MB=6.06 BIC_SEM=1.76e+03
+# 2026-09-27 13:43
+NOV[sanitasi_diare] N3 MLC-DAG v2 node 33->20 reflektif=['eta_pendidikan'] komposit=['eta_ekonomi', 'eta_akses'] dipecah=['eta_kebersihan'] omega={'eta_pendidikan': 0.89, 'eta_kebersihan': 0.32} sisi=77 detik=15.33 (tanpa konstruk 25.13) RD=-0.0192 (tanpa konstruk +0.0000)
+NOV[sanitasi_diare] banding: terbaik=B3 BN berbasis skor (peringkat 1.00) | B1 detik_penemuan=0.0484 memori_MB=5.87 lebar_CI=0.0326 | B2 detik_penemuan=24.2 memori_MB=3.91 lebar_CI=0.0344 | B3 detik_penemuan=2.7 memori_MB=2.92 lebar_CI=0.0316 | N3 detik_penemuan=15.3 memori_MB=4.91 lebar_CI=0.0379 | N3- detik_penemuan=25.1 memori_MB=6.39 lebar_CI=nan
+# 2026-09-27 13:53
+SOL[sanitasi_diare] SOL-DAG: node=20 sisi=44 skeleton=49 RD=+0.0000 [+0.0000,+0.0000] detik=109.85 memori=3.8MB
+SOL[sanitasi_diare] SOL tanpa MLC: node=15 sisi=30 skeleton=32 RD=+0.0000 [+0.0000,+0.0000] detik=32.23 memori=4.1MB
+SOL[sanitasi_diare] SOL tanpa koreksi desain: node=20 sisi=58 skeleton=69 RD=+0.0000 [+0.0000,+0.0000] detik=83.08 memori=2.5MB
+SOL[sanitasi_diare] SOL tanpa tier: node=20 sisi=44 skeleton=49 RD=+0.0000 [+0.0000,+0.0000] detik=108.54 memori=3.8MB
+SOL[sanitasi_diare] SOL tanpa pemisahan sampel: node=20 sisi=59 skeleton=74 RD=+0.0000 [+0.0000,+0.0000] detik=287.56 memori=7.7MB
+# 2026-10-01 08:55
+PREP: 17848 kelahiran, 63 variabel, 1967 klaster, 34 provinsi
+PREP: PCA kekayaan non-WASH menjelaskan 22.0% varians; RT tanpa pasangan HR = 0
+# 2026-10-01 08:56
+EDA: kosong terbanyak jarak_sumur_septik_m=71%, Y_mati_bayi=19%, M_anc4=14%
+EDA: T_pbi 0.297 [0.285-0.309] n=17846
+EDA: T_sanitasi 0.743 [0.728-0.758] n=17212
+EDA: T_fasilitas 0.794 [0.780-0.808] n=17769
+EDA: Y_diare 0.142 [0.134-0.149] n=17155
+EDA: Y_ispa 0.042 [0.038-0.046] n=17168
+EDA: Y_mati_neonatal 0.015 [0.013-0.018] n=17724
+EDA: Y_mati_bayi 0.023 [0.020-0.026] n=14383
+EDA: T_pbi kovariat SMD>0.1=23; terbesar jkn_nonpbi=-0.97, kuintil_kekayaan_nonwash=-0.59, skor_kekayaan_nonwash=-0.56
+EDA: T_sanitasi kovariat SMD>0.1=28; terbesar sanitasi_klaster_lo=+1.21, skor_kekayaan_nonwash=+1.00, kuintil_kekayaan_nonwash=+0.99
+EDA: T_fasilitas kovariat SMD>0.1=26; terbesar fasilitas_klaster_lo=+1.71, skor_kekayaan_nonwash=+0.93, kuintil_kekayaan_nonwash=+0.88
+# 2026-10-10 13:15
+PREP: 17848 kelahiran, 63 variabel, 1967 klaster, 34 provinsi
+PREP: PCA kekayaan non-WASH menjelaskan 22.0% varians; RT tanpa pasangan HR = 0
+# 2026-10-10 13:30
+EDA: kosong terbanyak jarak_sumur_septik_m=71%, Y_mati_bayi=19%, M_anc4=14%
+EDA: T_pbi 0.297 [0.285-0.309] n=17846
+EDA: T_sanitasi 0.743 [0.728-0.758] n=17212
+EDA: T_fasilitas 0.794 [0.780-0.808] n=17769
+EDA: Y_diare 0.142 [0.134-0.149] n=17155
+EDA: Y_ispa 0.042 [0.038-0.046] n=17168
+EDA: Y_mati_neonatal 0.015 [0.013-0.018] n=17724
+EDA: Y_mati_bayi 0.023 [0.020-0.026] n=14383
+EDA: T_pbi kovariat SMD>0.1=23; terbesar jkn_nonpbi=-0.97, kuintil_kekayaan_nonwash=-0.59, skor_kekayaan_nonwash=-0.56
+EDA: T_sanitasi kovariat SMD>0.1=28; terbesar sanitasi_klaster_lo=+1.21, skor_kekayaan_nonwash=+1.00, kuintil_kekayaan_nonwash=+0.99
+EDA: T_fasilitas kovariat SMD>0.1=26; terbesar fasilitas_klaster_lo=+1.71, skor_kekayaan_nonwash=+0.93, kuintil_kekayaan_nonwash=+0.88
+# 2026-10-10 13:30
+KAUSAL[sanitasi_diare] T_sanitasi->Y_diare n=16232 |Z|=13 identifikasi=YA mediator=-
+KAUSAL[sanitasi_diare] AIPW RD=-0.0338 [-0.0574,-0.0117] RR=0.79 [0.69,0.92] | gcomp RD=-0.0194 IPW RD=-0.0362
+KAUSAL[sanitasi_diare] E-value titik=1.83 CI=1.39 | SMD maks setelah IPW=0.11 | boot sah=200/200
+# 2026-10-10 13:31
+BASE[sanitasi_diare] T_sanitasi->Y_diare n=16232 p=15 boot=100
+BASE[sanitasi_diare] B1[T_sanitasi->Y_diare] RMSEA=0.079 CFI=0.840 SRMR=0.069 chi2=2915.7 df=61 (n_eff=7515)
+BASE[sanitasi_diare] B1 linear: total=-0.0203 langsung=-0.0203 tak langsung=+0.0000 | probit RD=-0.0194 | backdoor g-komp RD=-0.0194 [-0.0365,-0.0039]
+BASE[sanitasi_diare] B2 uji=7798 sisi berarah=40 tak berarah=4 SHD vs pakar=39 | IDA 1 himpunan, RD [-0.0185,-0.0185], min|RD|=-0.0185
+BASE[sanitasi_diare] B3 skor=bic langkah=28 sisi=28 SHD vs pakar=31 skor akhir=-192751.6 (pakar -673067.0) | RD=-0.0192 [-0.0323,-0.0007]
+BASE[sanitasi_diare] TERBAIK: B2 PC + tier + IDA (peringkat rata-rata 1.67; unggul pada BIC_SEM, CFI) RD=-0.0185 | B1 BIC=2371 CFI=0.840 CI=0.0326 | B2 BIC=385 CFI=0.953 CI=0.0344 | B3 BIC=684 CFI=0.929 CI=0.0316
+# 2026-10-10 13:35
+NOV[sanitasi_diare] N1 SD-Hybrid uji=4927 skeleton=37 (B2 naif 44) delta_bar=2.77 n_eff=3823 sisi=17 SHD=24 RD=+0.0000 [+0.0000,+0.0000]
+NOV[sanitasi_diare] banding: terbaik=B2 PC + tier + IDA (peringkat 1.67) | B1 BIC_SEM=2.37e+03 CFI=0.84 lebar_CI=0.0326 | B2 BIC_SEM=385 CFI=0.953 lebar_CI=0.0344 | B3 BIC_SEM=684 CFI=0.929 lebar_CI=0.0316 | N1 BIC_SEM=2.26e+03 CFI=0.835 lebar_CI=nan
+NOV[sanitasi_diare] uji (naif/orde1/orde2): biner 2×2, S=∅ efek=0.0: 0.130/0.040/0.040; 3×3 (df 4), S=∅ efek=0.0: 0.140/0.070/0.050; biner 2×2, S={z} efek=0.0: 0.130/0.040/0.040; kontinu, S=∅ efek=0.0: 0.225/0.055/0.055; kontinu, S={z} efek=0.0: 0.225/0.055/0.055; biner 2×2, S=∅ efek=0.05: 0.940/0.750/0.750; 3×3 (df 4), S=∅ efek=0.05: 0.970/0.795/0.785; biner 2×2, S={z} efek=0.05: 0.925/0.700/0.695; kontinu, S=∅ efek=0.05: 1.000/0.915/0.915; kontinu, S={z} efek=0.05: 1.000/0.915/0.915; biner 2×2, S=∅ efek=0.1: 1.000/1.000/1.000; 3×3 (df 4), S=∅ efek=0.1: 1.000/1.000/1.000; biner 2×2, S={z} efek=0.1: 1.000/1.000/1.000; kontinu, S=∅ efek=0.1: 1.000/1.000/1.000; kontinu, S={z} efek=0.1: 1.000/1.000/1.000
+# 2026-10-10 13:37
+NOV[sanitasi_diare] N1 SD-Hybrid uji=4927 skeleton=37 (B2 naif 44) delta_bar=2.77 n_eff=3823 sisi=17 SHD=24 RD=+0.0000 [+0.0000,+0.0000]
+NOV[sanitasi_diare] banding: terbaik=B2 PC + tier + IDA (peringkat 1.67) | B1 BIC_SEM=2.37e+03 CFI=0.84 lebar_CI=0.0326 | B2 BIC_SEM=385 CFI=0.953 lebar_CI=0.0344 | B3 BIC_SEM=684 CFI=0.929 lebar_CI=0.0316 | N1 BIC_SEM=2.26e+03 CFI=0.835 lebar_CI=nan
+NOV[sanitasi_diare] uji (naif/orde1/orde2): biner 2×2, S=∅ efek=0.0: 0.130/0.040/0.040; 3×3 (df 4), S=∅ efek=0.0: 0.140/0.070/0.050; biner 2×2, S={z} efek=0.0: 0.130/0.040/0.040; kontinu, S=∅ efek=0.0: 0.225/0.055/0.055; kontinu, S={z} efek=0.0: 0.225/0.055/0.055; biner 2×2, S=∅ efek=0.05: 0.940/0.750/0.750; 3×3 (df 4), S=∅ efek=0.05: 0.970/0.795/0.785; biner 2×2, S={z} efek=0.05: 0.925/0.700/0.695; kontinu, S=∅ efek=0.05: 1.000/0.915/0.915; kontinu, S={z} efek=0.05: 1.000/0.915/0.915; biner 2×2, S=∅ efek=0.1: 1.000/1.000/1.000; 3×3 (df 4), S=∅ efek=0.1: 1.000/1.000/1.000; biner 2×2, S={z} efek=0.1: 1.000/1.000/1.000; kontinu, S=∅ efek=0.1: 1.000/1.000/1.000; kontinu, S={z} efek=0.1: 1.000/1.000/1.000
+# 2026-10-10 14:04
+NOV[sanitasi_diare] N2 TO-DAG ruang urutan=20,736 (tanpa tier 1.31e+12) skor lokal=340 F=-45076.2 (B3 -45308.6) sisi=20 SHD=25 detik=0.42 memori=6.1MB RD=+0.0000
+NOV[sanitasi_diare] banding: terbaik=B3 BN berbasis skor (peringkat 1.67) | B1 detik_penemuan=0.0102 memori_MB=5.87 BIC_SEM=2.37e+03 | B2 detik_penemuan=4.3 memori_MB=3.91 BIC_SEM=385 | B3 detik_penemuan=0.561 memori_MB=2.92 BIC_SEM=684 | N2 detik_penemuan=0.422 memori_MB=6.06 BIC_SEM=1.76e+03
+# 2026-10-10 14:04
+NOV[sanitasi_diare] N3 MLC-DAG v2 node 33->20 reflektif=['eta_pendidikan'] komposit=['eta_ekonomi', 'eta_akses'] dipecah=['eta_kebersihan'] omega={'eta_pendidikan': 0.89, 'eta_kebersihan': 0.32} sisi=77 detik=4.02 (tanpa konstruk 6.63) RD=-0.0192 (tanpa konstruk +0.0000)
+NOV[sanitasi_diare] banding: terbaik=B3 BN berbasis skor (peringkat 1.00) | B1 detik_penemuan=0.0102 memori_MB=5.87 lebar_CI=0.0326 | B2 detik_penemuan=4.3 memori_MB=3.91 lebar_CI=0.0344 | B3 detik_penemuan=0.561 memori_MB=2.92 lebar_CI=0.0316 | N3 detik_penemuan=4.02 memori_MB=4.91 lebar_CI=0.0379 | N3- detik_penemuan=6.63 memori_MB=6.39 lebar_CI=nan
+# 2026-10-10 14:07
+SOL[sanitasi_diare] SOL-DAG: node=20 sisi=44 skeleton=49 RD=+0.0000 [+0.0000,+0.0000] detik=24.56 memori=3.8MB
+SOL[sanitasi_diare] SOL tanpa MLC: node=15 sisi=30 skeleton=32 RD=+0.0000 [+0.0000,+0.0000] detik=7.16 memori=4.1MB
+SOL[sanitasi_diare] SOL tanpa koreksi desain: node=20 sisi=58 skeleton=69 RD=+0.0000 [+0.0000,+0.0000] detik=18.08 memori=2.5MB
+SOL[sanitasi_diare] SOL tanpa tier: node=20 sisi=44 skeleton=49 RD=+0.0000 [+0.0000,+0.0000] detik=24.96 memori=3.8MB
+SOL[sanitasi_diare] SOL tanpa pemisahan sampel: node=20 sisi=59 skeleton=74 RD=+0.0000 [+0.0000,+0.0000] detik=69.11 memori=7.7MB
+# 2026-10-10 15:31
+PREP: 17848 kelahiran, 63 variabel, 1967 klaster, 34 provinsi
+PREP: PCA kekayaan non-WASH menjelaskan 22.0% varians; RT tanpa pasangan HR = 0
+# 2026-10-10 15:32
+PREP: 17848 kelahiran, 63 variabel, 1967 klaster, 34 provinsi
+PREP: PCA kekayaan non-WASH menjelaskan 22.0% varians; RT tanpa pasangan HR = 0
+# 2026-10-10 15:35
+EDA: kosong terbanyak jarak_sumur_septik_m=71%, Y_mati_bayi=19%, M_anc4=14%
+EDA: T_pbi 0.297 [0.285-0.309] n=17846
+EDA: T_sanitasi 0.743 [0.728-0.758] n=17212
+EDA: T_fasilitas 0.794 [0.780-0.808] n=17769
+EDA: Y_diare 0.142 [0.134-0.149] n=17155
+EDA: Y_ispa 0.042 [0.038-0.046] n=17168
+EDA: Y_mati_neonatal 0.015 [0.013-0.018] n=17724
+EDA: Y_mati_bayi 0.023 [0.020-0.026] n=14383
+EDA: T_pbi kovariat SMD>0.1=23; terbesar jkn_nonpbi=-0.97, kuintil_kekayaan_nonwash=-0.59, skor_kekayaan_nonwash=-0.56
+EDA: T_sanitasi kovariat SMD>0.1=28; terbesar sanitasi_klaster_lo=+1.21, skor_kekayaan_nonwash=+1.00, kuintil_kekayaan_nonwash=+0.99
+EDA: T_fasilitas kovariat SMD>0.1=26; terbesar fasilitas_klaster_lo=+1.71, skor_kekayaan_nonwash=+0.93, kuintil_kekayaan_nonwash=+0.88
+# 2026-10-10 17:27
+PREP: 17848 kelahiran, 63 variabel, 1967 klaster, 34 provinsi
+PREP: PCA kekayaan non-WASH menjelaskan 22.0% varians; RT tanpa pasangan HR = 0
+# 2026-10-10 17:27
+EDA: kosong terbanyak jarak_sumur_septik_m=71%, Y_mati_bayi=19%, M_anc4=14%
+EDA: T_pbi 0.297 [0.285-0.309] n=17846
+EDA: T_sanitasi 0.743 [0.728-0.758] n=17212
+EDA: T_fasilitas 0.794 [0.780-0.808] n=17769
+EDA: Y_diare 0.142 [0.134-0.149] n=17155
+EDA: Y_ispa 0.042 [0.038-0.046] n=17168
+EDA: Y_mati_neonatal 0.015 [0.013-0.018] n=17724
+EDA: Y_mati_bayi 0.023 [0.020-0.026] n=14383
+EDA: T_pbi kovariat SMD>0.1=23; terbesar jkn_nonpbi=-0.97, kuintil_kekayaan_nonwash=-0.59, skor_kekayaan_nonwash=-0.56
+EDA: T_sanitasi kovariat SMD>0.1=28; terbesar sanitasi_klaster_lo=+1.21, skor_kekayaan_nonwash=+1.00, kuintil_kekayaan_nonwash=+0.99
+EDA: T_fasilitas kovariat SMD>0.1=26; terbesar fasilitas_klaster_lo=+1.71, skor_kekayaan_nonwash=+0.93, kuintil_kekayaan_nonwash=+0.88
+# 2026-10-10 17:28
+DAG[sanitasi_diare] T_sanitasi->Y_diare identifikasi=YA |Z|=13
+DAG[sanitasi_diare] dikontrol: air_layak, anak_laki, cuci_tangan_dasar, cuci_tangan_klaster_lo, olah_air_efektif, org_per_kamar, p0_daerah_mar2017, pend_ibu_thn, perdesaan, punya_ternak, sanitasi_klaster_lo, skor_kekayaan_nonwash, umur_anak_bln
+DAG[sanitasi_diare] mediator: - | laten: -
+# 2026-10-10 17:30
+KAUSAL[sanitasi_diare] T_sanitasi->Y_diare n=16232 |Z|=13 identifikasi=YA mediator=-
+KAUSAL[sanitasi_diare] AIPW RD=-0.0338 [-0.0569,-0.0121] RR=0.79 [0.69,0.92] | gcomp RD=-0.0194 IPW RD=-0.0362
+KAUSAL[sanitasi_diare] E-value titik=1.83 CI=1.40 | SMD maks setelah IPW=0.11 | boot sah=500/500
+# 2026-10-10 17:36
+BASE[sanitasi_diare] T_sanitasi->Y_diare n=16232 p=15 boot=500
+BASE[sanitasi_diare] B1[T_sanitasi->Y_diare] RMSEA=0.079 CFI=0.840 SRMR=0.069 chi2=2915.7 df=61 (n_eff=7515)
+BASE[sanitasi_diare] B1 linear: total=-0.0203 langsung=-0.0203 tak langsung=+0.0000 | probit RD=-0.0194 | backdoor g-komp RD=-0.0194 [-0.0381,-0.0004]
+BASE[sanitasi_diare] B2 uji=9108 sisi berarah=42 tak berarah=4 SHD vs pakar=39 | IDA 1 himpunan, RD [-0.0185,-0.0185], min|RD|=-0.0185
+BASE[sanitasi_diare] B3 skor=gauss langkah=50 sisi=50 SHD vs pakar=41 skor akhir=-325242.0 (pakar -333284.2) | RD=-0.0201 [-0.0399,-0.0016]
+BASE[sanitasi_diare] TERBAIK: B2 PC + tier + IDA (peringkat rata-rata 1.67; unggul pada lebar_CI) RD=-0.0185 | B1 BIC=2371 CFI=0.840 CI=0.0378 | B2 BIC=381 CFI=0.954 CI=0.0367 | B3 BIC=-247 CFI=0.991 CI=0.0383
+# 2026-10-10 17:43
+NOV[sanitasi_diare] N1 SD-Hybrid uji=6343 skeleton=42 (B2 naif 46) delta_bar=2.26 n_eff=4670 sisi=36 SHD=35 RD=+0.0000 [+0.0000,+0.0000]
+NOV[sanitasi_diare] banding: terbaik=B3 BN berbasis skor (peringkat 1.67) | B1 BIC_SEM=2.37e+03 CFI=0.84 lebar_CI=0.0378 | B2 BIC_SEM=381 CFI=0.954 lebar_CI=0.0367 | B3 BIC_SEM=-247 CFI=0.991 lebar_CI=0.0383 | N1 BIC_SEM=344 CFI=0.951 lebar_CI=nan
+NOV[sanitasi_diare] uji (naif/orde1/orde2): biner 2×2, S=∅ efek=0.0: 0.121/0.045/0.045; 3×3 (df 4), S=∅ efek=0.0: 0.114/0.049/0.043; biner 2×2, S={z} efek=0.0: 0.107/0.053/0.051; kontinu, S=∅ efek=0.0: 0.225/0.053/0.053; kontinu, S={z} efek=0.0: 0.226/0.053/0.053; biner 2×2, S=∅ efek=0.05: 0.954/0.746/0.746; 3×3 (df 4), S=∅ efek=0.05: 0.958/0.786/0.775; biner 2×2, S={z} efek=0.05: 0.833/0.555/0.554; kontinu, S=∅ efek=0.05: 0.998/0.927/0.927; kontinu, S={z} efek=0.05: 0.997/0.928/0.928; biner 2×2, S=∅ efek=0.1: 1.000/1.000/1.000; 3×3 (df 4), S=∅ efek=0.1: 1.000/1.000/1.000; biner 2×2, S={z} efek=0.1: 1.000/0.992/0.992; kontinu, S=∅ efek=0.1: 1.000/1.000/1.000; kontinu, S={z} efek=0.1: 1.000/1.000/1.000
+# 2026-10-10 17:45
+NOV[sanitasi_diare] N2 TO-DAG ruang urutan=20,736 (tanpa tier 1.31e+12) skor lokal=661 F=-94202.6 (B3 -94234.5) sisi=42 SHD=42 detik=0.56 memori=8.3MB RD=+0.0000
+NOV[sanitasi_diare] banding: terbaik=N2 TO-DAG (peringkat 1.67) | B1 detik_penemuan=0.0253 memori_MB=5.87 BIC_SEM=2.37e+03 | B2 detik_penemuan=13.4 memori_MB=3.91 BIC_SEM=381 | B3 detik_penemuan=0.975 memori_MB=5.92 BIC_SEM=-247 | N2 detik_penemuan=0.565 memori_MB=8.3 BIC_SEM=-313
+# 2026-10-10 17:59
+NOV[sanitasi_diare] N3 MLC-DAG v2 node 31->18 reflektif=['eta_pendidikan'] komposit=['eta_ekonomi', 'eta_akses'] dipecah=['eta_kebersihan'] omega={'eta_pendidikan': 0.89, 'eta_kebersihan': 0.32} sisi=60 detik=6.22 (tanpa konstruk 10.95) RD=-0.0190 (tanpa konstruk +0.0000)
+NOV[sanitasi_diare] banding: terbaik=B3 BN berbasis skor (peringkat 2.00) | B1 detik_penemuan=0.0253 memori_MB=5.87 lebar_CI=0.0378 | B2 detik_penemuan=13.4 memori_MB=3.91 lebar_CI=0.0367 | B3 detik_penemuan=0.975 memori_MB=5.92 lebar_CI=0.0383 | N3 detik_penemuan=6.22 memori_MB=9.95 lebar_CI=0.0365 | N3- detik_penemuan=10.9 memori_MB=6.21 lebar_CI=nan
+# 2026-10-10 18:11
+SOL[sanitasi_diare] SOL-DAG: node=18 sisi=40 skeleton=51 RD=+0.0000 [+0.0000,+0.0000] detik=49.12 memori=3.4MB
+SOL[sanitasi_diare] SOL tanpa MLC: node=15 sisi=33 skeleton=37 RD=+0.0000 [+0.0000,+0.0000] detik=21.15 memori=4.1MB
+SOL[sanitasi_diare] SOL tanpa koreksi desain: node=18 sisi=53 skeleton=63 RD=-0.0325 [-0.0633,-0.0021] detik=31.30 memori=2.3MB
+SOL[sanitasi_diare] SOL tanpa tier: node=18 sisi=38 skeleton=51 RD=-0.0378 [-0.0619,-0.0146] detik=61.92 memori=3.4MB
+SOL[sanitasi_diare] SOL tanpa pemisahan sampel: node=18 sisi=54 skeleton=67 RD=-0.0307 [-0.0539,-0.0114] detik=125.13 memori=6.9MB
+# 2026-10-10 18:24
+BENCH[sanitasi_diare] 200 tugas (100 replikasi × 2 skenario), gagal=0, 246.6 menit
+BENCH[sanitasi_diare] H1 Akurasi: didukung sebagian (6/27)
+BENCH[sanitasi_diare] H2 Kecepatan: didukung sebagian (3/8)
+BENCH[sanitasi_diare] H3 Memori: didukung sebagian (6/8)
+BENCH[sanitasi_diare] H4 Konvergensi & stabilitas: didukung sebagian (4/8)
+BENCH[sanitasi_diare] H5 Validitas koreksi desain: tidak didukung (0/2)
+# 2026-10-11 02:17
+BENCH[sanitasi_diare] 200 tugas (100 replikasi × 2 skenario), gagal=0, 460.9 menit
+BENCH[sanitasi_diare] H1 Akurasi: didukung sebagian (4/27)
+BENCH[sanitasi_diare] H2 Kecepatan: didukung sebagian (3/8)
+BENCH[sanitasi_diare] H3 Memori: didukung sebagian (7/8)
+BENCH[sanitasi_diare] H4 Konvergensi & stabilitas: didukung sebagian (6/8)
+BENCH[sanitasi_diare] H5 Validitas koreksi desain: didukung sebagian (1/2)
+# 2026-10-11 11:05
+BASE[pbi_diare] T_pbi->Y_diare n=16508 p=15 boot=500
+BASE[pbi_diare] B1[T_pbi->Y_diare] RMSEA=0.037 CFI=0.964 SRMR=0.023 chi2=606.6 df=52 (n_eff=7643)
+BASE[pbi_diare] B1 linear: total=+0.0167 langsung=+0.0167 tak langsung=+0.0000 | probit RD=+0.0162 | backdoor g-komp RD=+0.0194 [+0.0044,+0.0335]
+BASE[pbi_diare] B2 uji=4811 sisi berarah=36 tak berarah=3 SHD vs pakar=30 | IDA 1 himpunan, RD [+0.0214,+0.0214], min|RD|=+0.0214
+BASE[pbi_diare] B3 skor=gauss langkah=42 sisi=42 SHD vs pakar=36 skor akhir=-334330.9 (pakar -342981.6) | RD=+0.0203 [+0.0043,+0.0352]
+BASE[pbi_diare] TERBAIK: B3 BN berbasis skor (peringkat rata-rata 1.33; unggul pada BIC_SEM, CFI) RD=+0.0203 | B1 BIC=142 CFI=0.964 CI=0.0291 | B2 BIC=-330 CFI=0.989 CI=0.0326 | B3 BIC=-374 CFI=0.993 CI=0.0309
+# 2026-10-11 11:08
+BASE[sanitasi_diare_ctps] T_sanitasi->Y_diare n=16232 p=15 boot=500
+BASE[sanitasi_diare_ctps] B1[T_sanitasi->Y_diare] RMSEA=0.079 CFI=0.844 SRMR=0.068 chi2=2844.0 df=60 (n_eff=7515)
+BASE[sanitasi_diare_ctps] B1 linear: total=-0.0205 langsung=-0.0203 tak langsung=-0.0002 | probit RD=-0.0196 | backdoor g-komp RD=-0.0193 [-0.0376,-0.0002]
+BASE[sanitasi_diare_ctps] B2 uji=9108 sisi berarah=42 tak berarah=4 SHD vs pakar=38 | IDA 1 himpunan, RD [-0.0185,-0.0185], min|RD|=-0.0185
+BASE[sanitasi_diare_ctps] B3 skor=gauss langkah=50 sisi=50 SHD vs pakar=41 skor akhir=-325242.0 (pakar -333219.4) | RD=-0.0201 [-0.0399,-0.0016]
+BASE[sanitasi_diare_ctps] TERBAIK: B2 PC + tier + IDA (peringkat rata-rata 1.67; unggul pada lebar_CI) RD=-0.0185 | B1 BIC=2309 CFI=0.844 CI=0.0374 | B2 BIC=381 CFI=0.954 CI=0.0367 | B3 BIC=-247 CFI=0.991 CI=0.0383
+# 2026-10-11 11:11
+BASE[pbi_diare_biaya] T_pbi->Y_diare n=16508 p=15 boot=500
+BASE[pbi_diare_biaya] B1[T_pbi->Y_diare] RMSEA=0.038 CFI=0.964 SRMR=0.023 chi2=605.1 df=51 (n_eff=7643)
+BASE[pbi_diare_biaya] B1 linear: total=+0.0165 langsung=+0.0167 tak langsung=-0.0002 | probit RD=+0.0161 | backdoor g-komp RD=+0.0191 [+0.0039,+0.0328]
+BASE[pbi_diare_biaya] B2 uji=4811 sisi berarah=36 tak berarah=3 SHD vs pakar=31 | IDA 1 himpunan, RD [+0.0214,+0.0214], min|RD|=+0.0214
+BASE[pbi_diare_biaya] B3 skor=gauss langkah=42 sisi=42 SHD vs pakar=35 skor akhir=-334330.9 (pakar -342982.9) | RD=+0.0203 [+0.0043,+0.0352]
+BASE[pbi_diare_biaya] TERBAIK: B3 BN berbasis skor (peringkat rata-rata 1.33; unggul pada BIC_SEM, CFI) RD=+0.0203 | B1 BIC=149 CFI=0.964 CI=0.0289 | B2 BIC=-330 CFI=0.989 CI=0.0326 | B3 BIC=-374 CFI=0.993 CI=0.0309
+# 2026-10-11 11:13
+KAUSAL[sanitasi_diare] T_sanitasi->Y_diare n=16232 |Z|=13 identifikasi=YA mediator=-
+KAUSAL[sanitasi_diare] AIPW RD=-0.0338 [-0.0569,-0.0121] RR=0.79 [0.69,0.92] | gcomp RD=-0.0194 IPW RD=-0.0362
+KAUSAL[sanitasi_diare] E-value titik=1.83 CI=1.40 | SMD maks setelah IPW=0.11 | boot sah=500/500
+# 2026-10-11 11:14
+SOLv2[sanitasi_diare] SOL v2 (desain): node=15 sisi=42+0 RD=-0.0324 [-0.0544,-0.0104] induk T=sanitasi_klaster_lo, pend_ibu_thn, org_per_kamar, skor_kekayaan_nonwash, cuci_tangan_dasar 12.6s 83.7MB
+SOLv2[sanitasi_diare] SOL v2 naif: node=15 sisi=44+2 RD=-0.0326 [-0.0545,-0.0106] induk T=sanitasi_klaster_lo, pend_ibu_thn, org_per_kamar, skor_kekayaan_nonwash, air_layak, cuci_tangan_dasar 20.1s 63.6MB
+SOLv2[sanitasi_diare] SOL v2 + MLC: node=18 sisi=67+0 RD=-0.0309 [-0.0524,-0.0094] induk T=eta_pendidikan, eta_ekonomi, umur_ibu, sanitasi_klaster_lo, org_per_kamar 42.6s 84.5MB
+# 2026-10-11 11:16
+KAUSAL[sanitasi_diare_ctps] T_sanitasi->Y_diare n=16384 |Z|=12 identifikasi=YA mediator=cuci_tangan_dasar
+KAUSAL[sanitasi_diare_ctps] AIPW RD=-0.0309 [-0.0523,-0.0116] RR=0.81 [0.71,0.92] | gcomp RD=-0.0183 IPW RD=-0.0336
+KAUSAL[sanitasi_diare_ctps] E-value titik=1.77 CI=1.39 | SMD maks setelah IPW=0.12 | boot sah=500/500
+# 2026-10-11 11:17
+SOLv2[sanitasi_diare_ctps] SOL v2 (desain): node=15 sisi=42+0 RD=-0.0324 [-0.0544,-0.0104] induk T=sanitasi_klaster_lo, pend_ibu_thn, org_per_kamar, skor_kekayaan_nonwash, cuci_tangan_dasar 13.1s 83.7MB
+SOLv2[sanitasi_diare_ctps] SOL v2 naif: node=15 sisi=44+2 RD=-0.0326 [-0.0545,-0.0106] induk T=sanitasi_klaster_lo, pend_ibu_thn, org_per_kamar, skor_kekayaan_nonwash, air_layak, cuci_tangan_dasar 20.5s 63.6MB
+SOLv2[sanitasi_diare_ctps] SOL v2 + MLC: node=18 sisi=67+0 RD=-0.0309 [-0.0524,-0.0094] induk T=eta_pendidikan, eta_ekonomi, umur_ibu, sanitasi_klaster_lo, org_per_kamar 46.1s 84.5MB
+# 2026-10-11 11:18
+KAUSAL[pbi_diare] T_pbi->Y_diare n=16508 |Z|=13 identifikasi=YA mediator=-
+KAUSAL[pbi_diare] AIPW RD=+0.0246 [+0.0070,+0.0421] RR=1.18 [1.05,1.32] | gcomp RD=+0.0194 IPW RD=+0.0257
+KAUSAL[pbi_diare] E-value titik=1.65 CI=1.28 | SMD maks setelah IPW=0.03 | boot sah=500/500
+# 2026-10-11 11:19
+SOLv2[pbi_diare] SOL v2 (desain): node=15 sisi=34+1 RD=+0.0252 [+0.0079,+0.0426] induk T=pbi_pct_prov, ibu_bekerja, jml_art, pend_ibu_thn, skor_kekayaan_nonwash, T_sanitasi 7.1s 80.2MB
+SOLv2[pbi_diare] SOL v2 naif: node=15 sisi=39+0 RD=+0.0252 [+0.0079,+0.0426] induk T=pbi_pct_prov, ibu_bekerja, jml_art, pend_ibu_thn, skor_kekayaan_nonwash, T_sanitasi 11.6s 80.1MB
+SOLv2[pbi_diare] SOL v2 + MLC: node=19 sisi=66+0 RD=+0.0270 [+0.0092,+0.0448] induk T=eta_pendidikan, eta_ekonomi, urutan_lahir, pbi_pct_prov, jml_art 37.1s 77.5MB
+# 2026-10-11 11:21
+KAUSAL[pbi_diare_biaya] T_pbi->Y_diare n=16518 |Z|=12 identifikasi=YA mediator=hambatan_biaya
+KAUSAL[pbi_diare_biaya] AIPW RD=+0.0241 [+0.0067,+0.0415] RR=1.18 [1.05,1.31] | gcomp RD=+0.0187 IPW RD=+0.0251
+KAUSAL[pbi_diare_biaya] E-value titik=1.63 CI=1.27 | SMD maks setelah IPW=0.03 | boot sah=500/500
+# 2026-10-11 11:22
+SOLv2[pbi_diare_biaya] SOL v2 (desain): node=15 sisi=34+1 RD=+0.0252 [+0.0079,+0.0426] induk T=pbi_pct_prov, ibu_bekerja, jml_art, pend_ibu_thn, skor_kekayaan_nonwash, T_sanitasi 6.9s 80.2MB
+SOLv2[pbi_diare_biaya] SOL v2 naif: node=15 sisi=39+0 RD=+0.0252 [+0.0079,+0.0426] induk T=pbi_pct_prov, ibu_bekerja, jml_art, pend_ibu_thn, skor_kekayaan_nonwash, T_sanitasi 11.6s 80.1MB
+SOLv2[pbi_diare_biaya] SOL v2 + MLC: node=19 sisi=66+0 RD=+0.0270 [+0.0092,+0.0448] induk T=eta_pendidikan, eta_ekonomi, urutan_lahir, pbi_pct_prov, jml_art 34.2s 77.5MB
+# 2026-10-11 12:54
+BASE[fasilitas_neonatal] T_fasilitas->Y_mati_neonatal n=17607 p=16 boot=500
+BASE[fasilitas_neonatal] B1[T_fasilitas->Y_mati_neonatal] RMSEA=0.118 CFI=0.815 SRMR=0.079 chi2=6367.7 df=56 (n_eff=8151)
+BASE[fasilitas_neonatal] B1 linear: total=-0.0027 langsung=-0.0027 tak langsung=+0.0000 | probit RD=-0.0027 | backdoor g-komp RD=+0.0010 [-0.0049,+0.0061]
+BASE[fasilitas_neonatal] B2 uji=7866 sisi berarah=40 tak berarah=2 SHD vs pakar=46 | IDA 1 himpunan, RD [+0.0019,+0.0019], min|RD|=+0.0019
+BASE[fasilitas_neonatal] B3 skor=gauss langkah=51 sisi=51 SHD vs pakar=54 skor akhir=-365852.9 (pakar -384364.7) | RD=+0.0000 [+0.0000,+0.0000]
+BASE[fasilitas_neonatal] TERBAIK: B3 BN berbasis skor (peringkat rata-rata 1.00; unggul pada BIC_SEM, CFI) RD=+0.0000 | B1 BIC=5863 CFI=0.815 CI=0.0110 | B2 BIC=1323 CFI=0.944 CI=0.0101 | B3 BIC=-323 CFI=0.994 CI=nan
+# 2026-10-11 12:56
+NOV[pbi_diare] N1 SD-Hybrid uji=3147 skeleton=33 (B2 naif 39) delta_bar=2.13 n_eff=5059 sisi=26 SHD=25 RD=+0.0000 [+0.0000,+0.0000]
+NOV[pbi_diare] banding: terbaik=B3 BN berbasis skor (peringkat 1.33) | B1 BIC_SEM=142 CFI=0.964 lebar_CI=0.0291 | B2 BIC_SEM=-330 CFI=0.989 lebar_CI=0.0326 | B3 BIC_SEM=-374 CFI=0.993 lebar_CI=0.0309 | N1 BIC_SEM=-362 CFI=0.984 lebar_CI=nan
+NOV[pbi_diare] uji (naif/orde1/orde2): biner 2×2, S=∅ efek=0.0: 0.124/0.045/0.045; 3×3 (df 4), S=∅ efek=0.0: 0.138/0.071/0.066; biner 2×2, S={z} efek=0.0: 0.122/0.070/0.069; kontinu, S=∅ efek=0.0: 0.215/0.066/0.066; kontinu, S={z} efek=0.0: 0.213/0.064/0.064; biner 2×2, S=∅ efek=0.05: 0.947/0.739/0.739; 3×3 (df 4), S=∅ efek=0.05: 0.967/0.786/0.781; biner 2×2, S={z} efek=0.05: 0.819/0.541/0.540; kontinu, S=∅ efek=0.05: 0.999/0.923/0.923; kontinu, S={z} efek=0.05: 0.999/0.924/0.924; biner 2×2, S=∅ efek=0.1: 1.000/1.000/1.000; 3×3 (df 4), S=∅ efek=0.1: 1.000/1.000/1.000; biner 2×2, S={z} efek=0.1: 1.000/0.991/0.991; kontinu, S=∅ efek=0.1: 1.000/1.000/1.000; kontinu, S={z} efek=0.1: 1.000/1.000/1.000
+# 2026-10-11 12:57
+NOV[pbi_diare] N2 TO-DAG ruang urutan=103,680 (tanpa tier 1.31e+12) skor lokal=513 F=-102893.9 (B3 -102914.2) sisi=32 SHD=29 detik=0.25 memori=8.4MB RD=+0.0203
+NOV[pbi_diare] banding: terbaik=N2 TO-DAG (peringkat 1.67) | B1 detik_penemuan=0.00742 memori_MB=5.96 BIC_SEM=142 | B2 detik_penemuan=3.78 memori_MB=3.97 BIC_SEM=-330 | B3 detik_penemuan=0.331 memori_MB=5.95 BIC_SEM=-374 | N2 detik_penemuan=0.254 memori_MB=8.43 BIC_SEM=-410
+# 2026-10-11 13:00
+NOV[fasilitas_neonatal] N1 SD-Hybrid uji=4758 skeleton=38 (B2 naif 42) delta_bar=2.19 n_eff=5197 sisi=33 SHD=40 RD=+0.0000 [+0.0000,+0.0000]
+NOV[fasilitas_neonatal] banding: terbaik=B3 BN berbasis skor (peringkat 1.67) | B1 BIC_SEM=5.86e+03 CFI=0.815 lebar_CI=0.011 | B2 BIC_SEM=1.32e+03 CFI=0.944 lebar_CI=0.0101 | B3 BIC_SEM=-323 CFI=0.994 lebar_CI=nan | N1 BIC_SEM=281 CFI=0.972 lebar_CI=nan
+NOV[fasilitas_neonatal] uji (naif/orde1/orde2): biner 2×2, S=∅ efek=0.0: 0.114/0.050/0.050; 3×3 (df 4), S=∅ efek=0.0: 0.121/0.051/0.049; biner 2×2, S={z} efek=0.0: 0.114/0.057/0.056; kontinu, S=∅ efek=0.0: 0.208/0.053/0.053; kontinu, S={z} efek=0.0: 0.208/0.053/0.053; biner 2×2, S=∅ efek=0.05: 0.959/0.771/0.771; 3×3 (df 4), S=∅ efek=0.05: 0.972/0.802/0.792; biner 2×2, S={z} efek=0.05: 0.827/0.559/0.558; kontinu, S=∅ efek=0.05: 0.998/0.926/0.926; kontinu, S={z} efek=0.05: 0.998/0.927/0.927; biner 2×2, S=∅ efek=0.1: 1.000/1.000/1.000; 3×3 (df 4), S=∅ efek=0.1: 1.000/1.000/1.000; biner 2×2, S={z} efek=0.1: 1.000/0.995/0.995; kontinu, S=∅ efek=0.1: 1.000/1.000/1.000; kontinu, S={z} efek=0.1: 1.000/1.000/1.000
+# 2026-10-11 13:00
+NOV[fasilitas_neonatal] N2 TO-DAG ruang urutan=172,800 (tanpa tier 2.09e+13) skor lokal=812 F=-107491.3 (B3 -107521.3) sisi=39 SHD=46 detik=0.25 memori=9.6MB RD=+0.0000
+NOV[fasilitas_neonatal] banding: terbaik=N2 TO-DAG (peringkat 1.67) | B1 detik_penemuan=0.00881 memori_MB=6.78 BIC_SEM=5.86e+03 | B2 detik_penemuan=3.82 memori_MB=4.52 BIC_SEM=1.32e+03 | B3 detik_penemuan=0.371 memori_MB=6.77 BIC_SEM=-323 | N2 detik_penemuan=0.247 memori_MB=9.55 BIC_SEM=-365
+# 2026-10-11 15:28
+KAUSAL[pbi_neonatal] T_pbi->Y_mati_neonatal n=6968 |Z|=10 identifikasi=YA mediator=T_fasilitas
+KAUSAL[pbi_neonatal] AIPW RD=-0.0011 [-0.0075,+0.0046] RR=0.92 [0.51,1.39] | gcomp RD=-0.0008 IPW RD=-0.0022
+KAUSAL[pbi_neonatal] E-value titik=1.40 CI=1.00 | SMD maks setelah IPW=0.02 | boot sah=500/500
+# 2026-10-11 15:29
+SOLv2[pbi_neonatal] SOL v2 (desain): node=13 sisi=23+1 RD=-0.0017 [-0.0081,+0.0047] induk T=pbi_pct_prov, jml_art, pend_ibu_thn, skor_kekayaan_nonwash 1.5s 35.9MB
+SOLv2[pbi_neonatal] SOL v2 naif: node=13 sisi=27+1 RD=-0.0017 [-0.0081,+0.0047] induk T=pbi_pct_prov, jml_art, pend_ibu_thn, skor_kekayaan_nonwash 3.3s 35.8MB
+SOLv2[pbi_neonatal] SOL v2 + MLC: node=17 sisi=50+0 RD=-0.0004 [-0.0073,+0.0064] induk T=eta_pendidikan, eta_ekonomi, pbi_pct_prov, jml_art 12.7s 36.2MB
+# 2026-10-11 15:30
+KAUSAL[fasilitas_neonatal] T_fasilitas->Y_mati_neonatal n=17607 |Z|=14 identifikasi=TIDAK (ada laten) mediator=-
+KAUSAL[fasilitas_neonatal] AIPW RD=-0.0031 [-0.0142,+0.0061] RR=0.80 [0.45,1.78] | gcomp RD=+0.0010 IPW RD=-0.0036
+KAUSAL[fasilitas_neonatal] E-value titik=1.81 CI=1.00 | SMD maks setelah IPW=0.11 | boot sah=500/500
+# 2026-10-11 15:31
+SOLv2[fasilitas_neonatal] SOL v2 (desain): node=16 sisi=39+0 RD=-0.0019 [-0.0097,+0.0059] induk T=fasilitas_klaster_lo, pend_ibu_thn, urutan_lahir, skor_kekayaan_nonwash 13.0s 96.1MB
+SOLv2[fasilitas_neonatal] SOL v2 naif: node=16 sisi=42+0 RD=-0.0019 [-0.0097,+0.0059] induk T=fasilitas_klaster_lo, pend_ibu_thn, urutan_lahir, skor_kekayaan_nonwash 21.5s 57.7MB
+SOLv2[fasilitas_neonatal] SOL v2 + MLC: node=16 sisi=47+0 RD=-0.0026 [-0.0105,+0.0053] induk T=eta_pendidikan, eta_ekonomi, cuci_tangan_dasar, air_layak, urutan_lahir, perdesaan, fasilitas_klaster_lo 37.6s 126.4MB
+# 2026-10-11 15:32
+NOV[pbi_diare] N3 MLC-DAG v2 node 32->19 reflektif=['eta_pendidikan'] komposit=['eta_ekonomi', 'eta_akses'] dipecah=['eta_kebersihan'] omega={'eta_pendidikan': 0.89, 'eta_kebersihan': 0.32} sisi=68 detik=4.86 (tanpa konstruk 6.90) RD=+0.0000 (tanpa konstruk +0.0000)
+NOV[pbi_diare] banding: terbaik=B2 PC + tier + IDA (peringkat 1.67) | B1 detik_penemuan=0.00742 memori_MB=5.96 lebar_CI=0.0291 | B2 detik_penemuan=3.78 memori_MB=3.97 lebar_CI=0.0326 | B3 detik_penemuan=0.331 memori_MB=5.95 lebar_CI=0.0309 | N3 detik_penemuan=4.86 memori_MB=10.8 lebar_CI=nan | N3- detik_penemuan=6.9 memori_MB=5.62 lebar_CI=nan
+# 2026-10-11 15:32
+NOV[pbi_neonatal] N3 MLC-DAG v2 node 30->17 reflektif=['eta_pendidikan'] komposit=['eta_ekonomi', 'eta_akses'] dipecah=['eta_kebersihan'] omega={'eta_pendidikan': 0.9, 'eta_kebersihan': 0.34} sisi=61 detik=3.45 (tanpa konstruk 5.87) RD=+0.0000 (tanpa konstruk +0.0000)
+NOV[pbi_neonatal] banding: terbaik=B2 PC + tier + IDA (peringkat 1.33) | B1 detik_penemuan=0.0105 memori_MB=2.18 lebar_CI=0.0113 | B2 detik_penemuan=2.79 memori_MB=1.45 lebar_CI=0.0112 | B3 detik_penemuan=0.397 memori_MB=2.18 lebar_CI=nan | N3 detik_penemuan=3.45 memori_MB=4.13 lebar_CI=nan | N3- detik_penemuan=5.87 memori_MB=5.66 lebar_CI=nan
+# 2026-10-11 15:33
+NOV[fasilitas_neonatal] N3 MLC-DAG v2 node 29->16 reflektif=['eta_pendidikan'] komposit=['eta_ekonomi', 'eta_akses'] dipecah=['eta_kebersihan'] omega={'eta_pendidikan': 0.9, 'eta_kebersihan': 0.33} sisi=52 detik=3.56 (tanpa konstruk 5.17) RD=+0.0006 (tanpa konstruk +0.0000)
+NOV[fasilitas_neonatal] banding: terbaik=B2 PC + tier + IDA (peringkat 1.67) | B1 detik_penemuan=0.00881 memori_MB=6.78 lebar_CI=0.011 | B2 detik_penemuan=3.82 memori_MB=4.52 lebar_CI=0.0101 | B3 detik_penemuan=0.371 memori_MB=6.77 lebar_CI=nan | N3 detik_penemuan=3.56 memori_MB=9.54 lebar_CI=0.0127 | N3- detik_penemuan=5.17 memori_MB=4.6 lebar_CI=nan
+# 2026-10-11 15:37
+SOL[sanitasi_diare] SOL-DAG: node=18 sisi=40 skeleton=51 RD=+0.0000 [+0.0000,+0.0000] detik=20.36 memori=3.4MB
+SOL[sanitasi_diare] SOL tanpa MLC: node=15 sisi=33 skeleton=37 RD=+0.0000 [+0.0000,+0.0000] detik=8.88 memori=4.1MB
+SOL[sanitasi_diare] SOL tanpa koreksi desain: node=18 sisi=53 skeleton=63 RD=-0.0325 [-0.0633,-0.0021] detik=13.10 memori=2.3MB
+SOL[sanitasi_diare] SOL tanpa tier: node=18 sisi=38 skeleton=51 RD=-0.0378 [-0.0619,-0.0146] detik=24.74 memori=3.4MB
+SOL[sanitasi_diare] SOL tanpa pemisahan sampel: node=18 sisi=54 skeleton=67 RD=-0.0307 [-0.0539,-0.0114] detik=65.15 memori=6.9MB
+# 2026-10-11 15:40
+SOL[pbi_diare] SOL-DAG: node=19 sisi=47 skeleton=52 RD=+0.0000 [+0.0000,+0.0000] detik=20.55 memori=3.7MB
+SOL[pbi_diare] SOL tanpa MLC: node=15 sisi=25 skeleton=29 RD=+0.0000 [+0.0000,+0.0000] detik=3.78 memori=4.1MB
+SOL[pbi_diare] SOL tanpa koreksi desain: node=19 sisi=51 skeleton=55 RD=+0.0179 [-0.0053,+0.0403] detik=11.12 memori=2.5MB
+SOL[pbi_diare] SOL tanpa tier: node=19 sisi=45 skeleton=52 RD=+0.0202 [-0.0020,+0.0418] detik=22.23 memori=4.2MB
+SOL[pbi_diare] SOL tanpa pemisahan sampel: node=19 sisi=54 skeleton=64 RD=+0.0000 [+0.0000,+0.0000] detik=45.10 memori=7.3MB
+# 2026-10-11 15:41
+SOL[pbi_neonatal] SOL-DAG: node=17 sisi=36 skeleton=40 RD=+0.0000 [+0.0000,+0.0000] detik=8.30 memori=1.6MB
+SOL[pbi_neonatal] SOL tanpa MLC: node=13 sisi=18 skeleton=21 RD=+0.0000 [+0.0000,+0.0000] detik=1.36 memori=1.6MB
+SOL[pbi_neonatal] SOL tanpa koreksi desain: node=17 sisi=44 skeleton=48 RD=+0.0000 [+0.0000,+0.0000] detik=6.59 memori=1.0MB
+SOL[pbi_neonatal] SOL tanpa tier: node=17 sisi=37 skeleton=40 RD=+0.0000 [+0.0000,+0.0000] detik=8.89 memori=2.7MB
+SOL[pbi_neonatal] SOL tanpa pemisahan sampel: node=17 sisi=42 skeleton=49 RD=+0.0000 [+0.0000,+0.0000] detik=11.61 memori=3.0MB
+# 2026-10-11 15:42
+SOL[fasilitas_neonatal] SOL-DAG: node=16 sisi=34 skeleton=38 RD=+0.0000 [+0.0000,+0.0000] detik=12.85 memori=3.3MB
+SOL[fasilitas_neonatal] SOL tanpa MLC: node=16 sisi=28 skeleton=32 RD=+0.0000 [+0.0000,+0.0000] detik=7.60 memori=4.7MB
+SOL[fasilitas_neonatal] SOL tanpa koreksi desain: node=16 sisi=43 skeleton=49 RD=+0.0000 [+0.0000,+0.0000] detik=8.42 memori=2.3MB
+SOL[fasilitas_neonatal] SOL tanpa tier: node=16 sisi=34 skeleton=38 RD=+0.0000 [+0.0000,+0.0000] detik=13.19 memori=3.3MB
+SOL[fasilitas_neonatal] SOL tanpa pemisahan sampel: node=16 sisi=39 skeleton=47 RD=+0.0000 [+0.0000,+0.0000] detik=26.76 memori=6.5MB
+# 2026-10-11 15:50
+PREP: 17848 kelahiran, 63 variabel, 1967 klaster, 34 provinsi
+PREP: PCA kekayaan non-WASH menjelaskan 22.0% varians; RT tanpa pasangan HR = 0
+# 2026-10-11 15:50
+EDA: kosong terbanyak jarak_sumur_septik_m=71%, Y_mati_bayi=19%, M_anc4=14%
+EDA: T_pbi 0.297 [0.285-0.309] n=17846
+EDA: T_sanitasi 0.743 [0.728-0.758] n=17212
+EDA: T_fasilitas 0.794 [0.780-0.808] n=17769
+EDA: Y_diare 0.142 [0.134-0.149] n=17155
+EDA: Y_ispa 0.042 [0.038-0.046] n=17168
+EDA: Y_mati_neonatal 0.015 [0.013-0.018] n=17724
+EDA: Y_mati_bayi 0.023 [0.020-0.026] n=14383
+EDA: T_pbi kovariat SMD>0.1=23; terbesar jkn_nonpbi=-0.97, kuintil_kekayaan_nonwash=-0.59, skor_kekayaan_nonwash=-0.56
+EDA: T_sanitasi kovariat SMD>0.1=28; terbesar sanitasi_klaster_lo=+1.21, skor_kekayaan_nonwash=+1.00, kuintil_kekayaan_nonwash=+0.99
+EDA: T_fasilitas kovariat SMD>0.1=26; terbesar fasilitas_klaster_lo=+1.71, skor_kekayaan_nonwash=+0.93, kuintil_kekayaan_nonwash=+0.88
+# 2026-10-11 15:51
+KAUSAL[sanitasi_diare] T_sanitasi->Y_diare n=16232 |Z|=13 identifikasi=YA mediator=-
+KAUSAL[sanitasi_diare] AIPW RD=-0.0338 [-0.0569,-0.0121] RR=0.79 [0.69,0.92] | gcomp RD=-0.0194 IPW RD=-0.0362
+KAUSAL[sanitasi_diare] E-value titik=1.83 CI=1.40 | SMD maks setelah IPW=0.11 | boot sah=500/500
+# 2026-10-11 16:07
+PREP: 17848 kelahiran, 63 variabel, 1967 klaster, 34 provinsi
+PREP: PCA kekayaan non-WASH menjelaskan 22.0% varians; RT tanpa pasangan HR = 0
+# 2026-10-11 16:08
+EDA: kosong terbanyak jarak_sumur_septik_m=71%, Y_mati_bayi=19%, M_anc4=14%
+EDA: T_pbi 0.297 [0.285-0.309] n=17846
+EDA: T_sanitasi 0.743 [0.728-0.758] n=17212
+EDA: T_fasilitas 0.794 [0.780-0.808] n=17769
+EDA: Y_diare 0.142 [0.134-0.149] n=17155
+EDA: Y_ispa 0.042 [0.038-0.046] n=17168
+EDA: Y_mati_neonatal 0.015 [0.013-0.018] n=17724
+EDA: Y_mati_bayi 0.023 [0.020-0.026] n=14383
+EDA: T_pbi kovariat SMD>0.1=23; terbesar jkn_nonpbi=-0.97, kuintil_kekayaan_nonwash=-0.59, skor_kekayaan_nonwash=-0.56
+EDA: T_sanitasi kovariat SMD>0.1=28; terbesar sanitasi_klaster_lo=+1.21, skor_kekayaan_nonwash=+1.00, kuintil_kekayaan_nonwash=+0.99
+EDA: T_fasilitas kovariat SMD>0.1=26; terbesar fasilitas_klaster_lo=+1.71, skor_kekayaan_nonwash=+0.93, kuintil_kekayaan_nonwash=+0.88
+# 2026-10-11 16:16
+KAUSAL[sanitasi_diare] T_sanitasi->Y_diare n=16232 |Z|=13 identifikasi=YA mediator=-
+KAUSAL[sanitasi_diare] AIPW RD=-0.0338 [-0.0569,-0.0121] RR=0.79 [0.69,0.92] | gcomp RD=-0.0194 IPW RD=-0.0362
+KAUSAL[sanitasi_diare] E-value titik=1.83 CI=1.40 | SMD maks setelah IPW=0.11 | boot sah=500/500
+KAUSAL[pbi_diare] T_pbi->Y_diare n=16508 |Z|=13 identifikasi=YA mediator=-
+KAUSAL[pbi_diare] AIPW RD=+0.0246 [+0.0083,+0.0417] RR=1.18 [1.06,1.32] | gcomp RD=+0.0194 IPW RD=+0.0257
+KAUSAL[pbi_diare] E-value titik=1.65 CI=1.31 | SMD maks setelah IPW=0.03 | boot sah=500/500
+KAUSAL[pbi_neonatal] T_pbi->Y_mati_neonatal n=6968 |Z|=10 identifikasi=YA mediator=T_fasilitas
+KAUSAL[pbi_neonatal] AIPW RD=-0.0011 [-0.0071,+0.0054] RR=0.92 [0.54,1.44] | gcomp RD=-0.0008 IPW RD=-0.0022
+KAUSAL[pbi_neonatal] E-value titik=1.40 CI=1.00 | SMD maks setelah IPW=0.02 | boot sah=500/500
+KAUSAL[fasilitas_neonatal] T_fasilitas->Y_mati_neonatal n=17607 |Z|=14 identifikasi=TIDAK (ada laten) mediator=-
+KAUSAL[fasilitas_neonatal] AIPW RD=-0.0031 [-0.0130,+0.0053] RR=0.80 [0.48,1.71] | gcomp RD=+0.0010 IPW RD=-0.0036
+KAUSAL[fasilitas_neonatal] E-value titik=1.81 CI=1.00 | SMD maks setelah IPW=0.11 | boot sah=500/500
+KAUSAL[sanitasi_diare_ctps] T_sanitasi->Y_diare n=16384 |Z|=12 identifikasi=YA mediator=cuci_tangan_dasar
+KAUSAL[sanitasi_diare_ctps] AIPW RD=-0.0309 [-0.0515,-0.0108] RR=0.81 [0.71,0.93] | gcomp RD=-0.0183 IPW RD=-0.0336
+KAUSAL[sanitasi_diare_ctps] E-value titik=1.77 CI=1.37 | SMD maks setelah IPW=0.12 | boot sah=500/500
+KAUSAL[pbi_diare_biaya] T_pbi->Y_diare n=16518 |Z|=12 identifikasi=YA mediator=hambatan_biaya
+KAUSAL[pbi_diare_biaya] AIPW RD=+0.0241 [+0.0070,+0.0407] RR=1.18 [1.05,1.31] | gcomp RD=+0.0187 IPW RD=+0.0251
+KAUSAL[pbi_diare_biaya] E-value titik=1.63 CI=1.28 | SMD maks setelah IPW=0.03 | boot sah=500/500
+# 2026-10-11 16:37
+BASE[sanitasi_diare] T_sanitasi->Y_diare n=16232 p=15 boot=500
+BASE[sanitasi_diare] B1[T_sanitasi->Y_diare] RMSEA=0.079 CFI=0.840 SRMR=0.069 chi2=2915.7 df=61 (n_eff=7515)
+BASE[sanitasi_diare] B1 linear: total=-0.0203 langsung=-0.0203 tak langsung=+0.0000 | probit RD=-0.0194 | backdoor g-komp RD=-0.0194 [-0.0381,-0.0004]
+BASE[sanitasi_diare] B2 uji=9108 sisi berarah=42 tak berarah=4 SHD vs pakar=39 | IDA 1 himpunan, RD [-0.0185,-0.0185], min|RD|=-0.0185
+BASE[sanitasi_diare] B3 skor=gauss langkah=50 sisi=50 SHD vs pakar=41 skor akhir=-325242.0 (pakar -333284.2) | RD=-0.0201 [-0.0399,-0.0016]
+BASE[sanitasi_diare] TERBAIK: B2 PC + tier + IDA (peringkat rata-rata 1.67; unggul pada lebar_CI) RD=-0.0185 | B1 BIC=2371 CFI=0.840 CI=0.0378 | B2 BIC=381 CFI=0.954 CI=0.0367 | B3 BIC=-247 CFI=0.991 CI=0.0383
+BASE[pbi_diare] T_pbi->Y_diare n=16508 p=15 boot=500
+BASE[pbi_diare] B1[T_pbi->Y_diare] RMSEA=0.037 CFI=0.964 SRMR=0.023 chi2=606.6 df=52 (n_eff=7643)
+BASE[pbi_diare] B1 linear: total=+0.0167 langsung=+0.0167 tak langsung=+0.0000 | probit RD=+0.0162 | backdoor g-komp RD=+0.0194 [+0.0037,+0.0343]
+BASE[pbi_diare] B2 uji=4811 sisi berarah=36 tak berarah=3 SHD vs pakar=30 | IDA 1 himpunan, RD [+0.0214,+0.0214], min|RD|=+0.0214
+BASE[pbi_diare] B3 skor=gauss langkah=42 sisi=42 SHD vs pakar=36 skor akhir=-334330.9 (pakar -342981.6) | RD=+0.0203 [+0.0040,+0.0367]
+BASE[pbi_diare] TERBAIK: B3 BN berbasis skor (peringkat rata-rata 1.67; unggul pada BIC_SEM, CFI) RD=+0.0203 | B1 BIC=142 CFI=0.964 CI=0.0306 | B2 BIC=-330 CFI=0.989 CI=0.0318 | B3 BIC=-374 CFI=0.993 CI=0.0327
+BASE[pbi_neonatal] T_pbi->Y_mati_neonatal n=6953 p=13 boot=500
+BASE[pbi_neonatal] B1[T_pbi->Y_mati_neonatal] RMSEA=0.116 CFI=0.839 SRMR=0.070 chi2=1331.9 df=30 (n_eff=3219)
+BASE[pbi_neonatal] B1 linear: total=-0.0025 langsung=-0.0028 tak langsung=+0.0002 | probit RD=-0.0022 | backdoor g-komp RD=-0.0011 [-0.0064,+0.0052]
+BASE[pbi_neonatal] B2 uji=2345 sisi berarah=23 tak berarah=5 SHD vs pakar=28 | IDA 1 himpunan, RD [-0.0014,-0.0014], min|RD|=-0.0014
+BASE[pbi_neonatal] B3 skor=gauss langkah=34 sisi=34 SHD vs pakar=30 skor akhir=-119443.1 (pakar -124446.4) | RD=+0.0000 [+0.0000,+0.0000]
+BASE[pbi_neonatal] TERBAIK: B3 BN berbasis skor (peringkat rata-rata 1.00; unggul pada BIC_SEM, CFI) RD=+0.0000 | B1 BIC=1090 CFI=0.839 CI=0.0116 | B2 BIC=168 CFI=0.936 CI=0.0114 | B3 BIC=-243 CFI=0.992 CI=nan
+BASE[fasilitas_neonatal] T_fasilitas->Y_mati_neonatal n=17607 p=16 boot=500
+BASE[fasilitas_neonatal] B1[T_fasilitas->Y_mati_neonatal] RMSEA=0.118 CFI=0.815 SRMR=0.079 chi2=6367.7 df=56 (n_eff=8151)
+BASE[fasilitas_neonatal] B1 linear: total=-0.0027 langsung=-0.0027 tak langsung=+0.0000 | probit RD=-0.0027 | backdoor g-komp RD=+0.0010 [-0.0057,+0.0058]
+BASE[fasilitas_neonatal] B2 uji=7866 sisi berarah=40 tak berarah=2 SHD vs pakar=46 | IDA 1 himpunan, RD [+0.0019,+0.0019], min|RD|=+0.0019
+BASE[fasilitas_neonatal] B3 skor=gauss langkah=51 sisi=51 SHD vs pakar=54 skor akhir=-365852.9 (pakar -384364.7) | RD=+0.0000 [+0.0000,+0.0000]
+BASE[fasilitas_neonatal] TERBAIK: B3 BN berbasis skor (peringkat rata-rata 1.00; unggul pada BIC_SEM, CFI) RD=+0.0000 | B1 BIC=5863 CFI=0.815 CI=0.0115 | B2 BIC=1323 CFI=0.944 CI=0.0115 | B3 BIC=-323 CFI=0.994 CI=nan
+BASE[sanitasi_diare_ctps] T_sanitasi->Y_diare n=16232 p=15 boot=500
+BASE[sanitasi_diare_ctps] B1[T_sanitasi->Y_diare] RMSEA=0.079 CFI=0.844 SRMR=0.068 chi2=2844.0 df=60 (n_eff=7515)
+BASE[sanitasi_diare_ctps] B1 linear: total=-0.0205 langsung=-0.0203 tak langsung=-0.0002 | probit RD=-0.0196 | backdoor g-komp RD=-0.0193 [-0.0365,-0.0012]
+BASE[sanitasi_diare_ctps] B2 uji=9108 sisi berarah=42 tak berarah=4 SHD vs pakar=38 | IDA 1 himpunan, RD [-0.0185,-0.0185], min|RD|=-0.0185
+BASE[sanitasi_diare_ctps] B3 skor=gauss langkah=50 sisi=50 SHD vs pakar=41 skor akhir=-325242.0 (pakar -333219.4) | RD=-0.0201 [-0.0388,-0.0020]
+BASE[sanitasi_diare_ctps] TERBAIK: B3 BN berbasis skor (peringkat rata-rata 1.67; unggul pada BIC_SEM, CFI) RD=-0.0201 | B1 BIC=2309 CFI=0.844 CI=0.0353 | B2 BIC=381 CFI=0.954 CI=0.0367 | B3 BIC=-247 CFI=0.991 CI=0.0368
+BASE[pbi_diare_biaya] T_pbi->Y_diare n=16508 p=15 boot=500
+BASE[pbi_diare_biaya] B1[T_pbi->Y_diare] RMSEA=0.038 CFI=0.964 SRMR=0.023 chi2=605.1 df=51 (n_eff=7643)
+BASE[pbi_diare_biaya] B1 linear: total=+0.0165 langsung=+0.0167 tak langsung=-0.0002 | probit RD=+0.0161 | backdoor g-komp RD=+0.0191 [+0.0048,+0.0368]
+BASE[pbi_diare_biaya] B2 uji=4811 sisi berarah=36 tak berarah=3 SHD vs pakar=31 | IDA 1 himpunan, RD [+0.0214,+0.0214], min|RD|=+0.0214
+BASE[pbi_diare_biaya] B3 skor=gauss langkah=42 sisi=42 SHD vs pakar=35 skor akhir=-334330.9 (pakar -342982.9) | RD=+0.0203 [+0.0056,+0.0377]
+BASE[pbi_diare_biaya] TERBAIK: B2 PC + tier + IDA (peringkat rata-rata 1.67; unggul pada lebar_CI) RD=+0.0214 | B1 BIC=149 CFI=0.964 CI=0.0320 | B2 BIC=-330 CFI=0.989 CI=0.0319 | B3 BIC=-374 CFI=0.993 CI=0.0321
+# 2026-10-11 16:55
+NOV[sanitasi_diare] N1 SD-Hybrid uji=6343 skeleton=42 (B2 naif 46) delta_bar=2.26 n_eff=4670 sisi=36 SHD=35 RD=+0.0000 [+0.0000,+0.0000]
+NOV[sanitasi_diare] banding: terbaik=B3 BN berbasis skor (peringkat 1.67) | B1 BIC_SEM=2.37e+03 CFI=0.84 lebar_CI=0.0378 | B2 BIC_SEM=381 CFI=0.954 lebar_CI=0.0367 | B3 BIC_SEM=-247 CFI=0.991 lebar_CI=0.0383 | N1 BIC_SEM=344 CFI=0.951 lebar_CI=nan
+NOV[sanitasi_diare] uji (naif/orde1/orde2): biner 2×2, S=∅ efek=0.0: 0.121/0.045/0.045; 3×3 (df 4), S=∅ efek=0.0: 0.114/0.049/0.043; biner 2×2, S={z} efek=0.0: 0.107/0.053/0.051; kontinu, S=∅ efek=0.0: 0.225/0.053/0.053; kontinu, S={z} efek=0.0: 0.226/0.053/0.053; biner 2×2, S=∅ efek=0.05: 0.954/0.746/0.746; 3×3 (df 4), S=∅ efek=0.05: 0.958/0.786/0.775; biner 2×2, S={z} efek=0.05: 0.833/0.555/0.554; kontinu, S=∅ efek=0.05: 0.998/0.927/0.927; kontinu, S={z} efek=0.05: 0.997/0.928/0.928; biner 2×2, S=∅ efek=0.1: 1.000/1.000/1.000; 3×3 (df 4), S=∅ efek=0.1: 1.000/1.000/1.000; biner 2×2, S={z} efek=0.1: 1.000/0.992/0.992; kontinu, S=∅ efek=0.1: 1.000/1.000/1.000; kontinu, S={z} efek=0.1: 1.000/1.000/1.000
+NOV[pbi_diare] N1 SD-Hybrid uji=3147 skeleton=33 (B2 naif 39) delta_bar=2.13 n_eff=5059 sisi=26 SHD=25 RD=+0.0000 [+0.0000,+0.0000]
+NOV[pbi_diare] banding: terbaik=B3 BN berbasis skor (peringkat 1.67) | B1 BIC_SEM=142 CFI=0.964 lebar_CI=0.0306 | B2 BIC_SEM=-330 CFI=0.989 lebar_CI=0.0318 | B3 BIC_SEM=-374 CFI=0.993 lebar_CI=0.0327 | N1 BIC_SEM=-362 CFI=0.984 lebar_CI=nan
+NOV[pbi_diare] uji (naif/orde1/orde2): biner 2×2, S=∅ efek=0.0: 0.124/0.045/0.045; 3×3 (df 4), S=∅ efek=0.0: 0.138/0.071/0.066; biner 2×2, S={z} efek=0.0: 0.122/0.070/0.069; kontinu, S=∅ efek=0.0: 0.215/0.066/0.066; kontinu, S={z} efek=0.0: 0.213/0.064/0.064; biner 2×2, S=∅ efek=0.05: 0.947/0.739/0.739; 3×3 (df 4), S=∅ efek=0.05: 0.967/0.786/0.781; biner 2×2, S={z} efek=0.05: 0.819/0.541/0.540; kontinu, S=∅ efek=0.05: 0.999/0.923/0.923; kontinu, S={z} efek=0.05: 0.999/0.924/0.924; biner 2×2, S=∅ efek=0.1: 1.000/1.000/1.000; 3×3 (df 4), S=∅ efek=0.1: 1.000/1.000/1.000; biner 2×2, S={z} efek=0.1: 1.000/0.991/0.991; kontinu, S=∅ efek=0.1: 1.000/1.000/1.000; kontinu, S={z} efek=0.1: 1.000/1.000/1.000
+NOV[pbi_neonatal] N1 SD-Hybrid uji=1248 skeleton=24 (B2 naif 28) delta_bar=1.39 n_eff=3220 sisi=23 SHD=25 RD=+0.0000 [+0.0000,+0.0000]
+NOV[pbi_neonatal] banding: terbaik=B3 BN berbasis skor (peringkat 1.67) | B1 BIC_SEM=1.09e+03 CFI=0.839 lebar_CI=0.0116 | B2 BIC_SEM=168 CFI=0.936 lebar_CI=0.0114 | B3 BIC_SEM=-243 CFI=0.992 lebar_CI=nan | N1 BIC_SEM=-139 CFI=0.972 lebar_CI=nan
+NOV[pbi_neonatal] uji (naif/orde1/orde2): biner 2×2, S=∅ efek=0.0: 0.086/0.045/0.045; 3×3 (df 4), S=∅ efek=0.0: 0.082/0.056/0.055; biner 2×2, S={z} efek=0.0: 0.066/0.043/0.043; kontinu, S=∅ efek=0.0: 0.124/0.059/0.059; kontinu, S={z} efek=0.0: 0.124/0.057/0.057; biner 2×2, S=∅ efek=0.05: 0.720/0.491/0.491; 3×3 (df 4), S=∅ efek=0.05: 0.750/0.484/0.473; biner 2×2, S={z} efek=0.05: 0.490/0.316/0.314; kontinu, S=∅ efek=0.05: 0.948/0.773/0.773; kontinu, S={z} efek=0.05: 0.949/0.772/0.772; biner 2×2, S=∅ efek=0.1: 1.000/0.967/0.967; 3×3 (df 4), S=∅ efek=0.1: 1.000/0.984/0.984; biner 2×2, S={z} efek=0.1: 0.972/0.861/0.860; kontinu, S=∅ efek=0.1: 1.000/1.000/1.000; kontinu, S={z} efek=0.1: 1.000/1.000/1.000
+NOV[fasilitas_neonatal] N1 SD-Hybrid uji=4758 skeleton=38 (B2 naif 42) delta_bar=2.19 n_eff=5197 sisi=33 SHD=40 RD=+0.0000 [+0.0000,+0.0000]
+NOV[fasilitas_neonatal] banding: terbaik=B3 BN berbasis skor (peringkat 1.67) | B1 BIC_SEM=5.86e+03 CFI=0.815 lebar_CI=0.0115 | B2 BIC_SEM=1.32e+03 CFI=0.944 lebar_CI=0.0115 | B3 BIC_SEM=-323 CFI=0.994 lebar_CI=nan | N1 BIC_SEM=281 CFI=0.972 lebar_CI=nan
+NOV[fasilitas_neonatal] uji (naif/orde1/orde2): biner 2×2, S=∅ efek=0.0: 0.114/0.050/0.050; 3×3 (df 4), S=∅ efek=0.0: 0.121/0.051/0.049; biner 2×2, S={z} efek=0.0: 0.114/0.057/0.056; kontinu, S=∅ efek=0.0: 0.208/0.053/0.053; kontinu, S={z} efek=0.0: 0.208/0.053/0.053; biner 2×2, S=∅ efek=0.05: 0.959/0.771/0.771; 3×3 (df 4), S=∅ efek=0.05: 0.972/0.802/0.792; biner 2×2, S={z} efek=0.05: 0.827/0.559/0.558; kontinu, S=∅ efek=0.05: 0.998/0.926/0.926; kontinu, S={z} efek=0.05: 0.998/0.927/0.927; biner 2×2, S=∅ efek=0.1: 1.000/1.000/1.000; 3×3 (df 4), S=∅ efek=0.1: 1.000/1.000/1.000; biner 2×2, S={z} efek=0.1: 1.000/0.995/0.995; kontinu, S=∅ efek=0.1: 1.000/1.000/1.000; kontinu, S={z} efek=0.1: 1.000/1.000/1.000
+NOV[sanitasi_diare_ctps] N1 SD-Hybrid uji=6343 skeleton=42 (B2 naif 46) delta_bar=2.26 n_eff=4670 sisi=36 SHD=35 RD=+0.0000 [+0.0000,+0.0000]
+NOV[sanitasi_diare_ctps] banding: terbaik=B3 BN berbasis skor (peringkat 1.67) | B1 BIC_SEM=2.31e+03 CFI=0.844 lebar_CI=0.0353 | B2 BIC_SEM=381 CFI=0.954 lebar_CI=0.0367 | B3 BIC_SEM=-247 CFI=0.991 lebar_CI=0.0368 | N1 BIC_SEM=344 CFI=0.951 lebar_CI=nan
+NOV[sanitasi_diare_ctps] uji (naif/orde1/orde2): biner 2×2, S=∅ efek=0.0: 0.107/0.052/0.052; 3×3 (df 4), S=∅ efek=0.0: 0.130/0.055/0.053; biner 2×2, S={z} efek=0.0: 0.098/0.044/0.043; kontinu, S=∅ efek=0.0: 0.200/0.047/0.047; kontinu, S={z} efek=0.0: 0.198/0.047/0.047; biner 2×2, S=∅ efek=0.05: 0.955/0.763/0.763; 3×3 (df 4), S=∅ efek=0.05: 0.968/0.796/0.788; biner 2×2, S={z} efek=0.05: 0.817/0.568/0.565; kontinu, S=∅ efek=0.05: 0.998/0.935/0.935; kontinu, S={z} efek=0.05: 0.998/0.935/0.935; biner 2×2, S=∅ efek=0.1: 1.000/1.000/1.000; 3×3 (df 4), S=∅ efek=0.1: 1.000/1.000/1.000; biner 2×2, S={z} efek=0.1: 1.000/0.994/0.994; kontinu, S=∅ efek=0.1: 1.000/1.000/1.000; kontinu, S={z} efek=0.1: 1.000/1.000/1.000
+NOV[pbi_diare_biaya] N1 SD-Hybrid uji=3147 skeleton=33 (B2 naif 39) delta_bar=2.13 n_eff=5059 sisi=26 SHD=26 RD=+0.0000 [+0.0000,+0.0000]
+NOV[pbi_diare_biaya] banding: terbaik=B3 BN berbasis skor (peringkat 1.67) | B1 BIC_SEM=149 CFI=0.964 lebar_CI=0.032 | B2 BIC_SEM=-330 CFI=0.989 lebar_CI=0.0319 | B3 BIC_SEM=-374 CFI=0.993 lebar_CI=0.0321 | N1 BIC_SEM=-362 CFI=0.984 lebar_CI=nan
+NOV[pbi_diare_biaya] uji (naif/orde1/orde2): biner 2×2, S=∅ efek=0.0: 0.128/0.049/0.049; 3×3 (df 4), S=∅ efek=0.0: 0.134/0.055/0.049; biner 2×2, S={z} efek=0.0: 0.120/0.053/0.053; kontinu, S=∅ efek=0.0: 0.227/0.048/0.048; kontinu, S={z} efek=0.0: 0.230/0.048/0.048; biner 2×2, S=∅ efek=0.05: 0.957/0.740/0.740; 3×3 (df 4), S=∅ efek=0.05: 0.963/0.803/0.792; biner 2×2, S={z} efek=0.05: 0.814/0.550/0.549; kontinu, S=∅ efek=0.05: 0.998/0.933/0.933; kontinu, S={z} efek=0.05: 0.998/0.933/0.933; biner 2×2, S=∅ efek=0.1: 1.000/1.000/1.000; 3×3 (df 4), S=∅ efek=0.1: 1.000/1.000/1.000; biner 2×2, S={z} efek=0.1: 1.000/0.994/0.994; kontinu, S=∅ efek=0.1: 1.000/1.000/1.000; kontinu, S={z} efek=0.1: 1.000/1.000/1.000
+# 2026-10-11 17:07
+NOV[sanitasi_diare] N2 TO-DAG ruang urutan=20,736 (tanpa tier 1.31e+12) skor lokal=661 F=-94202.6 (B3 -94234.5) sisi=42 SHD=42 detik=0.20 memori=8.3MB RD=+0.0000
+NOV[sanitasi_diare] banding: terbaik=N2 TO-DAG (peringkat 1.67) | B1 detik_penemuan=0.00983 memori_MB=5.87 BIC_SEM=2.37e+03 | B2 detik_penemuan=5.48 memori_MB=3.91 BIC_SEM=381 | B3 detik_penemuan=0.396 memori_MB=5.92 BIC_SEM=-247 | N2 detik_penemuan=0.202 memori_MB=8.3 BIC_SEM=-313
+NOV[pbi_diare] N2 TO-DAG ruang urutan=103,680 (tanpa tier 1.31e+12) skor lokal=513 F=-102893.9 (B3 -102914.2) sisi=32 SHD=29 detik=0.21 memori=8.4MB RD=+0.0203
+NOV[pbi_diare] banding: terbaik=N2 TO-DAG (peringkat 1.67) | B1 detik_penemuan=0.0119 memori_MB=5.96 BIC_SEM=142 | B2 detik_penemuan=3.13 memori_MB=3.98 BIC_SEM=-330 | B3 detik_penemuan=0.327 memori_MB=5.96 BIC_SEM=-374 | N2 detik_penemuan=0.214 memori_MB=8.43 BIC_SEM=-410
+NOV[pbi_neonatal] N2 TO-DAG ruang urutan=4,320 (tanpa tier 6.23e+09) skor lokal=534 F=-55604.3 (B3 -55611.7) sisi=31 SHD=31 detik=0.17 memori=3.2MB RD=+0.0000
+NOV[pbi_neonatal] banding: terbaik=N2 TO-DAG (peringkat 1.67) | B1 detik_penemuan=0.00888 memori_MB=2.19 BIC_SEM=1.09e+03 | B2 detik_penemuan=2.4 memori_MB=1.46 BIC_SEM=168 | B3 detik_penemuan=0.342 memori_MB=2.25 BIC_SEM=-243 | N2 detik_penemuan=0.17 memori_MB=3.16 BIC_SEM=-250
+NOV[fasilitas_neonatal] N2 TO-DAG ruang urutan=172,800 (tanpa tier 2.09e+13) skor lokal=812 F=-107491.3 (B3 -107521.3) sisi=39 SHD=46 detik=0.30 memori=9.6MB RD=+0.0000
+NOV[fasilitas_neonatal] banding: terbaik=N2 TO-DAG (peringkat 1.67) | B1 detik_penemuan=0.0183 memori_MB=6.78 BIC_SEM=5.86e+03 | B2 detik_penemuan=4.65 memori_MB=4.52 BIC_SEM=1.32e+03 | B3 detik_penemuan=0.439 memori_MB=6.84 BIC_SEM=-323 | N2 detik_penemuan=0.301 memori_MB=9.55 BIC_SEM=-365
+NOV[sanitasi_diare_ctps] N2 TO-DAG ruang urutan=20,736 (tanpa tier 1.31e+12) skor lokal=661 F=-94202.6 (B3 -94234.5) sisi=42 SHD=42 detik=0.24 memori=8.3MB RD=+0.0000
+NOV[sanitasi_diare_ctps] banding: terbaik=N2 TO-DAG (peringkat 1.67) | B1 detik_penemuan=0.0193 memori_MB=5.87 BIC_SEM=2.31e+03 | B2 detik_penemuan=7.32 memori_MB=3.91 BIC_SEM=381 | B3 detik_penemuan=0.471 memori_MB=5.92 BIC_SEM=-247 | N2 detik_penemuan=0.236 memori_MB=8.29 BIC_SEM=-313
+NOV[pbi_diare_biaya] N2 TO-DAG ruang urutan=103,680 (tanpa tier 1.31e+12) skor lokal=513 F=-102893.9 (B3 -102914.2) sisi=32 SHD=30 detik=0.21 memori=8.4MB RD=+0.0203
+NOV[pbi_diare_biaya] banding: terbaik=N2 TO-DAG (peringkat 1.67) | B1 detik_penemuan=0.0165 memori_MB=5.97 BIC_SEM=149 | B2 detik_penemuan=2.96 memori_MB=3.98 BIC_SEM=-330 | B3 detik_penemuan=0.405 memori_MB=6.02 BIC_SEM=-374 | N2 detik_penemuan=0.211 memori_MB=8.43 BIC_SEM=-410
+# 2026-10-11 17:25
+NOV[sanitasi_diare] N3 MLC-DAG v2 node 31->18 reflektif=['eta_pendidikan'] komposit=['eta_ekonomi', 'eta_akses'] dipecah=['eta_kebersihan'] omega={'eta_pendidikan': 0.89, 'eta_kebersihan': 0.32} sisi=60 detik=4.67 (tanpa konstruk 7.86) RD=-0.0190 (tanpa konstruk +0.0000)
+NOV[sanitasi_diare] banding: terbaik=B2 PC + tier + IDA (peringkat 2.00) | B1 detik_penemuan=0.00983 memori_MB=5.87 lebar_CI=0.0378 | B2 detik_penemuan=5.48 memori_MB=3.91 lebar_CI=0.0367 | B3 detik_penemuan=0.396 memori_MB=5.92 lebar_CI=0.0383 | N3 detik_penemuan=4.67 memori_MB=9.95 lebar_CI=0.0365 | N3- detik_penemuan=7.86 memori_MB=5.48 lebar_CI=nan
+NOV[pbi_diare] N3 MLC-DAG v2 node 32->19 reflektif=['eta_pendidikan'] komposit=['eta_ekonomi', 'eta_akses'] dipecah=['eta_kebersihan'] omega={'eta_pendidikan': 0.89, 'eta_kebersihan': 0.32} sisi=68 detik=5.28 (tanpa konstruk 7.39) RD=+0.0000 (tanpa konstruk +0.0000)
+NOV[pbi_diare] banding: terbaik=B2 PC + tier + IDA (peringkat 1.33) | B1 detik_penemuan=0.0119 memori_MB=5.96 lebar_CI=0.0306 | B2 detik_penemuan=3.13 memori_MB=3.98 lebar_CI=0.0318 | B3 detik_penemuan=0.327 memori_MB=5.96 lebar_CI=0.0327 | N3 detik_penemuan=5.28 memori_MB=10.8 lebar_CI=nan | N3- detik_penemuan=7.39 memori_MB=5.62 lebar_CI=nan
+NOV[pbi_neonatal] N3 MLC-DAG v2 node 30->17 reflektif=['eta_pendidikan'] komposit=['eta_ekonomi', 'eta_akses'] dipecah=['eta_kebersihan'] omega={'eta_pendidikan': 0.9, 'eta_kebersihan': 0.34} sisi=61 detik=3.89 (tanpa konstruk 5.97) RD=+0.0000 (tanpa konstruk +0.0000)
+NOV[pbi_neonatal] banding: terbaik=B2 PC + tier + IDA (peringkat 1.33) | B1 detik_penemuan=0.00888 memori_MB=2.19 lebar_CI=0.0116 | B2 detik_penemuan=2.4 memori_MB=1.46 lebar_CI=0.0114 | B3 detik_penemuan=0.342 memori_MB=2.25 lebar_CI=nan | N3 detik_penemuan=3.89 memori_MB=4.12 lebar_CI=nan | N3- detik_penemuan=5.97 memori_MB=5.67 lebar_CI=nan
+NOV[fasilitas_neonatal] N3 MLC-DAG v2 node 29->16 reflektif=['eta_pendidikan'] komposit=['eta_ekonomi', 'eta_akses'] dipecah=['eta_kebersihan'] omega={'eta_pendidikan': 0.9, 'eta_kebersihan': 0.33} sisi=52 detik=4.00 (tanpa konstruk 6.10) RD=+0.0006 (tanpa konstruk +0.0000)
+NOV[fasilitas_neonatal] banding: terbaik=B2 PC + tier + IDA (peringkat 1.67) | B1 detik_penemuan=0.0183 memori_MB=6.78 lebar_CI=0.0115 | B2 detik_penemuan=4.65 memori_MB=4.52 lebar_CI=0.0115 | B3 detik_penemuan=0.439 memori_MB=6.84 lebar_CI=nan | N3 detik_penemuan=4 memori_MB=9.52 lebar_CI=0.0127 | N3- detik_penemuan=6.1 memori_MB=4.58 lebar_CI=nan
+NOV[sanitasi_diare_ctps] N3 MLC-DAG v2 node 31->18 reflektif=['eta_pendidikan'] komposit=['eta_ekonomi', 'eta_akses'] dipecah=['eta_kebersihan'] omega={'eta_pendidikan': 0.89, 'eta_kebersihan': 0.32} sisi=60 detik=2.58 (tanpa konstruk 4.13) RD=-0.0190 (tanpa konstruk +0.0000)
+NOV[sanitasi_diare_ctps] banding: terbaik=B2 PC + tier + IDA (peringkat 2.00) | B1 detik_penemuan=0.0193 memori_MB=5.87 lebar_CI=0.0353 | B2 detik_penemuan=7.32 memori_MB=3.91 lebar_CI=0.0367 | B3 detik_penemuan=0.471 memori_MB=5.92 lebar_CI=0.0368 | N3 detik_penemuan=2.58 memori_MB=9.95 lebar_CI=0.0398 | N3- detik_penemuan=4.13 memori_MB=5.46 lebar_CI=nan
+NOV[pbi_diare_biaya] N3 MLC-DAG v2 node 32->19 reflektif=['eta_pendidikan'] komposit=['eta_ekonomi', 'eta_akses'] dipecah=['eta_kebersihan'] omega={'eta_pendidikan': 0.89, 'eta_kebersihan': 0.32} sisi=68 detik=3.50 (tanpa konstruk 4.92) RD=+0.0000 (tanpa konstruk +0.0000)
+NOV[pbi_diare_biaya] banding: terbaik=B2 PC + tier + IDA (peringkat 1.33) | B1 detik_penemuan=0.0165 memori_MB=5.97 lebar_CI=0.032 | B2 detik_penemuan=2.96 memori_MB=3.98 lebar_CI=0.0319 | B3 detik_penemuan=0.405 memori_MB=6.02 lebar_CI=0.0321 | N3 detik_penemuan=3.5 memori_MB=10.8 lebar_CI=nan | N3- detik_penemuan=4.92 memori_MB=5.62 lebar_CI=nan
+# 2026-10-11 17:36
+SOLv2[sanitasi_diare] SOL v2 (desain): node=15 sisi=42+0 RD=-0.0324 [-0.0544,-0.0104] induk T=sanitasi_klaster_lo, pend_ibu_thn, org_per_kamar, skor_kekayaan_nonwash, cuci_tangan_dasar 13.7s 83.7MB
+SOLv2[sanitasi_diare] SOL v2 naif: node=15 sisi=44+2 RD=-0.0326 [-0.0545,-0.0106] induk T=sanitasi_klaster_lo, pend_ibu_thn, org_per_kamar, skor_kekayaan_nonwash, air_layak, cuci_tangan_dasar 20.6s 61.1MB
+SOLv2[sanitasi_diare] SOL v2 + MLC: node=18 sisi=67+0 RD=-0.0309 [-0.0524,-0.0094] induk T=eta_pendidikan, eta_ekonomi, umur_ibu, sanitasi_klaster_lo, org_per_kamar 44.7s 84.5MB
+SOLv2[pbi_diare] SOL v2 (desain): node=15 sisi=34+1 RD=+0.0252 [+0.0079,+0.0426] induk T=pbi_pct_prov, ibu_bekerja, jml_art, pend_ibu_thn, skor_kekayaan_nonwash, T_sanitasi 6.8s 80.1MB
+SOLv2[pbi_diare] SOL v2 naif: node=15 sisi=39+0 RD=+0.0252 [+0.0079,+0.0426] induk T=pbi_pct_prov, ibu_bekerja, jml_art, pend_ibu_thn, skor_kekayaan_nonwash, T_sanitasi 11.0s 80.1MB
+SOLv2[pbi_diare] SOL v2 + MLC: node=19 sisi=66+0 RD=+0.0270 [+0.0092,+0.0448] induk T=eta_pendidikan, eta_ekonomi, urutan_lahir, pbi_pct_prov, jml_art 35.8s 77.4MB
+SOLv2[pbi_neonatal] SOL v2 (desain): node=13 sisi=23+1 RD=-0.0017 [-0.0081,+0.0047] induk T=pbi_pct_prov, jml_art, pend_ibu_thn, skor_kekayaan_nonwash 1.9s 35.8MB
+SOLv2[pbi_neonatal] SOL v2 naif: node=13 sisi=27+1 RD=-0.0017 [-0.0081,+0.0047] induk T=pbi_pct_prov, jml_art, pend_ibu_thn, skor_kekayaan_nonwash 3.9s 35.8MB
+SOLv2[pbi_neonatal] SOL v2 + MLC: node=17 sisi=50+0 RD=-0.0004 [-0.0073,+0.0064] induk T=eta_pendidikan, eta_ekonomi, pbi_pct_prov, jml_art 13.8s 36.1MB
+SOLv2[fasilitas_neonatal] SOL v2 (desain): node=16 sisi=39+0 RD=-0.0019 [-0.0097,+0.0059] induk T=fasilitas_klaster_lo, pend_ibu_thn, urutan_lahir, skor_kekayaan_nonwash 14.1s 96.0MB
+SOLv2[fasilitas_neonatal] SOL v2 naif: node=16 sisi=42+0 RD=-0.0019 [-0.0097,+0.0059] induk T=fasilitas_klaster_lo, pend_ibu_thn, urutan_lahir, skor_kekayaan_nonwash 21.3s 96.0MB
+SOLv2[fasilitas_neonatal] SOL v2 + MLC: node=16 sisi=47+0 RD=-0.0026 [-0.0105,+0.0053] induk T=eta_pendidikan, eta_ekonomi, cuci_tangan_dasar, air_layak, urutan_lahir, perdesaan, fasilitas_klaster_lo 27.7s 126.3MB
+SOLv2[sanitasi_diare_ctps] SOL v2 (desain): node=15 sisi=42+0 RD=-0.0324 [-0.0544,-0.0104] induk T=sanitasi_klaster_lo, pend_ibu_thn, org_per_kamar, skor_kekayaan_nonwash, cuci_tangan_dasar 14.3s 83.6MB
+SOLv2[sanitasi_diare_ctps] SOL v2 naif: node=15 sisi=44+2 RD=-0.0326 [-0.0545,-0.0106] induk T=sanitasi_klaster_lo, pend_ibu_thn, org_per_kamar, skor_kekayaan_nonwash, air_layak, cuci_tangan_dasar 20.3s 91.3MB
+SOLv2[sanitasi_diare_ctps] SOL v2 + MLC: node=18 sisi=67+0 RD=-0.0309 [-0.0524,-0.0094] induk T=eta_pendidikan, eta_ekonomi, umur_ibu, sanitasi_klaster_lo, org_per_kamar 54.6s 84.4MB
+SOLv2[pbi_diare_biaya] SOL v2 (desain): node=15 sisi=34+1 RD=+0.0252 [+0.0079,+0.0426] induk T=pbi_pct_prov, ibu_bekerja, jml_art, pend_ibu_thn, skor_kekayaan_nonwash, T_sanitasi 8.0s 80.1MB
+SOLv2[pbi_diare_biaya] SOL v2 naif: node=15 sisi=39+0 RD=+0.0252 [+0.0079,+0.0426] induk T=pbi_pct_prov, ibu_bekerja, jml_art, pend_ibu_thn, skor_kekayaan_nonwash, T_sanitasi 13.7s 80.1MB
+SOLv2[pbi_diare_biaya] SOL v2 + MLC: node=19 sisi=66+0 RD=+0.0270 [+0.0092,+0.0448] induk T=eta_pendidikan, eta_ekonomi, urutan_lahir, pbi_pct_prov, jml_art 56.0s 77.4MB

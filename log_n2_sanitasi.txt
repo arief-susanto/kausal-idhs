@@ -1,0 +1,2 @@
+﻿NOV[sanitasi_diare] N2 TO-DAG ruang urutan=20,736 (tanpa tier 1.31e+12) skor lokal=661 F=-94202.6 (B3 -94234.5) sisi=42 SHD=42 detik=0.32 memori=8.3MB RD=+0.0000
+NOV[sanitasi_diare] banding: terbaik=N2 TO-DAG (peringkat 1.67) | B1 detik_penemuan=0.0253 memori_MB=5.87 BIC_SEM=2.37e+03 | B2 detik_penemuan=13.4 memori_MB=3.91 BIC_SEM=381 | B3 detik_penemuan=0.975 memori_MB=5.92 BIC_SEM=-247 | N2 detik_penemuan=0.32 memori_MB=8.29 BIC_SEM=-313

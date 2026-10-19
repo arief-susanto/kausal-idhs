@@ -1,0 +1,25 @@
+langkah,operasi,skor
+0,awal,-59499.816793205224
+1,tambah umur_ibu -> urutan_lahir,-58711.98658660273
+2,tambah pbi_pct_prov -> p0_daerah_mar2017,-57992.07334194585
+3,tambah perdesaan -> p0_daerah_mar2017,-57249.454716351545
+4,tambah pend_ibu_thn -> skor_kekayaan_nonwash,-56780.16801191355
+5,tambah p0_daerah_mar2017 -> skor_kekayaan_nonwash,-56544.080784843674
+6,tambah skor_kekayaan_nonwash -> T_fasilitas,-56330.63959755488
+7,tambah pend_ibu_thn -> urutan_lahir,-56184.16436056189
+8,tambah jml_art -> urutan_lahir,-56084.380610024644
+9,tambah skor_kekayaan_nonwash -> T_pbi,-55991.29838058624
+10,tambah perdesaan -> skor_kekayaan_nonwash,-55938.85739362994
+11,tambah umur_ibu -> skor_kekayaan_nonwash,-55910.112322057386
+12,tambah perdesaan -> T_fasilitas,-55882.84999930731
+13,tambah pbi_pct_prov -> T_pbi,-55855.96232712461
+14,tambah perdesaan -> pbi_pct_prov,-55831.12347640666
+15,tambah pend_ibu_thn -> T_pbi,-55806.315389940406
+16,tambah urutan_lahir -> T_fasilitas,-55785.45183775894
+17,tambah urutan_lahir -> kk_perempuan,-55775.26686259457
+18,tambah pbi_pct_prov -> jml_art,-55768.001182720545
+19,tambah kembar -> Y_mati_neonatal,-55761.42531151939
+20,tambah jml_art -> T_pbi,-55756.90374506525
+21,tambah jml_art -> Y_mati_neonatal,-55753.429029923485
+22,tambah pbi_pct_prov -> kk_perempuan,-55752.53964223422
+23,tambah pend_ibu_thn -> umur_ibu,-55751.707516911505

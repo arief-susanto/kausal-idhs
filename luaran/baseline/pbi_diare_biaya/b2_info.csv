@@ -1,0 +1,20 @@
+kunci,nilai
+n,16508
+uji,campuran
+alpha,0.05
+maks_kondisi,3
+jumlah_uji,4811
+sisi_berarah,36
+sisi_tak_berarah,3
+induk_pasti_T,"pbi_pct_prov, ibu_bekerja, jml_art, pend_ibu_thn, skor_kekayaan_nonwash"
+tetangga_tak_berarah_T,-
+jumlah_himpunan_IDA,1
+sisi,39
+sisi_sama_pakar,17
+sisi_tambahan,22
+sisi_hilang,9
+arah_beda,0
+SHD,31
+detik_penemuan,2.96
+memori_MB,3.98
+detik,32.0

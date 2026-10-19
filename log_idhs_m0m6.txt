@@ -1,0 +1,18 @@
+﻿M0M6[sanitasi_diare] M0: |Z|=10 RD=-0.0323 [-0.0536,-0.0110] Z=anak_laki, cuci_tangan_klaster_lo, org_per_kamar, p0_daerah_mar2017, pend_ibu_thn, perdesaan, punya_ternak, sanitasi_klaster_lo, skor_kekayaan_nonwash, umur_anak_bln
+M0M6[sanitasi_diare] M1: |Z|=5 RD=-0.0299 [-0.0506,-0.0092] Z=p0_daerah_mar2017, pend_ibu_thn, perdesaan, sanitasi_klaster_lo, skor_kekayaan_nonwash
+M0M6[sanitasi_diare] M2: |Z|=4 RD=-0.0318 [-0.0527,-0.0109] Z=sanitasi_klaster_lo, pend_ibu_thn, org_per_kamar, skor_kekayaan_nonwash
+M0M6[sanitasi_diare] M3: |Z|=4 RD=-0.0318 [-0.0527,-0.0109] Z=sanitasi_klaster_lo, pend_ibu_thn, org_per_kamar, skor_kekayaan_nonwash
+M0M6[sanitasi_diare] M4(aT=0.1): |Z|=4 RD=-0.0318 [-0.0527,-0.0109] Z=sanitasi_klaster_lo, pend_ibu_thn, org_per_kamar, skor_kekayaan_nonwash
+M0M6[sanitasi_diare] M4(aT=0.2): |Z|=4 RD=-0.0318 [-0.0527,-0.0109] Z=sanitasi_klaster_lo, pend_ibu_thn, org_per_kamar, skor_kekayaan_nonwash
+M0M6[sanitasi_diare] M4(aT=0.3): |Z|=4 RD=-0.0318 [-0.0527,-0.0109] Z=sanitasi_klaster_lo, pend_ibu_thn, org_per_kamar, skor_kekayaan_nonwash
+M0M6[sanitasi_diare] M5: |Z|=6 RD=-0.0301 [-0.0509,-0.0092] Z=org_per_kamar, p0_daerah_mar2017, pend_ibu_thn, perdesaan, sanitasi_klaster_lo, skor_kekayaan_nonwash
+M0M6[sanitasi_diare] M6: |Z|=5 RD=-0.0326 [-0.0538,-0.0115] Z=org_per_kamar, pend_ibu_thn, sanitasi_klaster_lo, skor_kekayaan_nonwash, umur_anak_bln
+M0M6[pbi_diare] M0: |Z|=10 RD=+0.0245 [+0.0072,+0.0417] Z=anak_laki, ibu_bekerja, jml_art, kk_perempuan, p0_daerah_mar2017, pbi_pct_prov, pend_ibu_thn, perdesaan, skor_kekayaan_nonwash, umur_anak_bln
+M0M6[pbi_diare] M1: |Z|=8 RD=+0.0266 [+0.0092,+0.0440] Z=ibu_bekerja, jml_art, kk_perempuan, p0_daerah_mar2017, pbi_pct_prov, pend_ibu_thn, perdesaan, skor_kekayaan_nonwash
+M0M6[pbi_diare] M2: |Z|=5 RD=+0.0261 [+0.0089,+0.0433] Z=pbi_pct_prov, ibu_bekerja, jml_art, pend_ibu_thn, skor_kekayaan_nonwash
+M0M6[pbi_diare] M3: |Z|=6 RD=+0.0255 [+0.0083,+0.0427] Z=pbi_pct_prov, ibu_bekerja, jml_art, pend_ibu_thn, skor_kekayaan_nonwash, T_sanitasi
+M0M6[pbi_diare] M4(aT=0.1): |Z|=6 RD=+0.0255 [+0.0083,+0.0427] Z=pbi_pct_prov, ibu_bekerja, jml_art, pend_ibu_thn, skor_kekayaan_nonwash, T_sanitasi
+M0M6[pbi_diare] M4(aT=0.2): |Z|=7 RD=+0.0235 [+0.0064,+0.0406] Z=pbi_pct_prov, ibu_bekerja, jml_art, pend_ibu_thn, umur_anak_bln, skor_kekayaan_nonwash, T_sanitasi
+M0M6[pbi_diare] M4(aT=0.3): |Z|=7 RD=+0.0235 [+0.0064,+0.0406] Z=pbi_pct_prov, ibu_bekerja, jml_art, pend_ibu_thn, umur_anak_bln, skor_kekayaan_nonwash, T_sanitasi
+M0M6[pbi_diare] M5: |Z|=9 RD=+0.0260 [+0.0086,+0.0434] Z=T_sanitasi, ibu_bekerja, jml_art, kk_perempuan, p0_daerah_mar2017, pbi_pct_prov, pend_ibu_thn, perdesaan, skor_kekayaan_nonwash
+M0M6[pbi_diare] M6: |Z|=7 RD=+0.0235 [+0.0064,+0.0406] Z=T_sanitasi, ibu_bekerja, jml_art, pbi_pct_prov, pend_ibu_thn, skor_kekayaan_nonwash, umur_anak_bln

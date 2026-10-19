@@ -1,0 +1,6 @@
+﻿BASE[fasilitas_neonatal] T_fasilitas->Y_mati_neonatal n=17607 p=16 boot=500
+BASE[fasilitas_neonatal] B1[T_fasilitas->Y_mati_neonatal] RMSEA=0.118 CFI=0.815 SRMR=0.079 chi2=6367.7 df=56 (n_eff=8151)
+BASE[fasilitas_neonatal] B1 linear: total=-0.0027 langsung=-0.0027 tak langsung=+0.0000 | probit RD=-0.0027 | backdoor g-komp RD=+0.0010 [-0.0049,+0.0061]
+BASE[fasilitas_neonatal] B2 uji=7874 sisi berarah=40 tak berarah=2 SHD vs pakar=47 | IDA 1 himpunan, RD [+0.0019,+0.0019], min|RD|=+0.0019
+BASE[fasilitas_neonatal] B3 skor=gauss langkah=51 sisi=51 SHD vs pakar=54 skor akhir=-365852.9 (pakar -384364.7) | RD=+0.0000 [+0.0000,+0.0000]
+BASE[fasilitas_neonatal] TERBAIK: B3 BN berbasis skor (peringkat rata-rata 1.00; unggul pada BIC_SEM, CFI) RD=+0.0000 | B1 BIC=5863 CFI=0.815 CI=0.0110 | B2 BIC=1312 CFI=0.945 CI=0.0101 | B3 BIC=-323 CFI=0.994 CI=nan

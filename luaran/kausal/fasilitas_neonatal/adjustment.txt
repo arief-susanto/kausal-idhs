@@ -1,0 +1,6 @@
+Teridentifikasi (backdoor): False
+Dikontrol (14): anak_laki, fasilitas_klaster_lo, hambatan_biaya, hambatan_jarak, jarak_klaster_lo, kembar, p0_daerah_mar2017, pct_pkm_kurang_bidan, pend_ibu_thn, perdesaan, rasio_pkm_per_kec, skor_kekayaan_nonwash, umur_ibu, urutan_lahir
+Mediator (tidak dikontrol): -
+Laten: risiko_kehamilan
+Filter: -
+n analisis: 17607

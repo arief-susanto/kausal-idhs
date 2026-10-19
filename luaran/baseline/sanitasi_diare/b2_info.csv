@@ -1,0 +1,20 @@
+kunci,nilai
+n,16232
+uji,campuran
+alpha,0.05
+maks_kondisi,3
+jumlah_uji,9108
+sisi_berarah,42
+sisi_tak_berarah,4
+induk_pasti_T,"sanitasi_klaster_lo, pend_ibu_thn, org_per_kamar, skor_kekayaan_nonwash"
+tetangga_tak_berarah_T,-
+jumlah_himpunan_IDA,1
+sisi,46
+sisi_sama_pakar,19
+sisi_tambahan,27
+sisi_hilang,10
+arah_beda,2
+SHD,39
+detik_penemuan,5.48
+memori_MB,3.91
+detik,31.2

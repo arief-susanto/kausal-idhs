@@ -1,0 +1,14 @@
+[heterogen] n H0=538 H1=362 | deff median 2.37
+  naif          tipeI 15.6% [12.8%-18.9%] per-bin <1,5:13.3% 1,5–3:11.9% >3:24.5% | maks|dev| 19.5% | daya 65.5%
+  kish          tipeI 16.4% [13.5%-19.7%] per-bin <1,5:20.0% 1,5–3:11.3% >3:27.1% | maks|dev| 22.1% | daya 64.4%
+  deff_global   tipeI 0.6% [0.2%-1.6%] per-bin <1,5:0.0% 1,5–3:0.0% >3:1.9% | maks|dev| 5.0% | daya 44.5%
+  sandwich_CR1  tipeI 4.1% [2.7%-6.1%] per-bin <1,5:16.7% 1,5–3:2.8% >3:4.5% | maks|dev| 11.7% | daya 55.0%
+  desain_usulan tipeI 4.1% [2.7%-6.1%] per-bin <1,5:16.7% 1,5–3:2.8% >3:4.5% | maks|dev| 11.7% | daya 55.0%
+  keputusan identik usulan vs sandwich_CR1 pada H0: 100.0%
+[homogen] n H0=538 H1=362 | deff median 2.61
+  naif          tipeI 16.7% [13.8%-20.1%] per-bin 1,5–3:15.0% >3:23.2% | maks|dev| 18.2% | daya 65.7%
+  kish          tipeI 16.9% [14.0%-20.3%] per-bin 1,5–3:13.6% >3:29.5% | maks|dev| 24.5% | daya 65.2%
+  deff_global   tipeI 1.1% [0.5%-2.4%] per-bin 1,5–3:0.5% >3:3.6% | maks|dev| 4.5% | daya 44.8%
+  sandwich_CR1  tipeI 3.9% [2.6%-5.9%] per-bin 1,5–3:4.0% >3:3.6% | maks|dev| 1.4% | daya 55.2%
+  desain_usulan tipeI 3.9% [2.6%-5.9%] per-bin 1,5–3:4.0% >3:3.6% | maks|dev| 1.4% | daya 55.5%
+  keputusan identik usulan vs sandwich_CR1 pada H0: 100.0%

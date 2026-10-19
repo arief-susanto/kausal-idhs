@@ -1,0 +1,53 @@
+{
+ "A": {
+  "node": 15,
+  "sisi_benar": 29,
+  "sisi_pakar": 29,
+  "dihapus": 8,
+  "ditambah": 8,
+  "SHD_pakar_vs_benar": 16,
+  "RD_benar": -0.020209864296823945,
+  "p1": 0.14137145198883677,
+  "p0": 0.16158131628566072
+ },
+ "B": {
+  "node": 18,
+  "node_indikator": 31,
+  "sisi_benar": 29,
+  "dihapus": 8,
+  "ditambah": 8,
+  "RD_benar": -0.045497793959032626,
+  "p1": 0.12975337961267616,
+  "p0": 0.1752511735717088,
+  "reflektif": [
+   "eta_pendidikan"
+  ],
+  "komposit": [
+   "eta_ekonomi",
+   "eta_akses"
+  ],
+  "dipecah": [
+   "eta_kebersihan"
+  ]
+ },
+ "analisis": "sanitasi_diare",
+ "rep": 100,
+ "pekerja": 3,
+ "konfigurasi": {
+  "rep": 100,
+  "pekerja": 3,
+  "perturbasi": 0.3,
+  "boot": 20,
+  "n_populasi": 20,
+  "alpha_uji": 0.05,
+  "n_pernyataan": 20,
+  "skenario": [
+   "A",
+   "B"
+  ]
+ },
+ "mulai": "2026-10-10 18:36",
+ "selesai": "2026-10-11 02:17",
+ "detik": 27654.415337085724,
+ "gagal": 0
+}

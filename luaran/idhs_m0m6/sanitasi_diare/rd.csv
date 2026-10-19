@@ -1,0 +1,10 @@
+analisis,metode,n,n_Z,RD,se,RD_lo,RD_hi,Z
+sanitasi_diare,M0,16232,10,-0.03229499385427787,0.010870344258178757,-0.053614166059776924,-0.010975821648778823,"anak_laki, cuci_tangan_klaster_lo, org_per_kamar, p0_daerah_mar2017, pend_ibu_thn, perdesaan, punya_ternak, sanitasi_klaster_lo, skor_kekayaan_nonwash, umur_anak_bln"
+sanitasi_diare,M1,16232,5,-0.029887884547504018,0.010537780823864277,-0.050554825604015474,-0.009220943490992558,"p0_daerah_mar2017, pend_ibu_thn, perdesaan, sanitasi_klaster_lo, skor_kekayaan_nonwash"
+sanitasi_diare,M2,16232,4,-0.03181700339495372,0.01066934427969167,-0.05274196976364648,-0.010892037026260959,"sanitasi_klaster_lo, pend_ibu_thn, org_per_kamar, skor_kekayaan_nonwash"
+sanitasi_diare,M3,16232,4,-0.03181700339495372,0.01066934427969167,-0.05274196976364648,-0.010892037026260959,"sanitasi_klaster_lo, pend_ibu_thn, org_per_kamar, skor_kekayaan_nonwash"
+sanitasi_diare,M4(aT=0.1),16232,4,-0.03181700339495372,0.01066934427969167,-0.05274196976364648,-0.010892037026260959,"sanitasi_klaster_lo, pend_ibu_thn, org_per_kamar, skor_kekayaan_nonwash"
+sanitasi_diare,M4(aT=0.2),16232,4,-0.03181700339495372,0.01066934427969167,-0.05274196976364648,-0.010892037026260959,"sanitasi_klaster_lo, pend_ibu_thn, org_per_kamar, skor_kekayaan_nonwash"
+sanitasi_diare,M4(aT=0.3),16232,4,-0.03181700339495372,0.01066934427969167,-0.05274196976364648,-0.010892037026260959,"sanitasi_klaster_lo, pend_ibu_thn, org_per_kamar, skor_kekayaan_nonwash"
+sanitasi_diare,M5,16232,6,-0.0300864426021547,0.01063171407558555,-0.050937607738576196,-0.009235277465733202,"org_per_kamar, p0_daerah_mar2017, pend_ibu_thn, perdesaan, sanitasi_klaster_lo, skor_kekayaan_nonwash"
+sanitasi_diare,M6,16232,5,-0.032647192038253246,0.010767718116968918,-0.05376509146661902,-0.011529292609887474,"org_per_kamar, pend_ibu_thn, sanitasi_klaster_lo, skor_kekayaan_nonwash, umur_anak_bln"

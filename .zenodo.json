@@ -1,0 +1,13 @@
+{
+  "title": "Kausal IDHS: design-based causal graph discovery and confounder selection for complex survey data",
+  "upload_type": "software",
+  "description": "Configuration-driven Python pipeline (code and locked analysis plan) for the study 'Survey-design-calibrated independence tests reduce adjustment-set validity in PC-based causal discovery'. It implements design-corrected conditional-independence tests (Rao-Scott, design t test), PC-stable with temporal tiers, seven confounder-selection strategies, cross-fitted AIPW with design-based standard errors, and a simulation benchmark mimicking the 2017 Indonesia Demographic and Health Survey. IDHS microdata are not included and must be requested from The DHS Program.",
+  "creators": [
+    {"name": "Susanto, Arief", "affiliation": "Universitas Diponegoro; Universitas Muria Kudus"},
+    {"name": "Widodo, Aris Puji", "affiliation": "Universitas Diponegoro"},
+    {"name": "Wibowo, Adi", "affiliation": "Universitas Diponegoro"}
+  ],
+  "keywords": ["causal discovery", "PC algorithm", "complex survey", "confounder selection", "IDHS"],
+  "license": "MIT",
+  "access_right": "open"
+}
