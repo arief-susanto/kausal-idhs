@@ -4,7 +4,7 @@ title: "Kausal IDHS: design-based causal graph discovery and confounder selectio
 version: v-paper1
 date-released: 2026-10-17
 license: MIT
-repository-code: "https://github.com/ariefsusanto-png/kausal-idhs"
+repository-code: "https://github.com/arief-susanto/kausal-idhs"
 keywords:
   - causal discovery
   - PC algorithm
