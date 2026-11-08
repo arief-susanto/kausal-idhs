@@ -1,0 +1,7 @@
+analisis,variabel_tier0,deff_maks_tier0,delta_bar_pra_audit,delta_bar_audit,n_eff_pra_audit,n_eff_audit,cocok_manual
+sanitasi_diare,cuci_tangan_klaster_lo p0_daerah_mar2017 perdesaan sanitasi_klaster_lo,7.5,2.765,2.264,3823.0,4670.0,True
+pbi_diare,p0_daerah_mar2017 pbi_pct_prov perdesaan,1.58,1.937,2.125,5549.0,5059.0,True
+pbi_neonatal,p0_daerah_mar2017 pbi_pct_prov perdesaan,1.1,1.277,1.395,3516.0,3220.0,True
+fasilitas_neonatal,fasilitas_klaster_lo jarak_klaster_lo p0_daerah_mar2017 pct_pkm_kurang_bidan perdesaan rasio_pkm_per_kec,9.39,2.679,2.195,4257.0,5197.0,True
+sanitasi_diare_ctps,cuci_tangan_klaster_lo p0_daerah_mar2017 perdesaan sanitasi_klaster_lo,7.5,2.765,2.264,3823.0,4670.0,True
+pbi_diare_biaya,p0_daerah_mar2017 pbi_pct_prov perdesaan,1.58,1.937,2.125,5549.0,5059.0,True

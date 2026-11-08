@@ -1,0 +1,6 @@
+analisis,berkas_dibandingkan,identik,berkas_beda,terbaik_semua,terbaik_sendiri,pra_audit_berbeda,RD_CI_pra_audit_semua,RD_CI_pra_audit_sendiri,terbaik_berpindah
+pbi_diare,5,True,,B3,B3,False,"(0.020314209081, 0.007494214325, 0.038601863879)","(0.020314209081, 0.007494214325, 0.038601863879)",False
+pbi_neonatal,5,True,,N2,N2,False,"(0.0, 0.0, 0.0)","(0.0, 0.0, 0.0)",False
+fasilitas_neonatal,5,True,,N2,B3,False,"(0.0, 0.0, 0.0)","(0.0, 0.0, 0.0)",True
+sanitasi_diare_ctps,5,True,,N2,N2,False,"(0.0, 0.0, 0.0)","(0.0, 0.0, 0.0)",False
+pbi_diare_biaya,5,True,,N2,N2,True,"(0.020314209081, 0.011751810803, 0.0373750099)","(0.020314209081, 0.007494214325, 0.038601863879)",False

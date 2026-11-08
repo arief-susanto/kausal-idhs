@@ -1,0 +1,7 @@
+analisis,T,treatment_pra_audit,treatment_audit,treatment_lain_tersisa,tersisa_di_DAG_pakar
+sanitasi_diare,T_sanitasi,T_sanitasi T_pbi T_fasilitas,T_sanitasi,,True
+pbi_diare,T_pbi,T_sanitasi T_pbi T_fasilitas,T_sanitasi T_pbi,T_sanitasi,True
+pbi_neonatal,T_pbi,T_sanitasi T_pbi T_fasilitas,T_pbi T_fasilitas,T_fasilitas,True
+fasilitas_neonatal,T_fasilitas,T_sanitasi T_pbi T_fasilitas,T_fasilitas,,True
+sanitasi_diare_ctps,T_sanitasi,T_sanitasi T_pbi T_fasilitas,T_sanitasi,,True
+pbi_diare_biaya,T_pbi,T_sanitasi T_pbi T_fasilitas,T_sanitasi T_pbi,T_sanitasi,True

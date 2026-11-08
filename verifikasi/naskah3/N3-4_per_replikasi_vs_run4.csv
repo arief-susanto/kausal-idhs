@@ -1,0 +1,7 @@
+Metode,Replikasi identik,|ΔSHD| maks,|ΔSHD| rata-rata,|ΔSID| maks,|ΔSID| rata-rata,SID terdefinisi (tier 2 / run 4),Status SID berubah,|ΔRD| maks
+SOL-DAG,100/100,0,"0,00",0,"0,00",100 / 100,0,0.0e+00
+SOL tanpa MLC,96/100,0,"0,00",–,–,0 / 0,0,3.7e-04
+N3 MLC-DAG,100/100,0,"0,00",0,"0,00",100 / 100,0,0.0e+00
+N3 tanpa konstruk,27/100,7,"0,70",3,"0,67",7 / 7,2,1.1e-03
+B2 indikator mentah,82/100,0,"0,00",1,"0,03",99 / 98,1,2.8e-04
+B3 indikator mentah,51/100,1,"0,08",0,"0,00",2 / 1,1,2.8e-04

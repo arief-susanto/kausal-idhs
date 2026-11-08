@@ -1,0 +1,65 @@
+{
+ "waktu": "2026-11-01T09:32:05+07:00",
+ "menit": 3.7,
+ "commit_HEAD": "f1d96be",
+ "python": "3.13.15",
+ "numpy": "2.5.3",
+ "pandas": "3.0.6",
+ "sha256_novelty": "88c597821d490a1f8985484f0e5cdd1a8eaaa3707e774b2ea398c5c20713b372",
+ "sha256_benchmark": "0f8a1b6616308b8ae054dab64726baf663cca383c46038d121cf6388dac08aae",
+ "sha256_config": "641b28da6925637e6688daf12536dbadffaf61ffa423600b41a4d9bfeacb547f",
+ "hasil": {
+  "A1": {
+   "status": "LULUS",
+   "ringkas": "18 modul aktif dipindai, 0 masih mengimpor config_old; 8 modul terimpor memakai objek config yang sama; 13 nilai config.py berbeda dari config_old.py (dulu tidak terpakai)",
+   "impor_lama": [],
+   "runtime": {
+    "baseline": true,
+    "novelty": true,
+    "benchmark": true,
+    "sol_dag": true,
+    "narasi": true,
+    "laporan": true,
+    "eda": true,
+    "prep": true
+   },
+   "n_beda_config": 13
+  },
+  "A2": {
+   "status": "LULUS",
+   "ringkas": "pasangan z tanpa pengondisian ditolak 100.0% (kontinu) dan 100.0% (biner) -> z benar confounder; dengan S={z} kembali ke 5.9% dan 5.5%. Namun keputusan S={z} kontinu sama dengan S=∅ pada 99.9% replikasi (versi pra-audit 99.9%): perbandingan baris log S={z} vs S=∅ tidak dapat membedakan versi lama dan baru",
+   "analisis": "sanitasi_diare",
+   "replikasi": 2000,
+   "icc": 0.4,
+   "muatan_z": 0.6,
+   "sepakat_kontinu_audit": 0.999,
+   "sepakat_kontinu_pra_audit": 0.999,
+   "sepakat_biner_audit": 0.908,
+   "sepakat_biner_pra_audit": 0.955,
+   "kontinu_maks_beda_p_terkoreksi": 6.661338147750939e-16,
+   "kontinu_maks_beda_p_naif": 5.387912338505885e-13,
+   "kontinu_keputusan_sama": 1.0,
+   "biner_maks_beda_p_terkoreksi": 0.9725750954422774,
+   "biner_keputusan_sama": 0.904
+  },
+  "A3": {
+   "status": "LULUS",
+   "ringkas": "berkas hasil N2 identik antara 'jalankan semua' dan 'jalankan satu' pada 5/5 analisis (kolom waktu/memori diabaikan); tiruan perilaku pra-audit (satu rng bersama) memberi RD/CI bootstrap berbeda pada 1/5 analisis. Terpisah dari rng: label 'terbaik' di banding.csv berpindah pada 1/5 analisis karena peringkat memakai waktu komputasi",
+   "bootstrap": 30,
+   "folder_sementara": "<folder sementara lokal>"
+  },
+  "A4": {
+   "status": "LULUS",
+   "ringkas": "tidak ada lagi pemanggilan temukan(..., len(d)) di novelty.py/benchmark.py; n_eff MLC = 27%–44% dari n mentah",
+   "pemanggilan_n_mentah": 0
+  },
+  "A5": {
+   "status": "LULUS",
+   "ringkas": "delta_bar berubah dari rentang 1.28–2.77 menjadi 1.40–2.26; implementasi cocok dengan hitungan manual (rerata deff variabel tier > 0) pada 6/6 analisis. Arah perubahan: turun pada 3, naik pada 3 analisis"
+  },
+  "A6": {
+   "status": "LULUS",
+   "ringkas": "treatment analisis lain di node MLC: pra-audit 12 (total atas 6 analisis), sesudah audit 3, seluruhnya treatment yang memang node DAG pakar analisis tersebut (pengecualian yang disengaja)"
+  }
+ }
+}

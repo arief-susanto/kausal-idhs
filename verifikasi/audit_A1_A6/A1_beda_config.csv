@@ -1,0 +1,14 @@
+objek,kunci,config_old,config
+NOVELTY,boot,100,500
+NOVELTY,sd_alpha,0.01,0.05
+NOVELTY,sd_skor,'bic','gauss'
+NOVELTY,sim_rep,200,1000
+NOVELTY,to_skor,'bic','gauss'
+BENCH,n_populasi,5,20
+SOL,alpha,0.01,0.05
+SOL,boot,100,500
+SOL_V2,K,2,5
+TIER,hambatan_biaya,2,3
+BASELINE,alpha,0.01,0.05
+BASELINE,boot,100,500
+BASELINE,skor,'bic','gauss'

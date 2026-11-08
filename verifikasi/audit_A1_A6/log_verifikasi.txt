@@ -1,0 +1,7 @@
+[A1] LULUS: 18 modul aktif dipindai, 0 masih mengimpor config_old; 8 modul terimpor memakai objek config yang sama; 13 nilai config.py berbeda dari config_old.py (dulu tidak terpakai)
+[A2] LULUS: pasangan z tanpa pengondisian ditolak 100.0% (kontinu) dan 100.0% (biner) -> z benar confounder; dengan S={z} kembali ke 5.9% dan 5.5%. Namun keputusan S={z} kontinu sama dengan S=∅ pada 99.9% replikasi (versi pra-audit 99.9%): perbandingan baris log S={z} vs S=∅ tidak dapat membedakan versi lama dan baru
+[A3] LULUS: berkas hasil N2 identik antara 'jalankan semua' dan 'jalankan satu' pada 5/5 analisis (kolom waktu/memori diabaikan); tiruan perilaku pra-audit (satu rng bersama) memberi RD/CI bootstrap berbeda pada 1/5 analisis. Terpisah dari rng: label 'terbaik' di banding.csv berpindah pada 1/5 analisis karena peringkat memakai waktu komputasi
+[A4] LULUS: tidak ada lagi pemanggilan temukan(..., len(d)) di novelty.py/benchmark.py; n_eff MLC = 27%–44% dari n mentah
+[A5] LULUS: delta_bar berubah dari rentang 1.28–2.77 menjadi 1.40–2.26; implementasi cocok dengan hitungan manual (rerata deff variabel tier > 0) pada 6/6 analisis. Arah perubahan: turun pada 3, naik pada 3 analisis
+[A6] LULUS: treatment analisis lain di node MLC: pra-audit 12 (total atas 6 analisis), sesudah audit 3, seluruhnya treatment yang memang node DAG pakar analisis tersebut (pengecualian yang disengaja)
+selesai dalam 3.7 menit

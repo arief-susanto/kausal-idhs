@@ -12,6 +12,8 @@ M0–M6, serta benchmark simulasi dengan graf benar yang diketahui.
 > hasil agregat. Benchmark simulasi (`bench_v4.py`, `v2/`, `v3/`) dapat dijalankan tanpa data DHS.
 
 Penulis: Arief Susanto, Aris Puji Widodo, Adi Wibowo (Universitas Diponegoro; Universitas Muria Kudus).
+Catatan deviasi: [CATATAN_DEVIASI.md](CATATAN_DEVIASI.md). Skrip dan laporan verifikasi: [verifikasi/README.md](verifikasi/README.md).
+
 Lisensi: MIT. Cara mengutip: lihat [CITATION.cff](CITATION.cff).
 
 ---
