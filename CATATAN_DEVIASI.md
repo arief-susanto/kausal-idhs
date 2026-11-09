@@ -166,3 +166,18 @@ Jalankan `python skrip/verifikasi_kunci.py` dari folder `naskah_lanjutan/01_efek
 Yang tidak dapat diverifikasi lewat git: bahwa waktu kunci (jejak waktu sistem berkas) mendahului pembacaan hasil.
 Tindakan ke depan: rencana di-commit sebelum run penuh dan, bila memungkinkan, didaftarkan ke OSF atau diarsipkan ke
 Zenodo untuk stempel waktu pihak ketiga.
+
+## 7. Analisis eksploratif M7 pada benchmark v4 (ditambahkan 09-11-2026, rilis v1.2)
+
+- **Apa:** M7 = himpunan penyesuaian optimal (Henckel dkk. 2022; Rotnitzky & Smucler 2020). Karena DGP benchmark v4 tidak memuat mediator, O-set pada graf benar = induk Y selain T. M7 diestimasi sebagai induk Y dari graf M3 (PC-stable + uji desain + tier), tanpa digabung dengan induk T.
+- **Status:** di luar rencana terkunci (tag `rencana-v4`). Tidak diuji terhadap H10–H13. Putusan hipotesis tidak berubah.
+- **Kode:** `bench_v4_m7.py`. Data, graf benar, dan graf M3 tiap replikasi identik dengan `bench_v4.satu`: seed dan urutan rng sampai `bangkit()` sama. Lipatan cross-fitting AIPW memakai aliran rng terpisah, jadi baris M0–M6 di `per_rep.csv` tidak berubah.
+- **Pemeriksaan:** RD benar M7 = RD benar M6 pada 4.800/4.800 replikasi. Himpunan M7 ⊆ himpunan M6 pada 100% replikasi. `bench_v4.satu` mereproduksi `per_rep.csv` bit demi bit (diuji pada sel `icc=heterogen|beta=0.0|lemah|p=15`, rep 0).
+- **Keluaran:** `naskah/data/benchmark_v4/per_rep_m7.csv` (4.800 baris). Waktu jalan: 93 menit (heterogen) dan 108 menit (ICC 0,15), 2 pekerja.
+- **Hasil (sel ICC heterogen):** valid 43,0% [41,0; 45,0], rerata |galat| 0,0075, RMSE 0,0110, cakupan 89,8%, lebar IK 0,0301, rerata |Z| 6,3.
+- **Hasil (semua sel):** valid 45,2%; perancu kuat 67,9%, lemah 22,5%; p = 15: 51,5%, p = 30: 38,8%.
+- **SHA-256:**
+  - `bench_v4_m7.py` 3dba81ec3912e2295348caee4331459843149de5db83ce36adccc9dbac92a4cd
+  - `per_rep_m7.csv` fbd82648e235bab980b5903b52310f6bf670e41f4d242b90d9aa0b1f714e98ce
+- **Penerapan SDKI:** belum dijalankan. Bila dijalankan, M7 = induk Y dari graf M3 pada tier ≤ tier T (`idhs_m0m6.py`), dan hasilnya dicatat di sini.
+- **Alat bantu:** skrip M7 ditulis dan dijalankan dengan bantuan Claude (Anthropic). Hasilnya diperiksa penulis.
