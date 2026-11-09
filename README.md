@@ -14,6 +14,10 @@ M0–M6, serta benchmark simulasi dengan graf benar yang diketahui.
 Penulis: Arief Susanto, Aris Puji Widodo, Adi Wibowo (Universitas Diponegoro; Universitas Muria Kudus).
 Catatan deviasi: [CATATAN_DEVIASI.md](CATATAN_DEVIASI.md). Skrip dan laporan verifikasi: [verifikasi/README.md](verifikasi/README.md).
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24075810.svg)](https://doi.org/10.5281/zenodo.24075810)
+
+Arsip Zenodo: rilis v1.2 https://doi.org/10.5281/zenodo.24075810 (v1.1: https://doi.org/10.5281/zenodo.24050887; DOI konsep untuk semua versi: https://doi.org/10.5281/zenodo.24050886).
+
 Lisensi: MIT. Cara mengutip: lihat [CITATION.cff](CITATION.cff).
 
 ---

@@ -4,6 +4,14 @@ title: "Kausal IDHS: design-based causal graph discovery and confounder selectio
 version: v1.2
 date-released: 2026-11-09
 license: MIT
+doi: 10.5281/zenodo.24050886
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.24050886
+    description: "Concept DOI (all versions, resolves to the latest)"
+  - type: doi
+    value: 10.5281/zenodo.24075810
+    description: "Version DOI for v1.2"
 repository-code: "https://github.com/arief-susanto/kausal-idhs"
 keywords:
   - causal discovery
