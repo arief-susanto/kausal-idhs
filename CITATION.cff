@@ -12,6 +12,9 @@ identifiers:
   - type: doi
     value: 10.5281/zenodo.24075810
     description: "Version DOI for v1.2"
+  - type: doi
+    value: 10.5281/zenodo.24168639
+    description: "Version DOI for v1.3"
 repository-code: "https://github.com/arief-susanto/kausal-idhs"
 keywords:
   - causal discovery
