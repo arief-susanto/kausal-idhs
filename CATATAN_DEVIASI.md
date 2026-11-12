@@ -181,3 +181,20 @@ Zenodo untuk stempel waktu pihak ketiga.
   - `per_rep_m7.csv` fbd82648e235bab980b5903b52310f6bf670e41f4d242b90d9aa0b1f714e98ce
 - **Penerapan SDKI:** belum dijalankan. Bila dijalankan, M7 = induk Y dari graf M3 pada tier ≤ tier T (`idhs_m0m6.py`), dan hasilnya dicatat di sini.
 - **Alat bantu:** skrip M7 ditulis dan dijalankan dengan bantuan Claude (Anthropic). Hasilnya diperiksa penulis.
+
+## 8. Benih acak per analisis pada aplikasi dan bahan verifikasi naskah 3 (ditambahkan 12-11-2026, rilis v1.3)
+
+- **Apa:** `causal.py`, `baseline.py`, dan `sol_dag.py` tidak lagi memakai satu aliran acak `default_rng(C.SEED)` untuk semua analisis dalam satu proses. Sekarang benihnya `default_rng([C.SEED, crc32(nama_analisis)])`. Di `baseline.py` benih ditambah nama metode. Di `sol_dag.py` aliran per varian dipakai untuk bootstrap dan pemisahan PSU tiap varian. `novelty.py` sudah memakai benih per analisis sejak audit A3, jadi tidak diubah.
+- **Mengapa:** uji E9 naskah 3 (`verifikasi/naskah3/revisi5/`) menunjukkan masalah pada kode lama. Batas CI bootstrap suatu analisis bergantung pada analisis yang dijalankan sebelumnya dalam proses yang sama, sehingga hasil "jalankan semua" berbeda dari "jalankan satu". Pada skema itu, batas CI berbeda pada 5 dari 6 analisis, dengan selisih maksimum 0,127. Mekanisme ini menjelaskan seluruh drift batas CI pada evaluasi E3. Dengan benih per analisis, batas CI identik bit demi bit walaupun urutan analisis dibalik (6/6).
+- **Dampak:** angka naskah dibaca dari salinan beku dan tidak dihitung ulang. Pada `causal.py` dan `baseline.py` aliran acak hanya dipakai untuk bootstrap, jadi estimasi titik tidak berubah. Batas CI dari aplikasi yang dijalankan ulang akan berbeda dari salinan beku pada level noise bootstrap. Pada `sol_dag.py` aliran acak juga menentukan pemisahan PSU, sehingga estimasi titik SOL-DAG dari aplikasi yang dijalankan ulang juga dapat berbeda dari salinan beku. Luaran aplikasi belum dijalankan ulang dengan kode ini.
+- **Bahan verifikasi naskah 3 (revisi 5):** `verifikasi/naskah3/revisi5/` memuat:
+  - pemeriksa impor konfigurasi berbasis AST (E7);
+  - injeksi kesalahan (E8);
+  - uji utas BLAS (E1);
+  - uji skema benih bootstrap (E9);
+  - desain 2×2 kode × konfigurasi untuk konfigurasi basi, dengan sel kode pra-audit (tag `67d1dfb`);
+  - manifest rencana naskah pendamping dan bukti OpenTimestamps (E10). Atestasi paling awal tercatat pada blok Bitcoin #975540.
+
+  Path ke salinan kode pra-audit di `meta.json` dan log disamarkan.
+- **Masalah yang diketahui, belum diperbaiki:** `naskah_bahan.py` membaca `naskah/data` dan memakai cadangan ke `hasil/` bila folder itu tidak ada. Di repositori pribadi folder salinan beku sudah dipindahkan, sehingga skrip ini diam-diam membaca luaran aktif. `naskah_bekukan.py` juga masih menulis ke jalur lama. Di repositori publik ini `naskah/data` masih ada, jadi perilakunya belum terpengaruh.
+- **Alat bantu:** perubahan kode dan skrip verifikasi ditulis dan dijalankan dengan bantuan Claude (Anthropic). Hasilnya diperiksa penulis.

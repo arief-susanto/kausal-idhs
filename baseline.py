@@ -10,6 +10,7 @@ import time
 import tracemalloc
 import warnings
 import numpy as np
+import zlib
 import pandas as pd
 import networkx as nx
 import statsmodels.api as sm
@@ -592,7 +593,7 @@ def rangkuman(d, V, G, out):
 
 
 def run(df, nama=None, metode=("B1", "B2", "B3"), progress=None):
-    rng = np.random.default_rng(C.SEED); lines = []
+    lines = []
     fn = {"B1": b1, "B2": b2, "B3": b3}
     for n, spec in C.ANALISIS.items():
         if nama and n != nama:
@@ -606,6 +607,8 @@ def run(df, nama=None, metode=("B1", "B2", "B3"), progress=None):
         for m in metode:
             if progress:
                 progress(f"{n}: {m} berjalan...")
+            # benih per (analisis, metode) (naskah 3, E9): hasil tidak bergantung pada analisis/metode lain yang dijalankan
+            rng = np.random.default_rng([C.SEED, zlib.crc32(n.encode()), zlib.crc32(m.encode())])
             r, l = fn[m](d, V, G, spec, out, P['boot'], rng)
             rows += r; lines += [f"BASE[{n}] {x}" for x in l]
         tab = pd.DataFrame(rows)

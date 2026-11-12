@@ -2,6 +2,7 @@
 + bootstrap klaster (PSU dalam strata) + keseimbangan + E-value."""
 import warnings
 import numpy as np
+import zlib
 import pandas as pd
 import networkx as nx
 import statsmodels.api as sm
@@ -111,10 +112,13 @@ def cek_dag(nama=None):
 
 
 def run(df, nama=None, progress=None):
-    rng = np.random.default_rng(C.SEED); lines = []
+    lines = []
     for n, spec in C.ANALISIS.items():
         if nama and n != nama:
             continue
+        # Benih per analisis (naskah 3, E9): versi lama memakai SATU aliran acak untuk semua analisis, sehingga CI
+        # bootstrap analisis ke-2 dst. bergantung pada analisis yang dijalankan sebelumnya ("semua" vs "satu").
+        rng = np.random.default_rng([C.SEED, zlib.crc32(n.encode())])
         out = C.OUT / "kausal" / n; out.mkdir(parents=True, exist_ok=True)
         G = build_dag(spec); T, Y = spec['T'], spec['Y']
         Z, ok, med = adjustment(G, T, Y, spec['laten'])

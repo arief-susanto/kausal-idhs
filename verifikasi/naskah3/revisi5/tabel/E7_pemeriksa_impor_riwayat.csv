@@ -1,0 +1,22 @@
+commit,tanggal,judul,berkas_py,modul_config,langgar_mentah,langgar_sesudah_arsip,berkas_langgar,berkas_arsip
+67d1dfb,2026-10-10 16:59:12 +0700,Snapshot sebelum audit,17,config:4;config_old:10,10,10,app.py;baseline.py;benchmark.py;eda.py;laporan.py;main.py;narasi.py;novelty.py;prep.py;sol_dag.py,
+74eb7a4,2026-10-10 17:00:04 +0700,Pasang audit A1-A6 dan config v-paper1,20,config:14;config_old:2,2,0,,benchmark_sebelum_audit.py;novelty_sebelum_audit.py
+872d0e9,2026-10-10 17:12:33 +0700,Log Fase 1 sanitasi_diare (gerbang belum lulus: baris kontinu S={z}),20,config:14;config_old:2,2,0,,benchmark_sebelum_audit.py;novelty_sebelum_audit.py
+a02d204,2026-10-10 19:14:21 +0700,Fase 1 lulus: audit terverifikasi,20,config:14;config_old:2,2,0,,benchmark_sebelum_audit.py;novelty_sebelum_audit.py
+91edfd7,2026-10-10 20:01:54 +0700,Kunci rencana analisis dan kode benchmark v4,20,config:14;config_old:2,2,0,,benchmark_sebelum_audit.py;novelty_sebelum_audit.py
+de729dc,2026-10-11 10:55:14 +0700,Fase 2 selesai: skenario B,20,config:14;config_old:2,2,0,,benchmark_sebelum_audit.py;novelty_sebelum_audit.py
+98841d0,2026-10-11 11:24:03 +0700,"Fase 3: analisis sensitivitas mediator, tier hambatan_biaya=3, hasil IDHS",20,config:14;config_old:2,2,0,,benchmark_sebelum_audit.py;novelty_sebelum_audit.py
+4806252,2026-10-11 13:00:13 +0700,Fase 3: M0-M6 pada IDHS (idhs_m0m6.py) dan hasil ulang setelah perubahan tier,21,config:15;config_old:2,2,0,,benchmark_sebelum_audit.py;novelty_sebelum_audit.py
+a2cf17a,2026-10-11 13:08:13 +0700,Catat hash v-paper1 untuk naskah,22,config:16;config_old:2,2,0,,benchmark_sebelum_audit.py;novelty_sebelum_audit.py
+b077ace,2026-10-11 13:08:13 +0700,Kode final naskah,22,config:16;config_old:2,2,0,,benchmark_sebelum_audit.py;novelty_sebelum_audit.py
+bc2c365,2026-10-11 13:13:03 +0700,README reproduksi naskah; dokumen disertasi tidak lagi dilacak,22,config:16;config_old:2,2,0,,benchmark_sebelum_audit.py;novelty_sebelum_audit.py
+efea39b,2026-10-11 13:54:22 +0700,Draf naskah RESTI dari hasil v-paper1 (naskah_tulis.py),23,config:17;config_old:2,2,0,,benchmark_sebelum_audit.py;novelty_sebelum_audit.py
+66ea80c,2026-10-11 15:27:58 +0700,Bekukan data naskah di naskah/data; skrip naskah tidak lagi membaca hasil/ dan tidak menimpa file suntingan,24,config:18;config_old:2,2,0,,benchmark_sebelum_audit.py;novelty_sebelum_audit.py
+2efa589,2026-10-11 15:43:48 +0700,Log penyelarasan hasil aplikasi dengan versi audit,24,config:18;config_old:2,2,0,,benchmark_sebelum_audit.py;novelty_sebelum_audit.py
+fa24b59,2026-10-11 15:54:39 +0700,Aplikasi: menu Benchmark v4 (M0-M6) sebagai penampil hasil bench_v4 dan idhs_m0m6,24,config:18;config_old:2,2,0,,benchmark_sebelum_audit.py;novelty_sebelum_audit.py
+906f674,2026-10-11 17:44:50 +0700,Aplikasi: narasi dan laporan Word untuk menu Benchmark v4,24,config:18;config_old:2,2,0,,benchmark_sebelum_audit.py;novelty_sebelum_audit.py
+e068ba9,2026-10-18 17:34:09 +0700,Naskah lanjutan A-E dan simulasi perluasan naskah A,24,config:18;config_old:2,2,0,,benchmark_sebelum_audit.py;novelty_sebelum_audit.py
+00bc436,2026-10-18 17:56:25 +0700,"Jejak kunci naskah A: rencana awal terpisah, skrip verifikasi, dan catatan deviasi",24,config:18;config_old:2,2,0,,benchmark_sebelum_audit.py;novelty_sebelum_audit.py
+80142ab,2026-10-18 18:11:27 +0700,Naskah A: satukan bukti dan catatan di folder 01_efek_nol_graf,24,config:18;config_old:2,2,0,,benchmark_sebelum_audit.py;novelty_sebelum_audit.py
+f1d96be,2026-11-01 09:00:45 +0700,"Verifikasi ulang audit A1-A6: skrip uji, tabel hasil, dan laporan",24,config:18;config_old:2,2,0,,benchmark_sebelum_audit.py;novelty_sebelum_audit.py
+b857c00,2026-11-01 18:37:42 +0700,"Uji penentu E4/E5: tier menjelaskan selisih run 3-4, pemisahan efek konfigurasi basi",24,config:18;config_old:2,2,0,,benchmark_sebelum_audit.py;novelty_sebelum_audit.py

@@ -1,0 +1,5 @@
+banding,estimasi,identik_bit,selisih_maks,keputusan_sama,tugas
+utas=1 vs asli,648,648,0.0,648,72
+utas bawaan (venv) vs asli,648,526,4.85722573273506e-17,648,72
+utas=1 vs utas bawaan,648,526,4.85722573273506e-17,648,72
+py39 (utas bawaan) vs asli,648,23,4.996003610813204e-16,648,72

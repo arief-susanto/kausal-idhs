@@ -1,0 +1,1 @@
+{'label': 'venv_benang1', 'utas': {'OMP_NUM_THREADS': '1', 'OPENBLAS_NUM_THREADS': '1', 'MKL_NUM_THREADS': '1'}, 'blas': "No module named 'threadpoolctl'", 'python': '3.13.15', 'numpy': '2.5.3', 'pandas': '3.0.6', 'tugas': 72, 'baris': 648, 'rep': [0, 1, 2], 'menit': 55.8}

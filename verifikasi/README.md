@@ -4,6 +4,7 @@
 |---|---|
 | `audit_A1_A6/` | Verifikasi ulang perbaikan audit A1–A6: `verifikasi_a1_a6.py` (uji), `buat_laporan.py` (penyusun laporan), tabel hasil (CSV/JSON), dan `LAPORAN_VERIFIKASI_A1_A6.md`/`.docx`. `verifikasi_a1_a6.py` membutuhkan `cache/analisis.pkl`, yang dibuat dari mikrodata SDKI 2017 (`python main.py prep`); mikrodata tidak disertakan. |
 | `naskah3/` | Pemeriksaan N3-1 sampai N3-4 untuk naskah reproduksibilitas: `LAPORAN_VERIFIKASI_NASKAH3.md`/`.docx`, tabel pendukung, dan penyusunnya `buat_laporan_naskah3.py`. |
+| `naskah3/revisi5/` | Bahan verifikasi naskah 3 revisi 5 (rilis v1.3): pemeriksa impor (E7), injeksi kesalahan (E8), uji utas BLAS (E1), skema benih bootstrap (E9), desain 2×2 kode × konfigurasi (E4), dan bukti OpenTimestamps (E10). Lihat `naskah3/revisi5/README.md`. |
 
 Catatan untuk `naskah3/`: penyusun laporan membaca riwayat git lengkap (tag, commit lama, dan log pada commit tertentu)
 serta luaran run di repositori pribadi penulis, sehingga tidak dapat dijalankan ulang dari repositori publik ini.

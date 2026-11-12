@@ -1,0 +1,78 @@
+S1 sanitasi_diare 7.4 mnt
+S1 pbi_diare 14.2 mnt
+S1 pbi_neonatal 18.2 mnt
+S1 fasilitas_neonatal 26.4 mnt
+S1 sanitasi_diare_ctps 32.5 mnt
+S1 pbi_diare_biaya 37.6 mnt
+S2 sanitasi_diare
+S2 pbi_diare
+S2 pbi_neonatal
+S2 fasilitas_neonatal
+S2 sanitasi_diare_ctps
+S2 pbi_diare_biaya
+S3 sanitasi_diare
+S3 pbi_diare
+S3 pbi_neonatal
+S3 fasilitas_neonatal
+S3 sanitasi_diare_ctps
+S3 pbi_diare_biaya
+S4 pbi_diare_biaya
+S4 sanitasi_diare_ctps
+S4 fasilitas_neonatal
+S4 pbi_neonatal
+S4 pbi_diare
+S4 sanitasi_diare
+       skema             analisis             acuan  estimasi_identik  ci_identik_bit  ci_selisih_maks
+0         S1       sanitasi_diare              beku             False           False     1.110223e-16
+1         S1       sanitasi_diare             aktif             False           False     1.110223e-16
+2         S1            pbi_diare              beku             False           False     9.795121e-03
+3         S1            pbi_diare             aktif             False           False     2.220446e-16
+4         S1         pbi_neonatal             aktif              True            True     0.000000e+00
+5         S1   fasilitas_neonatal             aktif              True            True     0.000000e+00
+6         S1  sanitasi_diare_ctps              beku             False           False     8.076542e-03
+7         S1  sanitasi_diare_ctps             aktif             False           False     1.110223e-16
+8         S1      pbi_diare_biaya              beku             False           False     5.206026e-03
+9         S1      pbi_diare_biaya             aktif             False           False     2.220446e-16
+10        S2       sanitasi_diare              beku             False           False     1.110223e-16
+11        S2       sanitasi_diare             aktif             False           False     1.110223e-16
+12        S2            pbi_diare              beku             False           False     2.775558e-17
+13        S2            pbi_diare             aktif             False           False     9.795121e-03
+14        S2         pbi_neonatal             aktif              True           False     5.582053e-02
+15        S2   fasilitas_neonatal             aktif              True           False     1.265547e-01
+16        S2  sanitasi_diare_ctps              beku             False           False     1.110223e-16
+17        S2  sanitasi_diare_ctps             aktif             False           False     8.076542e-03
+18        S2      pbi_diare_biaya              beku             False           False     2.220446e-16
+19        S2      pbi_diare_biaya             aktif             False           False     5.206026e-03
+20        S3       sanitasi_diare              beku             False           False     6.846423e-03
+21        S3       sanitasi_diare             aktif             False           False     6.846423e-03
+22        S3            pbi_diare              beku             False           False     4.929588e-03
+23        S3            pbi_diare             aktif             False           False     1.403716e-02
+24        S3         pbi_neonatal             aktif              True           False     8.447838e-02
+25        S3   fasilitas_neonatal             aktif              True           False     1.589692e-01
+26        S3  sanitasi_diare_ctps              beku             False           False     1.475815e-02
+27        S3  sanitasi_diare_ctps             aktif             False           False     1.541070e-02
+28        S3      pbi_diare_biaya              beku             False           False     9.833756e-03
+29        S3      pbi_diare_biaya             aktif             False           False     1.275190e-02
+30        S4      pbi_diare_biaya              beku             False           False     9.833756e-03
+31        S4      pbi_diare_biaya             aktif             False           False     1.275190e-02
+32        S4  sanitasi_diare_ctps              beku             False           False     1.475815e-02
+33        S4  sanitasi_diare_ctps             aktif             False           False     1.541070e-02
+34        S4   fasilitas_neonatal             aktif              True           False     1.589692e-01
+35        S4         pbi_neonatal             aktif              True           False     8.447838e-02
+36        S4            pbi_diare              beku             False           False     4.929588e-03
+37        S4            pbi_diare             aktif             False           False     1.403716e-02
+38        S4       sanitasi_diare              beku             False           False     6.846423e-03
+39        S4       sanitasi_diare             aktif             False           False     6.846423e-03
+40  S3 vs S4       sanitasi_diare    urutan dibalik              True            True     0.000000e+00
+41  S1 vs S2       sanitasi_diare  semua vs sendiri              True            True     0.000000e+00
+42  S3 vs S4            pbi_diare    urutan dibalik              True            True     0.000000e+00
+43  S1 vs S2            pbi_diare  semua vs sendiri              True           False     9.795121e-03
+44  S3 vs S4         pbi_neonatal    urutan dibalik              True            True     0.000000e+00
+45  S1 vs S2         pbi_neonatal  semua vs sendiri              True           False     5.582053e-02
+46  S3 vs S4   fasilitas_neonatal    urutan dibalik              True            True     0.000000e+00
+47  S1 vs S2   fasilitas_neonatal  semua vs sendiri              True           False     1.265547e-01
+48  S3 vs S4  sanitasi_diare_ctps    urutan dibalik              True            True     0.000000e+00
+49  S1 vs S2  sanitasi_diare_ctps  semua vs sendiri              True           False     8.076542e-03
+50  S3 vs S4      pbi_diare_biaya    urutan dibalik              True            True     0.000000e+00
+51  S1 vs S2      pbi_diare_biaya  semua vs sendiri              True           False     5.206026e-03
+selesai 112.7 menit

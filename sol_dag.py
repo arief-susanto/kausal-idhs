@@ -8,6 +8,7 @@ Ablasi mematikan satu komponen: tanpa MLC, tanpa koreksi desain, tanpa tier, tan
 import itertools
 import time
 import numpy as np
+import zlib
 import pandas as pd
 import networkx as nx
 import config as C
@@ -118,11 +119,12 @@ def jalankan(spec, opsi, d_mlc, obs, d_v, V, B, rng, cache=None, mask_A=None, R=
 
 # ================================================================== menu (data nyata)
 def run(df, nama=None, varian=tuple(VARIAN), progress=None):
-    rng = np.random.default_rng(C.SEED); lines = []
+    lines = []
     N.MLC_DATA[0] = df
     for n, spec in C.ANALISIS.items():
         if nama and n != nama:
             continue
+        rng = np.random.default_rng([C.SEED, zlib.crc32(n.encode())])     # benih per analisis (naskah 3, E9)
         out = C.OUT / "sol_dag" / n; out.mkdir(parents=True, exist_ok=True)
         d_v, V, G0 = BL.siapkan(df, spec)
         d_m, obs, cols = N.data_mlc(spec, df)
@@ -133,7 +135,8 @@ def run(df, nama=None, varian=tuple(VARIAN), progress=None):
             if progress:
                 progress(f"{n}: {vn} ...")
             o = VARIAN[vn]
-            h = jalankan(spec, o, d_m, obs, d_v, V, P['boot'], rng, cache,
+            rng_v = np.random.default_rng([C.SEED, zlib.crc32(n.encode()), zlib.crc32(vn.encode())])  # per varian
+            h = jalankan(spec, o, d_m, obs, d_v, V, P['boot'], rng_v, cache,
                          mA_m if o['mlc'] else mA_v, R, biner)
             rows.append(dict(varian=vn, **{k: v for k, v in o.items()}, node=len(h['nodes']),
                              sisi=h['G'].number_of_edges(), sisi_skeleton=h['sisi_skeleton'],

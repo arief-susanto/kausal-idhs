@@ -1,0 +1,6 @@
+# Manifest rencana (SHA-256 isi berakhiran LF), dibuat 2026-11-12T09:32:29Z
+# Verifikasi: hitung SHA-256 tiap berkas sesudah CRLF->LF, bandingkan; lalu `ots verify` berkas .ots
+0e6d5085c6f393dba5a07fd4b8824968ff6c11c0d9b413348cec60278cebc7ec *naskah_ke_2/01_dsr_sistem_informasi/evaluasi_pengguna/PROTOKOL.md
+ea854b3c56f7b6ec35d50e78955d9a7bb7f220d6bfc4d3979dedeeb2d5958915 *naskah_ke_2/01_dsr_sistem_informasi/evaluasi_pengguna/analisis_pengguna.py
+e0865c0d1712c34485a253f4c810dfae23b62840d85dcf701cbbf5ecd06192ca *naskah_ke_2/01_dsr_sistem_informasi/evaluasi_pengguna/kunci_jawaban.csv
+8ca396fd265e741c44d0730fde79f2c78adfd440d7798fb10839498a48273bc5 *naskah_ke_2/01_dsr_sistem_informasi/evaluasi_pengguna/formulir_SUS.md

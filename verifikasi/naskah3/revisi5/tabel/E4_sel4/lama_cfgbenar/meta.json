@@ -1,0 +1,35 @@
+{
+ "label": "lama_cfgbenar",
+ "kode": "<salinan kode tag pra-audit 67d1dfb: lama_cfgbenar>",
+ "tier": 2,
+ "alpha": 0.05,
+ "skor": "gauss",
+ "n_populasi": 20,
+ "rep": 100,
+ "pekerja": 4,
+ "menit": 406.0,
+ "RD_benar": {
+  "A": -0.02020986429682395,
+  "B": -0.04616483083259046
+ },
+ "ringkas": [
+  {
+   "acuan": "gabungan",
+   "sel": 150,
+   "identik_1e12": 21,
+   "selisih_maks": 44.68539325842697
+  },
+  {
+   "acuan": "run1b",
+   "sel": 150,
+   "identik_1e12": 32,
+   "selisih_maks": 39.655913978494624
+  },
+  {
+   "acuan": "run3",
+   "sel": 150,
+   "identik_1e12": 37,
+   "selisih_maks": 64.5
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "ringkas_vs_acuan": [
+  {
+   "acuan": "gabungan",
+   "sel": 150,
+   "identik_1e12": 38,
+   "selisih_maks": 20.353535353535356
+  },
+  {
+   "acuan": "run1b",
+   "sel": 150,
+   "identik_1e12": 126,
+   "selisih_maks": 0.7200000000000131
+  },
+  {
+   "acuan": "run3",
+   "sel": 150,
+   "identik_1e12": 21,
+   "selisih_maks": 50.489999999999995
+  }
+ ],
+ "run2_baris": 1266,
+ "run2_identik_1e12": 1242,
+ "run2_selisih_maks": 18.0,
+ "run2_efek_nol_sama": 1266
+}

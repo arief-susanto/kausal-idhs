@@ -1,0 +1,35 @@
+{
+ "label": "lama_cfglama",
+ "kode": "<salinan kode tag pra-audit 67d1dfb: lama_cfglama>",
+ "tier": 2,
+ "alpha": 0.01,
+ "skor": "bic",
+ "n_populasi": 5,
+ "rep": 100,
+ "pekerja": 4,
+ "menit": 365.5,
+ "RD_benar": {
+  "A": -0.020298561029784123,
+  "B": -0.045107849089662616
+ },
+ "ringkas": [
+  {
+   "acuan": "gabungan",
+   "sel": 150,
+   "identik_1e12": 38,
+   "selisih_maks": 20.353535353535356
+  },
+  {
+   "acuan": "run1b",
+   "sel": 150,
+   "identik_1e12": 126,
+   "selisih_maks": 0.7200000000000131
+  },
+  {
+   "acuan": "run3",
+   "sel": 150,
+   "identik_1e12": 21,
+   "selisih_maks": 50.489999999999995
+  }
+ ]
+}

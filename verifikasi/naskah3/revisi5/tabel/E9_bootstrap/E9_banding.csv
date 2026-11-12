@@ -1,0 +1,53 @@
+skema,analisis,acuan,estimasi_identik,ci_identik_bit,ci_selisih_maks
+S1,sanitasi_diare,beku,False,False,1.1102230246251565e-16
+S1,sanitasi_diare,aktif,False,False,1.1102230246251565e-16
+S1,pbi_diare,beku,False,False,0.009795120578054206
+S1,pbi_diare,aktif,False,False,2.220446049250313e-16
+S1,pbi_neonatal,aktif,True,True,0.0
+S1,fasilitas_neonatal,aktif,True,True,0.0
+S1,sanitasi_diare_ctps,beku,False,False,0.008076542196866932
+S1,sanitasi_diare_ctps,aktif,False,False,1.1102230246251565e-16
+S1,pbi_diare_biaya,beku,False,False,0.005206026328530511
+S1,pbi_diare_biaya,aktif,False,False,2.220446049250313e-16
+S2,sanitasi_diare,beku,False,False,1.1102230246251565e-16
+S2,sanitasi_diare,aktif,False,False,1.1102230246251565e-16
+S2,pbi_diare,beku,False,False,2.7755575615628914e-17
+S2,pbi_diare,aktif,False,False,0.009795120578054206
+S2,pbi_neonatal,aktif,True,False,0.05582053394891906
+S2,fasilitas_neonatal,aktif,True,False,0.12655466878952026
+S2,sanitasi_diare_ctps,beku,False,False,1.1102230246251565e-16
+S2,sanitasi_diare_ctps,aktif,False,False,0.008076542196866932
+S2,pbi_diare_biaya,beku,False,False,2.220446049250313e-16
+S2,pbi_diare_biaya,aktif,False,False,0.005206026328530511
+S3,sanitasi_diare,beku,False,False,0.006846422926813256
+S3,sanitasi_diare,aktif,False,False,0.006846422926813256
+S3,pbi_diare,beku,False,False,0.0049295882704498695
+S3,pbi_diare,aktif,False,False,0.014037162586792995
+S3,pbi_neonatal,aktif,True,False,0.0844783820448296
+S3,fasilitas_neonatal,aktif,True,False,0.15896924872254647
+S3,sanitasi_diare_ctps,beku,False,False,0.014758150431115613
+S3,sanitasi_diare_ctps,aktif,False,False,0.015410701604631871
+S3,pbi_diare_biaya,beku,False,False,0.009833756210274602
+S3,pbi_diare_biaya,aktif,False,False,0.012751896114238326
+S4,pbi_diare_biaya,beku,False,False,0.009833756210274602
+S4,pbi_diare_biaya,aktif,False,False,0.012751896114238326
+S4,sanitasi_diare_ctps,beku,False,False,0.014758150431115613
+S4,sanitasi_diare_ctps,aktif,False,False,0.015410701604631871
+S4,fasilitas_neonatal,aktif,True,False,0.15896924872254647
+S4,pbi_neonatal,aktif,True,False,0.0844783820448296
+S4,pbi_diare,beku,False,False,0.0049295882704498695
+S4,pbi_diare,aktif,False,False,0.014037162586792995
+S4,sanitasi_diare,beku,False,False,0.006846422926813256
+S4,sanitasi_diare,aktif,False,False,0.006846422926813256
+S3 vs S4,sanitasi_diare,urutan dibalik,True,True,0.0
+S1 vs S2,sanitasi_diare,semua vs sendiri,True,True,0.0
+S3 vs S4,pbi_diare,urutan dibalik,True,True,0.0
+S1 vs S2,pbi_diare,semua vs sendiri,True,False,0.009795120578054206
+S3 vs S4,pbi_neonatal,urutan dibalik,True,True,0.0
+S1 vs S2,pbi_neonatal,semua vs sendiri,True,False,0.05582053394891906
+S3 vs S4,fasilitas_neonatal,urutan dibalik,True,True,0.0
+S1 vs S2,fasilitas_neonatal,semua vs sendiri,True,False,0.12655466878952026
+S3 vs S4,sanitasi_diare_ctps,urutan dibalik,True,True,0.0
+S1 vs S2,sanitasi_diare_ctps,semua vs sendiri,True,False,0.00807654219686682
+S3 vs S4,pbi_diare_biaya,urutan dibalik,True,True,0.0
+S1 vs S2,pbi_diare_biaya,semua vs sendiri,True,False,0.005206026328530511

@@ -1,7 +1,7 @@
 {
   "title": "Kausal IDHS: design-based causal graph discovery and confounder selection for complex survey data",
   "upload_type": "software",
-  "description": "Configuration-driven Python pipeline (code and locked analysis plan) for the study 'Survey-design-calibrated independence tests reduce adjustment-set validity in PC-based causal discovery'. It implements design-corrected conditional-independence tests (Rao-Scott, design t test), PC-stable with temporal tiers, seven confounder-selection strategies, cross-fitted AIPW with design-based standard errors, and a simulation benchmark mimicking the 2017 Indonesia Demographic and Health Survey. IDHS microdata are not included and must be requested from The DHS Program. Release v1.1 added the deviation log (CATATAN_DEVIASI.md) and the verification scripts and reports in verifikasi/. Release v1.2 adds the exploratory strategy M7 (optimal adjustment set estimated from the M3 graph): bench_v4_m7.py and its per-replication output naskah/data/benchmark_v4/per_rep_m7.csv (4,800 replications; data and graphs identical to M0-M6), documented as a deviation in CATATAN_DEVIASI.md section 7.",
+  "description": "Configuration-driven Python pipeline (code and locked analysis plan) for the study 'Survey-design-calibrated independence tests reduce adjustment-set validity in PC-based causal discovery'. It implements design-corrected conditional-independence tests (Rao-Scott, design t test), PC-stable with temporal tiers, seven confounder-selection strategies, cross-fitted AIPW with design-based standard errors, and a simulation benchmark mimicking the 2017 Indonesia Demographic and Health Survey. IDHS microdata are not included and must be requested from The DHS Program. Release v1.1 added the deviation log (CATATAN_DEVIASI.md) and the verification scripts and reports in verifikasi/. Release v1.2 adds the exploratory strategy M7 (optimal adjustment set estimated from the M3 graph): bench_v4_m7.py and its per-replication output naskah/data/benchmark_v4/per_rep_m7.csv (4,800 replications; data and graphs identical to M0-M6), documented as a deviation in CATATAN_DEVIASI.md section 7. Release v1.3 adds the verification material for the reproducibility manuscript (verifikasi/naskah3/revisi5/): an AST-based configuration-import checker run over the git history, controlled fault injection, a BLAS thread test, bootstrap seeding schemes, a 2x2 code x configuration benchmark design with Monte Carlo intervals, and OpenTimestamps proofs for two analysis-plan manifests. The application modules causal.py, baseline.py and sol_dag.py now seed the random stream per analysis (deviation log section 8).",
   "creators": [
     {
       "name": "Susanto, Arief",
@@ -21,9 +21,11 @@
     "PC algorithm",
     "complex survey",
     "confounder selection",
-    "IDHS"
+    "IDHS",
+    "reproducibility",
+    "silent errors"
   ],
   "license": "MIT",
   "access_right": "open",
-  "version": "v1.2"
+  "version": "v1.3"
 }
