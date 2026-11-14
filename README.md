@@ -16,7 +16,7 @@ Catatan deviasi: [CATATAN_DEVIASI.md](CATATAN_DEVIASI.md). Skrip dan laporan ver
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24168639.svg)](https://doi.org/10.5281/zenodo.24168639)
 
-Arsip Zenodo: rilis v1.3 https://doi.org/10.5281/zenodo.24168639 (v1.2: https://doi.org/10.5281/zenodo.24075810; v1.1: https://doi.org/10.5281/zenodo.24050887; DOI konsep untuk semua versi: https://doi.org/10.5281/zenodo.24050886).
+Arsip Zenodo: rilis v1.4 https://doi.org/10.5281/zenodo.24225837 (v1.3: https://doi.org/10.5281/zenodo.24168639; v1.2: https://doi.org/10.5281/zenodo.24075810; v1.1: https://doi.org/10.5281/zenodo.24050887; DOI konsep untuk semua versi: https://doi.org/10.5281/zenodo.24050886).
 
 Lisensi: MIT. Cara mengutip: lihat [CITATION.cff](CITATION.cff).
 
