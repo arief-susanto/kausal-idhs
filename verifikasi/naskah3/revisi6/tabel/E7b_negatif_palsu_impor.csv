@@ -1,0 +1,13 @@
+varian,konfigurasi efektif basi,D1 pemeriksa impor,IL Import Linter,D1r penjaga runtime
+V0 kontrol (tanpa kesalahan),False,False,False,False
+V1 import literal (kejadian nyata),True,True,True,True
+V2 from ... import *,True,True,True,True
+"V3 importlib, argumen literal",True,True,False,True
+"V4 importlib, argumen variabel",True,False,False,True
+V5 __import__ dengan string gabungan,True,False,False,True
+V6 re-export lewat modul perantara di akar,True,True,True,True
+V7 re-export lewat modul perantara di subfolder,True,False,False,True
+V8 manipulasi sys.path (config.py lain),True,False,False,True
+V9 exec atas berkas konfigurasi lama,True,False,False,True
+V10 konfigurasi lama bernama tak berpola,True,False,False,True
+V11 parameter dibaca dari JSON berjalur salah,True,False,False,False

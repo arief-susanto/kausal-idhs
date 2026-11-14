@@ -1,0 +1,11 @@
+kesalahan,D1r
+F0 kontrol (tanpa kesalahan),False
+F1 impor basi sesudah rilis,True
+F1b impor basi sebelum rilis (kejadian nyata),True
+F2 benih hilang,False
+F3 salinan beku ditimpa isi aktif,False
+F4 salinan beku diubah manual,False
+F5 konfigurasi diubah sesudah run,False
+F6 rencana terkunci diubah,False
+F7 kode analisis diubah sesudah tag,False
+F8 folder salinan beku dipindah,False

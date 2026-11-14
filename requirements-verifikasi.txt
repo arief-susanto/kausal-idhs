@@ -1,0 +1,9 @@
+# Dependensi tambahan untuk skrip verifikasi naskah 3 (E7b: negatif_palsu_impor.py).
+# Terpisah dari requirements-lock.txt agar lingkungan analisis terkunci (E6) tidak berubah.
+# Pasang:  python -m pip install -r requirements-lock.txt -r requirements-verifikasi.txt
+import-linter==2.16
+grimp==3.20
+rich==15.0.0
+markdown-it-py==4.3.0
+mdurl==0.1.2
+Pygments==2.21.0

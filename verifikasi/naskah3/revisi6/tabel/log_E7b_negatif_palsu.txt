@@ -1,0 +1,27 @@
+Import Linter: <.venv>/Scripts/lint-imports
+{'varian': 'V0 kontrol (tanpa kesalahan)', 'konfigurasi efektif basi': False, 'D1 pemeriksa impor': False, 'IL Import Linter': False, 'D1r penjaga runtime': False}
+{'varian': 'V1 import literal (kejadian nyata)', 'konfigurasi efektif basi': True, 'D1 pemeriksa impor': True, 'IL Import Linter': True, 'D1r penjaga runtime': True}
+{'varian': 'V2 from ... import *', 'konfigurasi efektif basi': True, 'D1 pemeriksa impor': True, 'IL Import Linter': True, 'D1r penjaga runtime': True}
+{'varian': 'V3 importlib, argumen literal', 'konfigurasi efektif basi': True, 'D1 pemeriksa impor': True, 'IL Import Linter': False, 'D1r penjaga runtime': True}
+{'varian': 'V4 importlib, argumen variabel', 'konfigurasi efektif basi': True, 'D1 pemeriksa impor': False, 'IL Import Linter': False, 'D1r penjaga runtime': True}
+{'varian': 'V5 __import__ dengan string gabungan', 'konfigurasi efektif basi': True, 'D1 pemeriksa impor': False, 'IL Import Linter': False, 'D1r penjaga runtime': True}
+{'varian': 'V6 re-export lewat modul perantara di akar', 'konfigurasi efektif basi': True, 'D1 pemeriksa impor': True, 'IL Import Linter': True, 'D1r penjaga runtime': True}
+{'varian': 'V7 re-export lewat modul perantara di subfolder', 'konfigurasi efektif basi': True, 'D1 pemeriksa impor': False, 'IL Import Linter': False, 'D1r penjaga runtime': True}
+{'varian': 'V8 manipulasi sys.path (config.py lain)', 'konfigurasi efektif basi': True, 'D1 pemeriksa impor': False, 'IL Import Linter': False, 'D1r penjaga runtime': True}
+{'varian': 'V9 exec atas berkas konfigurasi lama', 'konfigurasi efektif basi': True, 'D1 pemeriksa impor': False, 'IL Import Linter': False, 'D1r penjaga runtime': True}
+{'varian': 'V10 konfigurasi lama bernama tak berpola', 'konfigurasi efektif basi': True, 'D1 pemeriksa impor': False, 'IL Import Linter': False, 'D1r penjaga runtime': True}
+{'varian': 'V11 parameter dibaca dari JSON berjalur salah', 'konfigurasi efektif basi': True, 'D1 pemeriksa impor': False, 'IL Import Linter': False, 'D1r penjaga runtime': False}
+                                                 konfigurasi efektif basi  D1 pemeriksa impor  IL Import Linter  D1r penjaga runtime
+varian                                                                                                                              
+V0 kontrol (tanpa kesalahan)                                        False               False             False                False
+V1 import literal (kejadian nyata)                                   True                True              True                 True
+V2 from ... import *                                                 True                True              True                 True
+V3 importlib, argumen literal                                        True                True             False                 True
+V4 importlib, argumen variabel                                       True               False             False                 True
+V5 __import__ dengan string gabungan                                 True               False             False                 True
+V6 re-export lewat modul perantara di akar                           True                True              True                 True
+V7 re-export lewat modul perantara di subfolder                      True               False             False                 True
+V8 manipulasi sys.path (config.py lain)                              True               False             False                 True
+V9 exec atas berkas konfigurasi lama                                 True               False             False                 True
+V10 konfigurasi lama bernama tak berpola                             True               False             False                 True
+V11 parameter dibaca dari JSON berjalur salah                        True               False             False                False
